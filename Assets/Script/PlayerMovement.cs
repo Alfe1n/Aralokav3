@@ -1,65 +1,67 @@
-using UnityEngine;
+﻿using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Movement Settings")]
     public float moveSpeed = 5f;
 
-    [Tooltip("Centang jika Bara hanya boleh bergerak Atas/Bawah/Kiri/Kanan (tidak bisa diagonal)")]
-    public bool strict4WayMovement = false;
+    private Animator animator;
 
-    private Rigidbody2D rb;
-    private Vector2 movement;
-    private Animator anim;
+    float h;
+    float v;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        // Mengambil komponen Animator jika nanti sudah ditambahkan
-        anim = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        // GetAxisRaw menghasilkan nilai -1, 0, atau 1 secara instan
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-
-        // Logika Strict 4-Directional
-        // Memprioritaskan sumbu X jika tombol ditekan bersamaan agar tidak jalan diagonal
-        if (strict4WayMovement && movement.x != 0)
-        {
-            movement.y = 0;
-        }
-
-        // Normalisasi agar pergerakan diagonal tidak lebih cepat dari pergerakan lurus
-        movement = movement.normalized;
-
-        UpdateAnimation();
+        HandleInput();
+        Move();
+        Animate();
     }
 
-    void FixedUpdate()
+    void HandleInput()
     {
-        // Mengaplikasikan pergerakan ke Rigidbody2D
-        rb.linearVelocity = movement * moveSpeed;
+        h = Input.GetAxisRaw("Horizontal"); // A D
+        v = Input.GetAxisRaw("Vertical");   // W S
     }
 
-    void UpdateAnimation()
+    void Move()
     {
-        if (anim != null)
+        Vector3 move = new Vector3(h, v, 0f).normalized;
+
+        transform.position += move * moveSpeed * Time.deltaTime;
+    }
+
+    void Animate()
+    {
+        // 🔥 cek lagi gerak atau nggak
+        bool isMoving = (h != 0 || v != 0);
+
+        animator.SetBool("IsMoving", isMoving);
+
+        if (isMoving)
         {
-            if (movement != Vector2.zero)
+            // 🔥 PRIORITAS arah dominan (biar ga diagonal glitch)
+            if (Mathf.Abs(h) > Mathf.Abs(v))
             {
-                // Menyimpan arah gerak terakhir untuk mengatur arah menghadap (idle)
-                anim.SetFloat("MoveX", movement.x);
-                anim.SetFloat("MoveY", movement.y);
-                anim.SetBool("IsMoving", true);
+                // Kiri / kanan
+                animator.SetFloat("moveX", h);
+                animator.SetFloat("moveY", 0);
             }
             else
             {
-                anim.SetBool("IsMoving", false);
+                // Atas / bawah
+                animator.SetFloat("moveX", 0);
+                animator.SetFloat("moveY", v);
             }
+        }
+        else
+        {
+            // 🔥 IDLE → paksa ke depan (bawah)
+            animator.SetFloat("moveX", 0);
+            animator.SetFloat("moveY", -1);
         }
     }
 }
