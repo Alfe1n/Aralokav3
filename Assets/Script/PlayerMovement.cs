@@ -2,12 +2,13 @@
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Movement")]
     public float moveSpeed = 5f;
 
     private Animator animator;
 
-    float h;
-    float v;
+    private float h;
+    private float v;
 
     void Start()
     {
@@ -23,43 +24,37 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleInput()
     {
-        h = Input.GetAxisRaw("Horizontal"); // A D
-        v = Input.GetAxisRaw("Vertical");   // W S
+        // Raw biar responsif (no smoothing input)
+        h = Input.GetAxisRaw("Horizontal");
+        v = Input.GetAxisRaw("Vertical");
     }
 
     void Move()
     {
-        Vector3 move = new Vector3(h, v, 0f).normalized;
+        Vector3 move = new Vector3(h, v, 0f);
+
+        // 🔥 Normalize biar diagonal ga lebih cepat
+        if (move.magnitude > 1f)
+            move.Normalize();
 
         transform.position += move * moveSpeed * Time.deltaTime;
     }
 
     void Animate()
     {
-        // 🔥 cek lagi gerak atau nggak
         bool isMoving = (h != 0 || v != 0);
-
         animator.SetBool("IsMoving", isMoving);
 
         if (isMoving)
         {
-            // 🔥 PRIORITAS arah dominan (biar ga diagonal glitch)
-            if (Mathf.Abs(h) > Mathf.Abs(v))
-            {
-                // Kiri / kanan
-                animator.SetFloat("moveX", h);
-                animator.SetFloat("moveY", 0);
-            }
-            else
-            {
-                // Atas / bawah
-                animator.SetFloat("moveX", 0);
-                animator.SetFloat("moveY", v);
-            }
+            Vector2 dir = new Vector2(h, v).normalized;
+
+            animator.SetFloat("moveX", dir.x);
+            animator.SetFloat("moveY", dir.y);
         }
         else
         {
-            // 🔥 IDLE → paksa ke depan (bawah)
+            // 🔥 Idle default: HADAP BAWAH
             animator.SetFloat("moveX", 0);
             animator.SetFloat("moveY", -1);
         }
