@@ -1,21 +1,70 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class DoorTransition : MonoBehaviour
 {
+    [Header("Scene")]
     public string targetScene;
-    public string targetSpawnPoint;
+    public string spawnPointName;
 
-    bool playerInside = false;
+    [Header("Audio")]
+    public AudioClip doorSound;
+
+    private bool playerInside = false;
+    private bool isTransitioning = false;
 
     void Update()
     {
-        if (playerInside && Input.GetKeyDown(KeyCode.E))
+        if (playerInside &&
+            !isTransitioning &&
+            Input.GetKeyDown(KeyCode.E))
         {
-            SpawnManager.spawnPointName = targetSpawnPoint;
-
-            SceneManager.LoadScene(targetScene);
+            StartCoroutine(Transition());
         }
+    }
+
+    IEnumerator Transition()
+    {
+        isTransitioning = true;
+
+        if (doorSound != null)
+        {
+            AudioSource.PlayClipAtPoint(
+                doorSound,
+                Camera.main.transform.position,
+                0.2f
+            );
+        }
+
+        yield return new WaitForSeconds(0.2f);
+
+        // save spawn
+        SpawnManager.spawnPointName =
+            spawnPointName;
+
+        // ambil current scene
+        Scene currentScene =
+            SceneManager.GetActiveScene();
+
+        // load target additive
+        yield return SceneManager.LoadSceneAsync(
+            targetScene,
+            LoadSceneMode.Additive
+        );
+
+        // set active
+        Scene target =
+            SceneManager.GetSceneByName(targetScene);
+
+        SceneManager.SetActiveScene(target);
+
+        // unload scene lama
+        yield return SceneManager.UnloadSceneAsync(
+            currentScene
+        );
+
+        isTransitioning = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -23,6 +72,13 @@ public class DoorTransition : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = true;
+
+            if (!DialogueManager.instance
+                .IsDialogueActive())
+            {
+                DialogueManager.instance
+                    .ShowPrompt();
+            }
         }
     }
 
@@ -31,6 +87,9 @@ public class DoorTransition : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = false;
+
+            DialogueManager.instance
+                .HidePrompt();
         }
     }
 }

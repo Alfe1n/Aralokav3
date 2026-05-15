@@ -1,0 +1,1807 @@
+fileFormatVersion: 2
+guid: c57ed5f48b7cb7045848f4affd9cf16b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8125732590869385622
+    second: Bara Movement_0
+  - first:
+      213: 8075658866364938671
+    second: Bara Movement_1
+  - first:
+      213: -4535349760013702275
+    second: Bara Movement_2
+  - first:
+      213: 4367920359118765412
+    second: Bara Movement_3
+  - first:
+      213: -7836099714695915469
+    second: Bara Movement_4
+  - first:
+      213: -6465751722500813347
+    second: Bara Movement_5
+  - first:
+      213: 5123737439575044538
+    second: Bara Movement_6
+  - first:
+      213: -2843724097140429555
+    second: Bara Movement_7
+  - first:
+      213: -8382931541791926089
+    second: Bara Movement_8
+  - first:
+      213: -6188341062891630410
+    second: Bara Movement_9
+  - first:
+      213: 8603182594201855124
+    second: Bara Movement_10
+  - first:
+      213: -9125064575192948845
+    second: Bara Movement_11
+  - first:
+      213: -7660713804426161185
+    second: Bara Movement_12
+  - first:
+      213: 6549470244678458051
+    second: Bara Movement_13
+  - first:
+      213: -1065757226813436401
+    second: Bara Movement_14
+  - first:
+      213: 5836220938376968841
+    second: Bara Movement_15
+  - first:
+      213: 7029576023024379824
+    second: Bara Movement_16
+  - first:
+      213: -2639752703400637135
+    second: Bara Movement_17
+  - first:
+      213: 8421848211813305343
+    second: Bara Movement_18
+  - first:
+      213: -2579210421632965914
+    second: Bara Movement_19
+  - first:
+      213: 8410279886550275935
+    second: Bara Movement_20
+  - first:
+      213: -8240763687127257140
+    second: Bara Movement_21
+  - first:
+      213: -39979999873030043
+    second: Bara Movement_22
+  - first:
+      213: 6348676630127911926
+    second: Bara Movement_23
+  - first:
+      213: 4593146574381763505
+    second: Bara Movement_24
+  - first:
+      213: -2556197489499212566
+    second: Bara Movement_25
+  - first:
+      213: 2103186623133181688
+    second: Bara Movement_26
+  - first:
+      213: 7921098910130999612
+    second: Bara Movement_27
+  - first:
+      213: -3456351725354355027
+    second: Bara Movement_28
+  - first:
+      213: -5186622657766411137
+    second: Bara Movement_29
+  - first:
+      213: 2606839696603394423
+    second: Bara Movement_30
+  - first:
+      213: -4793818758827374878
+    second: Bara Movement_31
+  - first:
+      213: -8460199533344258997
+    second: Bara Movement_32
+  - first:
+      213: 7400543155416725018
+    second: Bara Movement_33
+  - first:
+      213: -4784537018349154075
+    second: Bara Movement_34
+  - first:
+      213: -5764302003283607771
+    second: Bara Movement_35
+  - first:
+      213: 8668982651607459226
+    second: Bara Movement_36
+  - first:
+      213: 7814889794892217851
+    second: Bara Movement_37
+  - first:
+      213: -4044342652180112630
+    second: Bara Movement_38
+  - first:
+      213: -5389028168384914277
+    second: Bara Movement_39
+  - first:
+      213: -1593319735766346233
+    second: Bara Movement_40
+  - first:
+      213: -3012090818430783588
+    second: Bara Movement_41
+  - first:
+      213: -4181954622080924903
+    second: Bara Movement_42
+  - first:
+      213: -251073285364027395
+    second: Bara Movement_43
+  - first:
+      213: -4143927783576425870
+    second: Bara Movement_44
+  - first:
+      213: 2358607928721261840
+    second: Bara Movement_45
+  - first:
+      213: -4850476142523634596
+    second: Bara Movement_46
+  - first:
+      213: 3421638563911682517
+    second: Bara Movement_47
+  - first:
+      213: 8985784081832525845
+    second: Bara Movement_48
+  - first:
+      213: -6215044550072780290
+    second: Bara Movement_49
+  - first:
+      213: 8413202826832790460
+    second: Bara Movement_50
+  - first:
+      213: -6636328751586081833
+    second: Bara Movement_51
+  - first:
+      213: 1762775364257611734
+    second: Bara Movement_52
+  - first:
+      213: -9014173525642988118
+    second: Bara Movement_53
+  - first:
+      213: -2499534237340870121
+    second: Bara Movement_54
+  - first:
+      213: -894491969110015526
+    second: Bara Movement_55
+  - first:
+      213: 6593308918791721160
+    second: Bara Movement_56
+  - first:
+      213: 8168488977817632997
+    second: Bara Movement_57
+  - first:
+      213: -8790012705106260769
+    second: Bara Movement_58
+  - first:
+      213: 6097489380569231003
+    second: Bara Movement_59
+  - first:
+      213: 4357817981750971359
+    second: Bara Movement_60
+  - first:
+      213: 7850355936275733050
+    second: Bara Movement_61
+  - first:
+      213: -4011447280876629841
+    second: Bara Movement_62
+  - first:
+      213: -8904726541183384902
+    second: Bara Movement_63
+  - first:
+      213: 528609312493790466
+    second: Bara Movement_64
+  - first:
+      213: -3197985958710154214
+    second: Bara Movement_65
+  - first:
+      213: 828125930994107707
+    second: Bara Movement_66
+  - first:
+      213: -5681366009217136008
+    second: Bara Movement_67
+  - first:
+      213: -353432043287208012
+    second: Bara Movement_68
+  - first:
+      213: -5665853784683941945
+    second: Bara Movement_69
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bara Movement_0
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 4084
+        width: 480
+        height: 1259
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691959a4db664c070800000000000000
+      internalID: 8125732590869385622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_1
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 4095
+        width: 486
+        height: 1248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa97ae8c3f0821070800000000000000
+      internalID: 8075658866364938671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_2
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 4095
+        width: 475
+        height: 1248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7bea3e2c633f01c0800000000000000
+      internalID: -4535349760013702275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_3
+      rect:
+        serializedVersion: 2
+        x: 2353
+        y: 4095
+        width: 474
+        height: 1248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d7874ac68fd9c30800000000000000
+      internalID: 4367920359118765412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_5
+      rect:
+        serializedVersion: 2
+        x: 3085
+        y: 4095
+        width: 475
+        height: 1248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd087eb0190546a0800000000000000
+      internalID: -6465751722500813347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_6
+      rect:
+        serializedVersion: 2
+        x: 3757
+        y: 4106
+        width: 469
+        height: 1237
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab17d38fd0c2b1740800000000000000
+      internalID: 5123737439575044538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_7
+      rect:
+        serializedVersion: 2
+        x: 4418
+        y: 4111
+        width: 475
+        height: 1232
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0de9b610001988d0800000000000000
+      internalID: -2843724097140429555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_8
+      rect:
+        serializedVersion: 2
+        x: 5073
+        y: 4111
+        width: 481
+        height: 1232
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8131b6d28d9ab80800000000000000
+      internalID: -8382931541791926089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_10
+      rect:
+        serializedVersion: 2
+        x: 5805
+        y: 4111
+        width: 478
+        height: 1232
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494a931ecf4a46770800000000000000
+      internalID: 8603182594201855124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_11
+      rect:
+        serializedVersion: 2
+        x: 6472
+        y: 4106
+        width: 458
+        height: 1237
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39f9f139d124d5180800000000000000
+      internalID: -9125064575192948845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_12
+      rect:
+        serializedVersion: 2
+        x: 7128
+        y: 4111
+        width: 475
+        height: 1232
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd35f31126dafa590800000000000000
+      internalID: -7660713804426161185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_13
+      rect:
+        serializedVersion: 2
+        x: 7800
+        y: 4138
+        width: 469
+        height: 1205
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cadc09ac7464ea50800000000000000
+      internalID: 6549470244678458051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_15
+      rect:
+        serializedVersion: 2
+        x: 8516
+        y: 4138
+        width: 464
+        height: 1205
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98af7a6950c6ef050800000000000000
+      internalID: 5836220938376968841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_16
+      rect:
+        serializedVersion: 2
+        x: 9188
+        y: 4138
+        width: 464
+        height: 1205
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7a8fd06221e8160800000000000000
+      internalID: 7029576023024379824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_17
+      rect:
+        serializedVersion: 2
+        x: 9855
+        y: 4138
+        width: 463
+        height: 1205
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d8deaf6e6bd5bd0800000000000000
+      internalID: -2639752703400637135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_18
+      rect:
+        serializedVersion: 2
+        x: 10515
+        y: 4138
+        width: 470
+        height: 1205
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb0469e35a60e470800000000000000
+      internalID: 8421848211813305343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_19
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 2876
+        width: 480
+        height: 1104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2e49969cdc43cd0800000000000000
+      internalID: -2579210421632965914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_20
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 2876
+        width: 486
+        height: 1104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57117b4ff057b470800000000000000
+      internalID: 8410279886550275935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_21
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2838
+        width: 481
+        height: 1142
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf67d6861de2ad80800000000000000
+      internalID: -8240763687127257140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_22
+      rect:
+        serializedVersion: 2
+        x: 2347
+        y: 2838
+        width: 486
+        height: 1142
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568a275e666f17ff0800000000000000
+      internalID: -39979999873030043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_23
+      rect:
+        serializedVersion: 2
+        x: 3084
+        y: 2876
+        width: 470
+        height: 1104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3299422c70b1850800000000000000
+      internalID: 6348676630127911926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_24
+      rect:
+        serializedVersion: 2
+        x: 3762
+        y: 2876
+        width: 459
+        height: 1098
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bbc35f49722ebf30800000000000000
+      internalID: 4593146574381763505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_25
+      rect:
+        serializedVersion: 2
+        x: 4439
+        y: 2876
+        width: 454
+        height: 1098
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae477a63def868cd0800000000000000
+      internalID: -2556197489499212566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_26
+      rect:
+        serializedVersion: 2
+        x: 5101
+        y: 2876
+        width: 448
+        height: 1098
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6e4303715003d10800000000000000
+      internalID: 2103186623133181688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_27
+      rect:
+        serializedVersion: 2
+        x: 5805
+        y: 2876
+        width: 481
+        height: 1104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c319711bd756ded60800000000000000
+      internalID: 7921098910130999612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_28
+      rect:
+        serializedVersion: 2
+        x: 6483
+        y: 2876
+        width: 459
+        height: 1104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6f1771b629800d0800000000000000
+      internalID: -3456351725354355027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_29
+      rect:
+        serializedVersion: 2
+        x: 7133
+        y: 2876
+        width: 470
+        height: 1104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7437d33c2a6508b0800000000000000
+      internalID: -5186622657766411137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_30
+      rect:
+        serializedVersion: 2
+        x: 7800
+        y: 2876
+        width: 474
+        height: 1104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771be6674ea5d2420800000000000000
+      internalID: 2606839696603394423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_31
+      rect:
+        serializedVersion: 2
+        x: 8516
+        y: 2876
+        width: 480
+        height: 1109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e68d72dc3fe87db0800000000000000
+      internalID: -4793818758827374878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_32
+      rect:
+        serializedVersion: 2
+        x: 9188
+        y: 2876
+        width: 479
+        height: 1104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4407163955579a80800000000000000
+      internalID: -8460199533344258997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_33
+      rect:
+        serializedVersion: 2
+        x: 9854
+        y: 2876
+        width: 475
+        height: 1104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16ff834ac204b660800000000000000
+      internalID: 7400543155416725018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_34
+      rect:
+        serializedVersion: 2
+        x: 10526
+        y: 2876
+        width: 459
+        height: 1104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e0979e6ee8e99db0800000000000000
+      internalID: -4784537018349154075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_35
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1205
+        width: 508
+        height: 1141
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f353c5ed51100b0800000000000000
+      internalID: -5764302003283607771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_36
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1205
+        width: 508
+        height: 1141
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9526199ac96e4870800000000000000
+      internalID: 8668982651607459226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_37
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1205
+        width: 513
+        height: 1141
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd30670dd0147c60800000000000000
+      internalID: 7814889794892217851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_38
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 1205
+        width: 513
+        height: 1141
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0bd7d229cb9fd7c0800000000000000
+      internalID: -4044342652180112630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_40
+      rect:
+        serializedVersion: 2
+        x: 3041
+        y: 1205
+        width: 535
+        height: 1136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7061700642463e9e0800000000000000
+      internalID: -1593319735766346233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_41
+      rect:
+        serializedVersion: 2
+        x: 3713
+        y: 1205
+        width: 529
+        height: 1130
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9fa7300c57e236d0800000000000000
+      internalID: -3012090818430783588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_42
+      rect:
+        serializedVersion: 2
+        x: 4401
+        y: 1205
+        width: 514
+        height: 1141
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913401c9d66b6f5c0800000000000000
+      internalID: -4181954622080924903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_43
+      rect:
+        serializedVersion: 2
+        x: 5062
+        y: 1205
+        width: 508
+        height: 1141
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff694d5d22048cf0800000000000000
+      internalID: -251073285364027395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_45
+      rect:
+        serializedVersion: 2
+        x: 5773
+        y: 1205
+        width: 513
+        height: 1130
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015c9db2a657bb020800000000000000
+      internalID: 2358607928721261840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_46
+      rect:
+        serializedVersion: 2
+        x: 6445
+        y: 1205
+        width: 519
+        height: 1136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c2f55b5a5afacb0800000000000000
+      internalID: -4850476142523634596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_47
+      rect:
+        serializedVersion: 2
+        x: 7117
+        y: 1205
+        width: 524
+        height: 1136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9cbbf252a1c7f20800000000000000
+      internalID: 3421638563911682517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_48
+      rect:
+        serializedVersion: 2
+        x: 7773
+        y: 1205
+        width: 518
+        height: 1136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510ccf1830be3bc70800000000000000
+      internalID: 8985784081832525845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_50
+      rect:
+        serializedVersion: 2
+        x: 8516
+        y: 1205
+        width: 491
+        height: 1136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb34eac5563b1c470800000000000000
+      internalID: 8413202826832790460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_51
+      rect:
+        serializedVersion: 2
+        x: 9182
+        y: 1205
+        width: 497
+        height: 1130
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d30005492607e3a0800000000000000
+      internalID: -6636328751586081833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_52
+      rect:
+        serializedVersion: 2
+        x: 9838
+        y: 1205
+        width: 508
+        height: 1136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df726daad2a67810800000000000000
+      internalID: 1762775364257611734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_53
+      rect:
+        serializedVersion: 2
+        x: 10493
+        y: 1205
+        width: 503
+        height: 1136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5b15400f837e280800000000000000
+      internalID: -9014173525642988118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_54
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 508
+        height: 1117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ade5faadedf4dd0800000000000000
+      internalID: -2499534237340870121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_55
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0
+        width: 502
+        height: 1112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad102c61b402693f0800000000000000
+      internalID: -894491969110015526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_56
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 0
+        width: 476
+        height: 1106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0defe5783208b50800000000000000
+      internalID: 6593308918791721160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_57
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 0
+        width: 484
+        height: 1106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e08382627d4c5170800000000000000
+      internalID: 8168488977817632997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_58
+      rect:
+        serializedVersion: 2
+        x: 3101
+        y: 0
+        width: 446
+        height: 1106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc88f4240a930680800000000000000
+      internalID: -8790012705106260769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_59
+      rect:
+        serializedVersion: 2
+        x: 3773
+        y: 0
+        width: 481
+        height: 1106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9eab862942ae9450800000000000000
+      internalID: 6097489380569231003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_60
+      rect:
+        serializedVersion: 2
+        x: 4412
+        y: 0
+        width: 470
+        height: 1106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb831e9d541a7c30800000000000000
+      internalID: 4357817981750971359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_61
+      rect:
+        serializedVersion: 2
+        x: 5098
+        y: 0
+        width: 434
+        height: 1105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a181e812112fc60800000000000000
+      internalID: 7850355936275733050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_62
+      rect:
+        serializedVersion: 2
+        x: 5822
+        y: 0
+        width: 447
+        height: 1106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0542c93f97458c0800000000000000
+      internalID: -4011447280876629841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_63
+      rect:
+        serializedVersion: 2
+        x: 6483
+        y: 0
+        width: 470
+        height: 1106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab285cad36e0c6480800000000000000
+      internalID: -8904726541183384902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_64
+      rect:
+        serializedVersion: 2
+        x: 7106
+        y: 0
+        width: 475
+        height: 1106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205e7287e5ff55700800000000000000
+      internalID: 528609312493790466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_65
+      rect:
+        serializedVersion: 2
+        x: 7794
+        y: 0
+        width: 448
+        height: 1106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ce466d6b87e93d0800000000000000
+      internalID: -3197985958710154214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_66
+      rect:
+        serializedVersion: 2
+        x: 8510
+        y: 0
+        width: 475
+        height: 1105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35813a85281e7b00800000000000000
+      internalID: 828125930994107707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_67
+      rect:
+        serializedVersion: 2
+        x: 9209
+        y: 0
+        width: 459
+        height: 1106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a42ad37bbb721b0800000000000000
+      internalID: -5681366009217136008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_68
+      rect:
+        serializedVersion: 2
+        x: 9838
+        y: 0
+        width: 475
+        height: 1106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf10afdd6b581bf0800000000000000
+      internalID: -353432043287208012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bara Movement_69
+      rect:
+        serializedVersion: 2
+        x: 10488
+        y: 0
+        width: 497
+        height: 1112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf6c967008de51b0800000000000000
+      internalID: -5665853784683941945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9ce30bc5884d2c948972cc322d380209
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Bara Movement_0: 8125732590869385622
+      Bara Movement_1: 8075658866364938671
+      Bara Movement_10: 8603182594201855124
+      Bara Movement_11: -9125064575192948845
+      Bara Movement_12: -7660713804426161185
+      Bara Movement_13: 6549470244678458051
+      Bara Movement_14: -1065757226813436401
+      Bara Movement_15: 5836220938376968841
+      Bara Movement_16: 7029576023024379824
+      Bara Movement_17: -2639752703400637135
+      Bara Movement_18: 8421848211813305343
+      Bara Movement_19: -2579210421632965914
+      Bara Movement_2: -4535349760013702275
+      Bara Movement_20: 8410279886550275935
+      Bara Movement_21: -8240763687127257140
+      Bara Movement_22: -39979999873030043
+      Bara Movement_23: 6348676630127911926
+      Bara Movement_24: 4593146574381763505
+      Bara Movement_25: -2556197489499212566
+      Bara Movement_26: 2103186623133181688
+      Bara Movement_27: 7921098910130999612
+      Bara Movement_28: -3456351725354355027
+      Bara Movement_29: -5186622657766411137
+      Bara Movement_3: 4367920359118765412
+      Bara Movement_30: 2606839696603394423
+      Bara Movement_31: -4793818758827374878
+      Bara Movement_32: -8460199533344258997
+      Bara Movement_33: 7400543155416725018
+      Bara Movement_34: -4784537018349154075
+      Bara Movement_35: -5764302003283607771
+      Bara Movement_36: 8668982651607459226
+      Bara Movement_37: 7814889794892217851
+      Bara Movement_38: -4044342652180112630
+      Bara Movement_39: -5389028168384914277
+      Bara Movement_4: -7836099714695915469
+      Bara Movement_40: -1593319735766346233
+      Bara Movement_41: -3012090818430783588
+      Bara Movement_42: -4181954622080924903
+      Bara Movement_43: -251073285364027395
+      Bara Movement_44: -4143927783576425870
+      Bara Movement_45: 2358607928721261840
+      Bara Movement_46: -4850476142523634596
+      Bara Movement_47: 3421638563911682517
+      Bara Movement_48: 8985784081832525845
+      Bara Movement_49: -6215044550072780290
+      Bara Movement_5: -6465751722500813347
+      Bara Movement_50: 8413202826832790460
+      Bara Movement_51: -6636328751586081833
+      Bara Movement_52: 1762775364257611734
+      Bara Movement_53: -9014173525642988118
+      Bara Movement_54: -2499534237340870121
+      Bara Movement_55: -894491969110015526
+      Bara Movement_56: 6593308918791721160
+      Bara Movement_57: 8168488977817632997
+      Bara Movement_58: -8790012705106260769
+      Bara Movement_59: 6097489380569231003
+      Bara Movement_6: 5123737439575044538
+      Bara Movement_60: 4357817981750971359
+      Bara Movement_61: 7850355936275733050
+      Bara Movement_62: -4011447280876629841
+      Bara Movement_63: -8904726541183384902
+      Bara Movement_64: 528609312493790466
+      Bara Movement_65: -3197985958710154214
+      Bara Movement_66: 828125930994107707
+      Bara Movement_67: -5681366009217136008
+      Bara Movement_68: -353432043287208012
+      Bara Movement_69: -5665853784683941945
+      Bara Movement_7: -2843724097140429555
+      Bara Movement_8: -8382931541791926089
+      Bara Movement_9: -6188341062891630410
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

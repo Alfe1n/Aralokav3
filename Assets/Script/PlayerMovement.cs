@@ -5,6 +5,17 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed = 5f;
 
+    [HideInInspector]
+    public bool canMove = true;
+
+    [Header("Footstep Audio")]
+    public AudioSource footstepSource;
+    public AudioClip[] footstepClips;
+
+    public float footstepDelay = 0.4f;
+
+    private float footstepTimer;
+
     private Animator animator;
 
     private float h;
@@ -20,11 +31,19 @@ public class PlayerMovement : MonoBehaviour
         HandleInput();
         Move();
         Animate();
+        HandleFootstep();
     }
 
     void HandleInput()
     {
-        // Raw biar responsif (no smoothing input)
+        // LOCK MOVEMENT SAAT DIALOGUE
+        if (!canMove)
+        {
+            h = 0;
+            v = 0;
+            return;
+        }
+
         h = Input.GetAxisRaw("Horizontal");
         v = Input.GetAxisRaw("Vertical");
     }
@@ -33,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 move = new Vector3(h, v, 0f);
 
-        // 🔥 Normalize biar diagonal ga lebih cepat
+        // biar diagonal ga lebih cepat
         if (move.magnitude > 1f)
             move.Normalize();
 
@@ -43,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
     void Animate()
     {
         bool isMoving = (h != 0 || v != 0);
+
         animator.SetBool("IsMoving", isMoving);
 
         if (isMoving)
@@ -52,11 +72,33 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("moveX", dir.x);
             animator.SetFloat("moveY", dir.y);
         }
-        else
+    }
+
+    void HandleFootstep()
+    {
+        // kalau ga bisa gerak → ga ada footstep
+        if (!canMove) return;
+
+        bool isMoving = (h != 0 || v != 0);
+
+        if (!isMoving) return;
+
+        // countdown timer
+        footstepTimer -= Time.deltaTime;
+
+        if (footstepTimer <= 0f)
         {
-            // 🔥 Idle default: HADAP BAWAH
-            animator.SetFloat("moveX", 0);
-            animator.SetFloat("moveY", -1);
+            if (footstepClips.Length > 0)
+            {
+                int randomIndex =
+                    Random.Range(0, footstepClips.Length);
+
+                footstepSource.PlayOneShot(
+                    footstepClips[randomIndex]
+                );
+            }
+
+            footstepTimer = footstepDelay;
         }
     }
 }
