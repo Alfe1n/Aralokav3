@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: aaaf4795b2a1bf847b8a3ccfad875170
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1959136444478913160
+    second: Tupai_idle_0
+  - first:
+      213: 4435774041875835532
+    second: Tupai_idle_1
+  - first:
+      213: -4627172676342192484
+    second: Tupai_idle_2
+  - first:
+      213: -8033361872870685135
+    second: Tupai_idle_3
+  - first:
+      213: 4116906664895232026
+    second: Tupai_idle_4
+  - first:
+      213: -5589005035616556797
+    second: Tupai_idle_5
+  - first:
+      213: 2006610503452543416
+    second: Tupai_idle_6
+  - first:
+      213: -6562851305416043530
+    second: Tupai_idle_7
+  - first:
+      213: 3504130225675895248
+    second: Tupai_idle_8
+  - first:
+      213: 8292949311406323624
+    second: Tupai_idle_9
+  - first:
+      213: 9126555738620575285
+    second: Tupai_idle_10
+  - first:
+      213: -1471518182993616846
+    second: Tupai_idle_11
+  - first:
+      213: -7110022836078456999
+    second: Tupai_idle_12
+  - first:
+      213: -4639200130813043429
+    second: Tupai_idle_13
+  - first:
+      213: -4985507740340641842
+    second: Tupai_idle_14
+  - first:
+      213: -176135843508666560
+    second: Tupai_idle_15
+  - first:
+      213: 5171821284332126379
+    second: Tupai_idle_16
+  - first:
+      213: 4383259954700189402
+    second: Tupai_idle_17
+  - first:
+      213: -6470707936349626358
+    second: Tupai_idle_18
+  - first:
+      213: 7993253248815495337
+    second: Tupai_idle_19
+  - first:
+      213: -8527509755639927693
+    second: Tupai_idle_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 170
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tupai_idle_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 187
+        width: 105
+        height: 117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8750050a8cfbfc4e0800000000000000
+      internalID: -1959136444478913160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tupai_idle_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 191
+        width: 111
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8a68e54df80f8d30800000000000000
+      internalID: 4435774041875835532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tupai_idle_2
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 187
+        width: 100
+        height: 121
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96ea3877faf8cfb0800000000000000
+      internalID: -4627172676342192484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tupai_idle_3
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 187
+        width: 118
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136406f60f3c38090800000000000000
+      internalID: -8033361872870685135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tupai_idle_4
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 191
+        width: 117
+        height: 135
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18b486acc0322930800000000000000
+      internalID: 4116906664895232026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tupai_idle_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 29
+        width: 120
+        height: 134
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e3847f61a08ae70800000000000000
+      internalID: 9126555738620575285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tupai_idle_11
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 29
+        width: 117
+        height: 134
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 230232e420e149be0800000000000000
+      internalID: -1471518182993616846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tupai_idle_12
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 29
+        width: 121
+        height: 134
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95fc0aea6ef145d90800000000000000
+      internalID: -7110022836078456999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tupai_idle_13
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 28
+        width: 118
+        height: 135
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d51f08f004e9fb0800000000000000
+      internalID: -4639200130813043429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 293035e07392ec94a819a02d5f98c3a2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Tupai_idle_0: -1959136444478913160
+      Tupai_idle_1: 4435774041875835532
+      Tupai_idle_10: 9126555738620575285
+      Tupai_idle_11: -1471518182993616846
+      Tupai_idle_12: -7110022836078456999
+      Tupai_idle_13: -4639200130813043429
+      Tupai_idle_14: -4985507740340641842
+      Tupai_idle_15: -176135843508666560
+      Tupai_idle_16: 5171821284332126379
+      Tupai_idle_17: 4383259954700189402
+      Tupai_idle_18: -6470707936349626358
+      Tupai_idle_19: 7993253248815495337
+      Tupai_idle_2: -4627172676342192484
+      Tupai_idle_20: -8527509755639927693
+      Tupai_idle_3: -8033361872870685135
+      Tupai_idle_4: 4116906664895232026
+      Tupai_idle_5: -5589005035616556797
+      Tupai_idle_6: 2006610503452543416
+      Tupai_idle_7: -6562851305416043530
+      Tupai_idle_8: 3504130225675895248
+      Tupai_idle_9: 8292949311406323624
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
