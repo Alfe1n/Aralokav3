@@ -256,6 +256,18 @@ MonoBehaviour:
   - text: Cermin antik
     speaker: Bara
     portrait: {fileID: 3063982380085596617, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
+  useQuest: 0
+  requiredQuest: -1
+  nextQuest: -1
+  useCutscene: 0
+  cutscenePanel: {fileID: 0}
+  videoPlayer: {fileID: 0}
+  rawImageVideo: {fileID: 0}
+  cgImage: {fileID: 0}
+  useSceneTransition: 0
+  targetScene: 
+  targetSpawnPoint: 
+  transitionQuest: -1
 --- !u!61 &729367896
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -707,6 +719,18 @@ MonoBehaviour:
   - text: Bathub antik
     speaker: Bara
     portrait: {fileID: 3063982380085596617, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
+  useQuest: 0
+  requiredQuest: -1
+  nextQuest: -1
+  useCutscene: 0
+  cutscenePanel: {fileID: 0}
+  videoPlayer: {fileID: 0}
+  rawImageVideo: {fileID: 0}
+  cgImage: {fileID: 0}
+  useSceneTransition: 0
+  targetScene: 
+  targetSpawnPoint: 
+  transitionQuest: -1
 --- !u!61 &947107311
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1206,8 +1230,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1669049506}
   - component: {fileID: 1669049505}
-  - component: {fileID: 1669049508}
   - component: {fileID: 1669049509}
+  - component: {fileID: 1669049510}
   m_Layer: 0
   m_Name: Pintu
   m_TagString: Untagged
@@ -1289,21 +1313,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 732783990}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1669049508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1669049503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4743f86e7a5288b468a02f797b16cf93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorTransition
-  targetScene: Kamar Bara
-  spawnPointName: Spawn_Kamar
-  doorSound: {fileID: 8300000, guid: 9f87588053e910b48be30f876566c31e, type: 3}
 --- !u!61 &1669049509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1350,6 +1359,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.7578647, y: 2.9213657}
   m_EdgeRadius: 0
+--- !u!114 &1669049510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669049503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667ee28ba5310a34c9adc74449d1d684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
+  dialogueLines: []
+  useQuest: 0
+  requiredQuest: -1
+  nextQuest: -1
+  useCutscene: 0
+  cutscenePanel: {fileID: 0}
+  videoPlayer: {fileID: 0}
+  rawImageVideo: {fileID: 0}
+  cgImage: {fileID: 0}
+  useSceneTransition: 1
+  targetScene: Kamar Bara
+  targetSpawnPoint: Spawn_Kamar
+  transitionQuest: -1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

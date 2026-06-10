@@ -760,7 +760,7 @@ Transform:
   m_GameObject: {fileID: 511968359}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.94539, y: -2.88405, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -796,7 +796,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.3506203, y: -1.4908597, z: -10}
+  m_LocalPosition: {x: -17.59477, y: -4.3449097, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1549,7 +1549,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pergi cek HP
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2590,11 +2590,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1646464280}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 960, y: 540}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1331264462
@@ -2821,6 +2821,7 @@ GameObject:
   - component: {fileID: 1588687656}
   - component: {fileID: 1588687655}
   - component: {fileID: 1588687654}
+  - component: {fileID: 1588687657}
   m_Layer: 0
   m_Name: InteractPrompt
   m_TagString: Untagged
@@ -2991,6 +2992,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0.009, y: 2.5}
   m_SizeDelta: {x: 1.644, y: 0.4824}
   m_Pivot: {x: 0.50000006, y: 0.42436287}
+--- !u!210 &1588687657
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588687653}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!1 &1611489468
 GameObject:
   m_ObjectHideFlags: 0
@@ -3095,16 +3109,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673102960}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1646464280}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 960, y: 540}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1673102962
@@ -3120,6 +3134,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestManager
   objectiveText: {fileID: 814287648}
+  objectivePanel: {fileID: 794346246}
+  quests:
+  - objectiveText: Pergi Cek HP
+  - objectiveText: Pergi Beristirahat
+  - objectiveText: Cari Jalan Keluar
+  - objectiveText: Periksa Sekitar Hutan
   currentQuest: 0
 --- !u!1 &1693929561
 GameObject:
@@ -3296,7 +3316,7 @@ Transform:
   m_GameObject: {fileID: 1929051348}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.3506203, y: -1.4908597, z: -10}
+  m_LocalPosition: {x: -17.59477, y: -4.3449097, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3437,6 +3457,50 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929051348}
   m_Enabled: 1
+--- !u!1 &1935315988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1935315990}
+  - component: {fileID: 1935315989}
+  m_Layer: 0
+  m_Name: TransitionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1935315989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935315988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1460b09398f22004aa1adfafafef91f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TransitionManager
+--- !u!4 &1935315990
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935315988}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.54985, y: 0.19156, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2022379974
 GameObject:
   m_ObjectHideFlags: 0
@@ -3742,11 +3806,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2981239180149163321, guid: c3fa43e34cc8a6145a251eacee6ce99e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.94539
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2981239180149163321, guid: c3fa43e34cc8a6145a251eacee6ce99e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.85405
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2981239180149163321, guid: c3fa43e34cc8a6145a251eacee6ce99e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3970,13 +4034,7 @@ PrefabInstance:
       addedObject: {fileID: 1129489373}
     - targetCorrespondingSourceObject: {fileID: 5391702997434779722, guid: 6c82510fcb1a6624e94e2fcda4a687da, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1331264461}
-    - targetCorrespondingSourceObject: {fileID: 5391702997434779722, guid: 6c82510fcb1a6624e94e2fcda4a687da, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 794346247}
-    - targetCorrespondingSourceObject: {fileID: 5391702997434779722, guid: 6c82510fcb1a6624e94e2fcda4a687da, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1673102961}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c82510fcb1a6624e94e2fcda4a687da, type: 3}
 --- !u!1660057539 &9223372036854775807
@@ -3985,3 +4043,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 511968361}
   - {fileID: 2022379977}
+  - {fileID: 1673102961}
+  - {fileID: 1331264461}
+  - {fileID: 1935315990}

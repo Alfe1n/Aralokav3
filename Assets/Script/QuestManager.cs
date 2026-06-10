@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -7,15 +8,21 @@ public class QuestManager : MonoBehaviour
 
     [Header("UI")]
     public TMP_Text objectiveText;
+    public GameObject objectivePanel;
 
-    public int currentQuest = 0;
+    [Header("Quest List")]
+    public List<QuestData> quests = new();
 
-    void Awake()
+    [SerializeField]
+    private int currentQuest = 0;
+
+    public int CurrentQuest => currentQuest;
+
+    private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -24,36 +31,74 @@ public class QuestManager : MonoBehaviour
         }
     }
 
-    void Start()
+    private void Start()
     {
+        HideObjective();
+
         UpdateObjective();
+    }
+
+    public void ShowObjective()
+    {
+        Debug.Log("SHOW QUEST UI");
+
+        if (objectivePanel == null)
+        {
+            Debug.LogError("OBJECTIVE PANEL NULL");
+            return;
+        }
+
+        objectivePanel.SetActive(true);
+    }
+
+    public void HideObjective()
+    {
+        Debug.Log("HIDE QUEST UI");
+
+        if (objectivePanel == null)
+        {
+            Debug.LogError("OBJECTIVE PANEL NULL");
+            return;
+        }
+
+        objectivePanel.SetActive(false);
     }
 
     public void SetQuest(int id)
     {
+        if (id < 0 || id >= quests.Count)
+            return;
+
         currentQuest = id;
+
+        Debug.Log(
+            $"QUEST CHANGED -> {currentQuest}"
+        );
 
         UpdateObjective();
     }
 
-    void UpdateObjective()
+    public void NextQuest()
     {
-        switch (currentQuest)
-        {
-            case 0:
-                objectiveText.text =
-                    "Pergi cek HP";
-                break;
+        SetQuest(currentQuest + 1);
+    }
 
-            case 1:
-                objectiveText.text =
-                    "Pergi istirahat";
-                break;
+    private void UpdateObjective()
+    {
+        if (objectiveText == null)
+            return;
 
-            case 2:
-                objectiveText.text =
-                    "???";
-                break;
-        }
+        if (quests.Count == 0)
+            return;
+
+        if (currentQuest >= quests.Count)
+            return;
+
+        Debug.Log(
+            "Quest Update: " + currentQuest
+        );
+
+        objectiveText.text =
+            quests[currentQuest].objectiveText;
     }
 }

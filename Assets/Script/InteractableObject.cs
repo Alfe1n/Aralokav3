@@ -8,75 +8,67 @@ public class InteractableObject : MonoBehaviour
     [Header("Dialogue")]
     public DialogueLine[] dialogueLines;
 
-    [Header("Cutscene")]
-    public bool useCutscene;
-
-    public GameObject cutscenePanel;
-
-    public VideoPlayer videoPlayer;
-
-    public RawImage rawImageVideo;
-
-    [Header("CG Image")]
-    public GameObject cgImage;
-
     [Header("Quest")]
     public bool useQuest;
-
     public int requiredQuest = -1;
-
     public int nextQuest = -1;
 
-    [Header("Player")]
+    [Header("Cutscene")]
+    public bool useCutscene;
+    public GameObject cutscenePanel;
+    public VideoPlayer videoPlayer;
+    public RawImage rawImageVideo;
+    public GameObject cgImage;
+
+    [Header("Scene Transition")]
+    public bool useSceneTransition;
+
+    public string targetScene;
+    public string targetSpawnPoint;
+
+    public int transitionQuest = -1;
+
+    private bool playerInside;
+    private bool isInteracting;
+
     private PlayerMovement playerMovement;
 
-    private bool playerInside = false;
-
-    private bool isInteracting = false;
-
-    void Start()
+    private void Start()
     {
-        // cari player otomatis dari Core Scene
         playerMovement =
             FindFirstObjectByType<PlayerMovement>();
 
-        // hide semua pas awal
         if (cutscenePanel != null)
-        {
             cutscenePanel.SetActive(false);
-        }
-
-        if (rawImageVideo != null)
-        {
-            rawImageVideo.gameObject.SetActive(false);
-        }
 
         if (cgImage != null)
-        {
             cgImage.SetActive(false);
-        }
+
+        if (rawImageVideo != null)
+            rawImageVideo.gameObject.SetActive(false);
     }
 
-    void Update()
+    private void Update()
     {
-        if (!playerInside) return;
-
-        // cegah spam dialogue
-        if (DialogueManager.instance.IsDialogueActive())
+        if (!playerInside)
             return;
 
-        // cegah spam interaction
         if (isInteracting)
             return;
 
-        // =========================
-        // QUEST CHECK
-        // =========================
+        if (
+            DialogueManager.instance != null &&
+            DialogueManager.instance.IsDialogueActive()
+        )
+            return;
 
         if (useQuest)
         {
+            if (QuestManager.Instance == null)
+                return;
+
             if (
-                QuestManager.Instance.currentQuest
+                QuestManager.Instance.CurrentQuest
                 != requiredQuest
             )
             {
@@ -84,15 +76,9 @@ public class InteractableObject : MonoBehaviour
             }
         }
 
-        // =========================
-        // INTERACT
-        // =========================
-
         if (Input.GetKeyDown(KeyCode.E))
         {
-            StartCoroutine(
-                BeginInteraction()
-            );
+            StartCoroutine(BeginInteraction());
         }
     }
 
@@ -100,178 +86,194 @@ public class InteractableObject : MonoBehaviour
     {
         isInteracting = true;
 
-        DialogueManager.instance.HidePrompt();
+        Debug.Log(
+            $"INTERACT : {gameObject.name}"
+        );
 
-        // =========================
-        // LOCK PLAYER
-        // =========================
+        DialogueManager.instance?.HidePrompt();
 
         if (playerMovement != null)
-        {
             playerMovement.canMove = false;
+
+        if (QuestManager.Instance != null)
+        {
+            QuestManager.Instance.HideObjective();
         }
 
-        // =========================
-        // CUTSCENE VIDEO
-        // =========================
+        // ====================
+        // CUTSCENE DULU
+        // ====================
 
         if (useCutscene)
         {
-            // tampilkan panel cutscene
+            Debug.Log("PLAY CUTSCENE");
+
             if (cutscenePanel != null)
-            {
                 cutscenePanel.SetActive(true);
-            }
 
-            // hide CG dulu
             if (cgImage != null)
-            {
                 cgImage.SetActive(false);
-            }
 
-            // tampilkan raw video
             if (rawImageVideo != null)
-            {
                 rawImageVideo.gameObject.SetActive(true);
-            }
 
-            // aktifkan videoplayer
             if (videoPlayer != null)
             {
-                videoPlayer.enabled = true;
-
-                // reset video
                 videoPlayer.Stop();
+
                 videoPlayer.frame = 0;
 
-                // play
                 videoPlayer.Play();
 
-                // tunggu video mulai
-                yield return new WaitUntil(() =>
-                    videoPlayer.isPlaying
+                yield return new WaitUntil(
+                    () => videoPlayer.isPlaying
                 );
 
-                // tunggu video selesai
-                yield return new WaitUntil(() =>
-                    !videoPlayer.isPlaying
+                yield return new WaitUntil(
+                    () => !videoPlayer.isPlaying
                 );
 
-                // stop video
                 videoPlayer.Stop();
             }
 
-            // hide raw video
             if (rawImageVideo != null)
-            {
                 rawImageVideo.gameObject.SetActive(false);
-            }
 
-            // tampilkan freeze frame / CG
+            // freeze frame
             if (cgImage != null)
-            {
                 cgImage.SetActive(true);
-            }
         }
 
-        // =========================
+        // ====================
         // DIALOGUE
-        // =========================
+        // ====================
 
-        DialogueManager.instance.StartDialogue(
-            dialogueLines
-        );
-
-        // tunggu dialogue selesai
-        while (
-            DialogueManager.instance
-            .IsDialogueActive()
+        if (
+            dialogueLines != null &&
+            dialogueLines.Length > 0
         )
         {
-            yield return null;
+            Debug.Log("START DIALOGUE");
+
+            DialogueManager.instance.StartDialogue(
+                dialogueLines
+            );
+
+            while (
+                DialogueManager.instance != null &&
+                DialogueManager.instance
+                    .IsDialogueActive()
+            )
+            {
+                yield return null;
+            }
+
+            Debug.Log("DIALOGUE FINISHED");
         }
 
-        // =========================
-        // NEXT QUEST
-        // =========================
+        // ====================
+        // TUTUP FREEZE FRAME
+        // ====================
+
+        if (cgImage != null)
+            cgImage.SetActive(false);
+
+        if (cutscenePanel != null)
+            cutscenePanel.SetActive(false);
+
+        // ====================
+        // QUEST UPDATE
+        // ====================
 
         if (useQuest)
         {
-            if (nextQuest >= 0)
-            {
-                QuestManager.Instance
-                    .SetQuest(nextQuest);
-            }
-        }
-
-        // =========================
-        // TUTUP SEMUA
-        // =========================
-
-        // hide CG
-        if (cgImage != null)
-        {
-            cgImage.SetActive(false);
-        }
-
-        // tutup panel cutscene
-        if (cutscenePanel != null)
-        {
-            cutscenePanel.SetActive(false);
-        }
-
-        // =========================
-        // UNLOCK PLAYER
-        // =========================
-
-        if (playerMovement != null)
-        {
-            playerMovement.canMove = true;
-        }
-
-        isInteracting = false;
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            playerInside = true;
-
-            // =========================
-            // QUEST CHECK
-            // =========================
-
-            if (useQuest)
-            {
-                if (
-                    QuestManager.Instance.currentQuest
-                    != requiredQuest
-                )
-                {
-                    return;
-                }
-            }
-
             if (
-                !DialogueManager.instance
-                .IsDialogueActive()
+                QuestManager.Instance != null &&
+                nextQuest >= 0
             )
             {
-                DialogueManager.instance
-                    .ShowPrompt();
+                Debug.Log(
+                    $"QUEST UPDATE {requiredQuest} -> {nextQuest}"
+                );
+
+                QuestManager.Instance.SetQuest(
+                    nextQuest
+                );
             }
+        }
+
+        // ====================
+        // SCENE TRANSITION
+        // ====================
+
+        if (useSceneTransition)
+        {
+            TransitionManager.Instance
+                .StartTransition(
+                    targetScene,
+                    targetSpawnPoint,
+                    transitionQuest
+                );
+
+            yield break;
+        }
+
+        // ====================
+        // CLEANUP
+        // ====================
+
+        if (playerMovement != null)
+            playerMovement.canMove = true;
+
+        isInteracting = false;
+        if (QuestManager.Instance != null)
+        {
+            QuestManager.Instance.ShowObjective();
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerEnter2D(
+        Collider2D other
+    )
     {
-        if (other.CompareTag("Player"))
-        {
-            playerInside = false;
+        if (!other.CompareTag("Player"))
+            return;
 
-            DialogueManager.instance
-                .HidePrompt();
+        playerInside = true;
+
+        if (useQuest)
+        {
+            if (QuestManager.Instance == null)
+                return;
+
+            if (
+                QuestManager.Instance.CurrentQuest
+                != requiredQuest
+            )
+            {
+                return;
+            }
         }
+
+        if (
+            DialogueManager.instance != null &&
+            !DialogueManager.instance
+                .IsDialogueActive()
+        )
+        {
+            DialogueManager.instance.ShowPrompt();
+        }
+    }
+
+    private void OnTriggerExit2D(
+        Collider2D other
+    )
+    {
+        if (!other.CompareTag("Player"))
+            return;
+
+        playerInside = false;
+
+        DialogueManager.instance?.HidePrompt();
     }
 }

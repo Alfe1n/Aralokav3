@@ -32,6 +32,13 @@ public class PlayerMovement : MonoBehaviour
         Move();
         Animate();
         HandleFootstep();
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Debug.Log(
+                "canMove = " + canMove
+            );
+        }
     }
 
     void HandleInput()

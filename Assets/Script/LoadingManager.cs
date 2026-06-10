@@ -17,6 +17,15 @@ public class LoadingManager : MonoBehaviour
     IEnumerator Start()
     {
         // =========================
+        // HIDE QUEST UI
+        // =========================
+
+        if (QuestManager.Instance != null)
+        {
+            QuestManager.Instance.HideObjective();
+        }
+
+        // =========================
         // FADE IN
         // =========================
 
@@ -36,7 +45,6 @@ public class LoadingManager : MonoBehaviour
             videoPlayer.Play();
         }
 
-        // timer loading minimum
         float timer = 0f;
 
         // =========================
@@ -66,22 +74,19 @@ public class LoadingManager : MonoBehaviour
                 LoadSceneMode.Additive
             );
 
-        // tunggu gameplay selesai load
         while (!gameplayLoad.isDone)
         {
             timer += Time.deltaTime;
-
             yield return null;
         }
 
         // =========================
-        // MINIMUM LOADING TIME
+        // MINIMUM LOAD TIME
         // =========================
 
         while (timer < minimumLoadTime)
         {
             timer += Time.deltaTime;
-
             yield return null;
         }
 
@@ -98,7 +103,6 @@ public class LoadingManager : MonoBehaviour
             gameplay
         );
 
-        // kasih waktu scene initialize
         yield return null;
         yield return null;
 
@@ -121,6 +125,26 @@ public class LoadingManager : MonoBehaviour
                 sceneFader.FadeOut()
             );
         }
+
+        // =========================
+        // TUNGGU SEBENTAR
+        // =========================
+
+        yield return new WaitForSeconds(
+            0.5f
+        );
+
+        // =========================
+        // SHOW QUEST UI
+        // =========================
+
+        if (QuestManager.Instance != null)
+        {
+            QuestManager.Instance.ShowObjective();
+        }
+
+        // kasih 1 frame biar aman
+        yield return null;
 
         // =========================
         // UNLOAD LOADING SCENE

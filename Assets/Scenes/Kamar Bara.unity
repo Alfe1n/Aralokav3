@@ -216,6 +216,7 @@ RectTransform:
   - {fileID: 625443246}
   - {fileID: 462600295}
   - {fileID: 489750423}
+  - {fileID: 2126998870}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -497,7 +498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 625443246}
   m_Layer: 5
-  m_Name: CutScenePanel
+  m_Name: CutScenePanelHP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -841,6 +842,7 @@ GameObject:
   - component: {fileID: 747668645}
   - component: {fileID: 747668647}
   - component: {fileID: 747668646}
+  - component: {fileID: 747668648}
   m_Layer: 0
   m_Name: Kasur
   m_TagString: Untagged
@@ -875,18 +877,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667ee28ba5310a34c9adc74449d1d684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
-  dialogueLines:
-  - text: Kasur yang besar
-    speaker: Bara
-    portrait: {fileID: -4433109054721328824, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
-  - text: Sepertinya cukup untuk dua orang
-    speaker: Bara
-    portrait: {fileID: 654078645604073550, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
-  useCutscene: 0
-  cutscenePanel: {fileID: 0}
-  videoPlayer: {fileID: 0}
-  rawImageVideo: {fileID: 0}
+  dialogueLines: []
+  useQuest: 1
+  requiredQuest: 1
+  nextQuest: -1
+  useCutscene: 1
+  cutscenePanel: {fileID: 2126998869}
+  videoPlayer: {fileID: 851118636}
+  rawImageVideo: {fileID: 815960941}
   cgImage: {fileID: 0}
+  useSceneTransition: 1
+  targetScene: Void
+  targetSpawnPoint: Spawn_Utama
+  transitionQuest: 2
 --- !u!61 &747668647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -933,6 +936,92 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.0139875, y: 2.8007417}
   m_EdgeRadius: 0
+--- !u!114 &747668648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747668644}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627f8fdca1d23d74c9100b0aa4d9f550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SleepTransition
+  targetScene: Void
+  nextQuest: 2
+--- !u!1 &815960939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 815960940}
+  - component: {fileID: 815960942}
+  - component: {fileID: 815960941}
+  m_Layer: 5
+  m_Name: RawImageVideo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &815960940
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815960939}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2126998870}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &815960941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815960939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 8400000, guid: 0072d6b00a36082498a47ceb57c0ed15, type: 2}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &815960942
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815960939}
+  m_CullTransparentMesh: 1
 --- !u!1 &826734494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,6 +1228,78 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &851118634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 851118635}
+  - component: {fileID: 851118636}
+  m_Layer: 5
+  m_Name: VideoPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &851118635
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851118634}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2126998870}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!328 &851118636
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851118634}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 1101dfa3ad2aef94eaaa1e6589e54cab, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 0072d6b00a36082498a47ceb57c0ed15, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_TimeUpdateMode: 2
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 0
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1 &1051598083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,11 +1889,18 @@ MonoBehaviour:
   - text: Sudah lama sekali..
     speaker: Bara
     portrait: {fileID: -7085337736244605806, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
+  useQuest: 0
+  requiredQuest: -1
+  nextQuest: -1
   useCutscene: 0
   cutscenePanel: {fileID: 0}
   videoPlayer: {fileID: 0}
   rawImageVideo: {fileID: 0}
   cgImage: {fileID: 0}
+  useSceneTransition: 0
+  targetScene: 
+  targetSpawnPoint: 
+  transitionQuest: -1
 --- !u!61 &1626699928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1791,7 +1959,7 @@ GameObject:
   - component: {fileID: 1669049505}
   - component: {fileID: 1669049507}
   - component: {fileID: 1669049509}
-  - component: {fileID: 1669049508}
+  - component: {fileID: 1669049510}
   m_Layer: 0
   m_Name: Pintu
   m_TagString: Untagged
@@ -1920,21 +2088,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &1669049508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1669049503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4743f86e7a5288b468a02f797b16cf93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorTransition
-  targetScene: Kamar Mandi
-  spawnPointName: Spawn_KamarMandi
-  doorSound: {fileID: 8300000, guid: 9f87588053e910b48be30f876566c31e, type: 3}
 --- !u!61 &1669049509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1981,6 +2134,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.4840909, y: 1.0075982}
   m_EdgeRadius: 0
+--- !u!114 &1669049510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669049503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667ee28ba5310a34c9adc74449d1d684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
+  dialogueLines: []
+  useQuest: 0
+  requiredQuest: -1
+  nextQuest: -1
+  useCutscene: 0
+  cutscenePanel: {fileID: 0}
+  videoPlayer: {fileID: 0}
+  rawImageVideo: {fileID: 0}
+  cgImage: {fileID: 0}
+  useSceneTransition: 1
+  targetScene: Kamar Mandi
+  targetSpawnPoint: Spawn_KamarMandi
+  transitionQuest: -1
 --- !u!1 &1739634530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,11 +2340,18 @@ MonoBehaviour:
   - text: Rak yang tersusun rapih
     speaker: Bara
     portrait: {fileID: 654078645604073550, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
+  useQuest: 0
+  requiredQuest: -1
+  nextQuest: -1
   useCutscene: 0
   cutscenePanel: {fileID: 0}
   videoPlayer: {fileID: 0}
   rawImageVideo: {fileID: 0}
   cgImage: {fileID: 0}
+  useSceneTransition: 0
+  targetScene: 
+  targetSpawnPoint: 
+  transitionQuest: -1
 --- !u!61 &1740343724
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2406,11 +2591,18 @@ MonoBehaviour:
   - text: Seseorang menyimpan barangnya di sini
     speaker: Bara
     portrait: {fileID: 3063982380085596617, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
+  useQuest: 0
+  requiredQuest: -1
+  nextQuest: -1
   useCutscene: 0
   cutscenePanel: {fileID: 0}
   videoPlayer: {fileID: 0}
   rawImageVideo: {fileID: 0}
   cgImage: {fileID: 0}
+  useSceneTransition: 0
+  targetScene: 
+  targetSpawnPoint: 
+  transitionQuest: -1
 --- !u!61 &1962646989
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2561,11 +2753,18 @@ MonoBehaviour:
   - text: Langsung cus istirahat yuk
     speaker: Bara
     portrait: {fileID: 654078645604073550, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
+  useQuest: 1
+  requiredQuest: 0
+  nextQuest: 1
   useCutscene: 1
   cutscenePanel: {fileID: 625443245}
   videoPlayer: {fileID: 740638760}
   rawImageVideo: {fileID: 1739634532}
   cgImage: {fileID: 216433958}
+  useSceneTransition: 0
+  targetScene: 
+  targetSpawnPoint: 
+  transitionQuest: -1
 --- !u!1 &2107926604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2695,6 +2894,43 @@ CapsuleCollider2D:
   m_Offset: {x: -0.003930343, y: 0.14864166}
   m_Size: {x: 0.7209118, y: 0.3430119}
   m_Direction: 1
+--- !u!1 &2126998869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2126998870}
+  m_Layer: 5
+  m_Name: CutScenePanelKasur
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2126998870
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126998869}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 851118635}
+  - {fileID: 815960940}
+  m_Father: {fileID: 55066554}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
