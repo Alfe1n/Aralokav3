@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: f1ad0fe017099d94e87a2bc8c635a2a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3819610618393574519
+    second: Ular (2)_0
+  - first:
+      213: -95023414359492492
+    second: Ular (2)_1
+  - first:
+      213: 438780661749786992
+    second: Ular (2)_2
+  - first:
+      213: 328869106793960648
+    second: Ular (2)_3
+  - first:
+      213: 8168976888096207178
+    second: Ular (2)_4
+  - first:
+      213: -6956165443509388830
+    second: Ular (2)_5
+  - first:
+      213: 4837018332319565235
+    second: Ular (2)_6
+  - first:
+      213: 8136093713987767628
+    second: Ular (2)_7
+  - first:
+      213: -3203105590490097965
+    second: Ular (2)_8
+  - first:
+      213: 3491437298785823594
+    second: Ular (2)_9
+  - first:
+      213: -7046539098914512576
+    second: Ular (2)_10
+  - first:
+      213: -2594543447113897081
+    second: Ular (2)_11
+  - first:
+      213: -7966577906835887719
+    second: Ular (2)_12
+  - first:
+      213: 2830110718335502016
+    second: Ular (2)_13
+  - first:
+      213: -8300738461118458472
+    second: Ular (2)_14
+  - first:
+      213: -6136411198431260783
+    second: Ular (2)_15
+  - first:
+      213: -2023952130863090124
+    second: Ular (2)_16
+  - first:
+      213: -7956049770707237228
+    second: Ular (2)_17
+  - first:
+      213: 3947161839877040251
+    second: Ular (2)_18
+  - first:
+      213: -5065385557060487245
+    second: Ular (2)_19
+  - first:
+      213: -3600885486308064366
+    second: Ular (2)_20
+  - first:
+      213: 5526630464839878500
+    second: Ular (2)_21
+  - first:
+      213: 3266044317338581099
+    second: Ular (2)_22
+  - first:
+      213: 4032324359139157260
+    second: Ular (2)_23
+  - first:
+      213: 217507117195686601
+    second: Ular (2)_24
+  - first:
+      213: 1387632064547139188
+    second: Ular (2)_25
+  - first:
+      213: -5820306923349185705
+    second: Ular (2)_26
+  - first:
+      213: 3027163154487237692
+    second: Ular (2)_27
+  - first:
+      213: -2780893960802552307
+    second: Ular (2)_28
+  - first:
+      213: -34546745072325375
+    second: Ular (2)_29
+  - first:
+      213: -3268582221653206585
+    second: Ular (2)_30
+  - first:
+      213: -2702505250188629377
+    second: Ular (2)_31
+  - first:
+      213: -1109081207276772934
+    second: Ular (2)_32
+  - first:
+      213: -2048999942102850927
+    second: Ular (2)_33
+  - first:
+      213: -1051651773315444446
+    second: Ular (2)_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 900
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ular (2)_7
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 2554
+        width: 1024
+        height: 582
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d8781402639e070800000000000000
+      internalID: 8136093713987767628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ular (2)_8
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 2555
+        width: 985
+        height: 538
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d615ccaf684c83d0800000000000000
+      internalID: -3203105590490097965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ular (2)_9
+      rect:
+        serializedVersion: 2
+        x: 2958
+        y: 2554
+        width: 983
+        height: 511
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6badad89b3147030800000000000000
+      internalID: 3491437298785823594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ular (2)_10
+      rect:
+        serializedVersion: 2
+        x: 4169
+        y: 2552
+        width: 1014
+        height: 513
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041ac41160aa53e90800000000000000
+      internalID: -7046539098914512576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ular (2)_11
+      rect:
+        serializedVersion: 2
+        x: 5514
+        y: 2554
+        width: 1074
+        height: 560
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b65783b745efbd0800000000000000
+      internalID: -2594543447113897081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ular (2)_25
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 1165
+        width: 798
+        height: 750
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e264eb20cd14310800000000000000
+      internalID: 1387632064547139188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ular (2)_26
+      rect:
+        serializedVersion: 2
+        x: 3116
+        y: 1143
+        width: 651
+        height: 893
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b6606c0bd1a3fa0800000000000000
+      internalID: -5820306923349185705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ular (2)_28
+      rect:
+        serializedVersion: 2
+        x: 4041
+        y: 1185
+        width: 1439
+        height: 581
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06b55c2da74869d0800000000000000
+      internalID: -2780893960802552307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ular (2)_29
+      rect:
+        serializedVersion: 2
+        x: 5761
+        y: 1165
+        width: 773
+        height: 753
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d61db1be3458ff0800000000000000
+      internalID: -34546745072325375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5dda40d1b837e564ba00219bba36f479
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ular (2)_0: 3819610618393574519
+      Ular (2)_1: -95023414359492492
+      Ular (2)_10: -7046539098914512576
+      Ular (2)_11: -2594543447113897081
+      Ular (2)_12: -7966577906835887719
+      Ular (2)_13: 2830110718335502016
+      Ular (2)_14: -8300738461118458472
+      Ular (2)_15: -6136411198431260783
+      Ular (2)_16: -2023952130863090124
+      Ular (2)_17: -7956049770707237228
+      Ular (2)_18: 3947161839877040251
+      Ular (2)_19: -5065385557060487245
+      Ular (2)_2: 438780661749786992
+      Ular (2)_20: -3600885486308064366
+      Ular (2)_21: 5526630464839878500
+      Ular (2)_22: 3266044317338581099
+      Ular (2)_23: 4032324359139157260
+      Ular (2)_24: 217507117195686601
+      Ular (2)_25: 1387632064547139188
+      Ular (2)_26: -5820306923349185705
+      Ular (2)_27: 3027163154487237692
+      Ular (2)_28: -2780893960802552307
+      Ular (2)_29: -34546745072325375
+      Ular (2)_3: 328869106793960648
+      Ular (2)_30: -3268582221653206585
+      Ular (2)_31: -2702505250188629377
+      Ular (2)_32: -1109081207276772934
+      Ular (2)_33: -2048999942102850927
+      Ular (2)_34: -1051651773315444446
+      Ular (2)_4: 8168976888096207178
+      Ular (2)_5: -6956165443509388830
+      Ular (2)_6: 4837018332319565235
+      Ular (2)_7: 8136093713987767628
+      Ular (2)_8: -3203105590490097965
+      Ular (2)_9: 3491437298785823594
+      Ular_0: -965625553
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

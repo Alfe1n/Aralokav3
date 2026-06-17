@@ -4,12 +4,19 @@ using UnityEngine.SceneManagement;
 
 public class SettingsManager : MonoBehaviour
 {
+    public static SettingsManager Instance;
+
     [Header("Panels")]
     public GameObject optionsPanel;
 
     public GameObject mainPanel;
     public GameObject soundsPanel;
     public GameObject controlsPanel;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
@@ -103,10 +110,30 @@ public class SettingsManager : MonoBehaviour
         // reset pause
         Time.timeScale = 1f;
 
-        // destroy persistent systems
-        Destroy(
-            GameObject.Find("DontDestroyOnLoad")
-        );
+        // Hancurkan objek manager yang persisten
+        QuestManager[] questManagers = Object.FindObjectsByType<QuestManager>(FindObjectsSortMode.None);
+        foreach (var q in questManagers) Destroy(q.gameObject);
+
+        TransitionManager[] transitionManagers = Object.FindObjectsByType<TransitionManager>(FindObjectsSortMode.None);
+        foreach (var t in transitionManagers) Destroy(t.gameObject);
+
+        RescueManager[] rescueManagers = Object.FindObjectsByType<RescueManager>(FindObjectsSortMode.None);
+        foreach (var r in rescueManagers) Destroy(r.gameObject);
+
+        // Hancurkan player yang persisten
+        PlayerMovement[] players = Object.FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
+        foreach (var p in players) Destroy(p.gameObject);
+
+        // Hancurkan DontDestroyOnLoad container jika ada
+        GameObject dontDestroyObj = GameObject.Find("DontDestroyOnLoad");
+        if (dontDestroyObj != null) Destroy(dontDestroyObj);
+
+        // Unload Core Scene secara additive agar bisa dimuat ulang dengan fresh
+        Scene coreScene = SceneManager.GetSceneByName("Core Scene");
+        if (coreScene.isLoaded)
+        {
+            SceneManager.UnloadSceneAsync(coreScene);
+        }
 
         // tutup setting
         optionsPanel.SetActive(false);
@@ -118,7 +145,7 @@ public class SettingsManager : MonoBehaviour
         controlsPanel.SetActive(false);
 
         // load menu
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Boot Scene");
     }
 
     public void OpenMainPanel()

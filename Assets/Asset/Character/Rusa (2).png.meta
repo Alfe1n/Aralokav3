@@ -1,0 +1,737 @@
+fileFormatVersion: 2
+guid: 3aecd65063a290048b93b152f6dbe154
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5186670658841192193
+    second: Rusa (2)_0
+  - first:
+      213: -7387875079699491282
+    second: Rusa (2)_1
+  - first:
+      213: 8050784832830393528
+    second: Rusa (2)_2
+  - first:
+      213: -9060688608087657855
+    second: Rusa (2)_3
+  - first:
+      213: 1194767836153128053
+    second: Rusa (2)_4
+  - first:
+      213: 6016935488314248164
+    second: Rusa (2)_5
+  - first:
+      213: -2741871690541093575
+    second: Rusa (2)_6
+  - first:
+      213: 7618868187262679096
+    second: Rusa (2)_7
+  - first:
+      213: 1380155934088763029
+    second: Rusa (2)_8
+  - first:
+      213: -5961614053586620987
+    second: Rusa (2)_9
+  - first:
+      213: -6953799039548826126
+    second: Rusa (2)_10
+  - first:
+      213: 6401061135908932243
+    second: Rusa (2)_11
+  - first:
+      213: 7154065387194573865
+    second: Rusa (2)_12
+  - first:
+      213: 5312645334832620112
+    second: Rusa (2)_13
+  - first:
+      213: -2514591194889940436
+    second: Rusa (2)_14
+  - first:
+      213: -552446398209168451
+    second: Rusa (2)_15
+  - first:
+      213: 2020361940921144120
+    second: Rusa (2)_16
+  - first:
+      213: 4458683058077785044
+    second: Rusa (2)_17
+  - first:
+      213: -7212557142494236563
+    second: Rusa (2)_18
+  - first:
+      213: -6805191903352074029
+    second: Rusa (2)_19
+  - first:
+      213: -8527790950095244293
+    second: Rusa (2)_20
+  - first:
+      213: 4829142040116217449
+    second: Rusa (2)_21
+  - first:
+      213: 7215624333633931084
+    second: Rusa (2)_22
+  - first:
+      213: 6372408742304398745
+    second: Rusa (2)_23
+  - first:
+      213: 3221366606818727987
+    second: Rusa (2)_24
+  - first:
+      213: -2438571176572425699
+    second: Rusa (2)_25
+  - first:
+      213: 2011919321409970844
+    second: Rusa (2)_26
+  - first:
+      213: 7152978406937077872
+    second: Rusa (2)_27
+  - first:
+      213: 5350687485884390379
+    second: Rusa (2)_28
+  - first:
+      213: -3837614311752662362
+    second: Rusa (2)_29
+  - first:
+      213: -1719515351156519499
+    second: Rusa (2)_30
+  - first:
+      213: -5592226207348684923
+    second: Rusa (2)_31
+  - first:
+      213: -7565128717411643739
+    second: Rusa (2)_32
+  - first:
+      213: 777748904647797131
+    second: Rusa (2)_33
+  - first:
+      213: 6144139215025087380
+    second: Rusa (2)_34
+  - first:
+      213: -6784279918148024562
+    second: Rusa (2)_35
+  - first:
+      213: -5184598944111622023
+    second: Rusa (2)_36
+  - first:
+      213: 8559780149881434575
+    second: Rusa (2)_37
+  - first:
+      213: 7110086950724929770
+    second: Rusa (2)_38
+  - first:
+      213: 3315756539442313766
+    second: Rusa (2)_39
+  - first:
+      213: 1330190010596301867
+    second: Rusa (2)_40
+  - first:
+      213: 5852425087731359576
+    second: Rusa (2)_41
+  - first:
+      213: 6618564306381238668
+    second: Rusa (2)_42
+  - first:
+      213: -8388079821101676800
+    second: Rusa (2)_43
+  - first:
+      213: 1662437483145330164
+    second: Rusa (2)_44
+  - first:
+      213: 107052800061753022
+    second: Rusa (2)_45
+  - first:
+      213: 1550436550740129013
+    second: Rusa (2)_46
+  - first:
+      213: -2467629289353840622
+    second: Rusa (2)_47
+  - first:
+      213: 780916862665121806
+    second: Rusa (2)_48
+  - first:
+      213: 6480115847417073482
+    second: Rusa (2)_49
+  - first:
+      213: 9093882710054816314
+    second: Rusa (2)_50
+  - first:
+      213: 516492860350357064
+    second: Rusa (2)_51
+  - first:
+      213: 6792299052285196431
+    second: Rusa (2)_52
+  - first:
+      213: -6239143574963783573
+    second: Rusa (2)_53
+  - first:
+      213: -5852074493019743986
+    second: Rusa (2)_54
+  - first:
+      213: 7390879147854541412
+    second: Rusa (2)_55
+  - first:
+      213: -4830980569394482791
+    second: Rusa (2)_56
+  - first:
+      213: 6856423074051982103
+    second: Rusa (2)_57
+  - first:
+      213: 4781527666287356544
+    second: Rusa (2)_58
+  - first:
+      213: 7185560627552317695
+    second: Rusa (2)_59
+  - first:
+      213: 5366133483369683673
+    second: Rusa (2)_60
+  - first:
+      213: 6153429593666117718
+    second: Rusa (2)_61
+  - first:
+      213: 4006474062963678615
+    second: Rusa (2)_62
+  - first:
+      213: 8123538718124887399
+    second: Rusa (2)_63
+  - first:
+      213: 4992760769422465717
+    second: Rusa (2)_64
+  - first:
+      213: 8956527395080852475
+    second: Rusa (2)_65
+  - first:
+      213: -6470933789310369754
+    second: Rusa (2)_66
+  - first:
+      213: 1943112533515337295
+    second: Rusa (2)_67
+  - first:
+      213: -3393336387651581287
+    second: Rusa (2)_68
+  - first:
+      213: 6396820606749667009
+    second: Rusa (2)_69
+  - first:
+      213: -3591374720705243135
+    second: Rusa (2)_70
+  - first:
+      213: 8663368965519941979
+    second: Rusa (2)_71
+  - first:
+      213: -5753680055614344855
+    second: Rusa (2)_72
+  - first:
+      213: -2438928690999883464
+    second: Rusa (2)_73
+  - first:
+      213: -1681157424579237034
+    second: Rusa (2)_74
+  - first:
+      213: 4015857336192580383
+    second: Rusa (2)_75
+  - first:
+      213: 7547526398094431820
+    second: Rusa (2)_76
+  - first:
+      213: 4500544689457535243
+    second: Rusa (2)_77
+  - first:
+      213: 9203047383045510855
+    second: Rusa (2)_78
+  - first:
+      213: -2667574623258645691
+    second: Rusa (2)_79
+  - first:
+      213: 4549643476496098577
+    second: Rusa (2)_80
+  - first:
+      213: 2390009150110947879
+    second: Rusa (2)_81
+  - first:
+      213: 2046536884604410932
+    second: Rusa (2)_82
+  - first:
+      213: 2810655011351536754
+    second: Rusa (2)_83
+  - first:
+      213: 4797519958584118748
+    second: Rusa (2)_84
+  - first:
+      213: 6077684916721853189
+    second: Rusa (2)_85
+  - first:
+      213: 5652867862408757569
+    second: Rusa (2)_86
+  - first:
+      213: 457910247021192917
+    second: Rusa (2)_87
+  - first:
+      213: 3711425874716217939
+    second: Rusa (2)_88
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 850
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rusa (2)_21
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 2450
+        width: 557
+        height: 1375
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966480f791f840340800000000000000
+      internalID: 4829142040116217449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rusa (2)_22
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 2450
+        width: 555
+        height: 1375
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c474ae6f91c032460800000000000000
+      internalID: 7215624333633931084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rusa (2)_23
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 2450
+        width: 552
+        height: 1375
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99db5a81df75f6850800000000000000
+      internalID: 6372408742304398745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rusa (2)_24
+      rect:
+        serializedVersion: 2
+        x: 3364
+        y: 2450
+        width: 558
+        height: 1375
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3385cb28cd794bc20800000000000000
+      internalID: 3221366606818727987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rusa (2)_25
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 2450
+        width: 553
+        height: 1375
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ae4ec5f64782ed0800000000000000
+      internalID: -2438571176572425699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rusa (2)_26
+      rect:
+        serializedVersion: 2
+        x: 4995
+        y: 2435
+        width: 982
+        height: 1360
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92e26596f5cbeb10800000000000000
+      internalID: 2011919321409970844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rusa (2)_27
+      rect:
+        serializedVersion: 2
+        x: 6140
+        y: 2434
+        width: 1055
+        height: 1276
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078268786fb744360800000000000000
+      internalID: 7152978406937077872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rusa (2)_28
+      rect:
+        serializedVersion: 2
+        x: 7337
+        y: 2433
+        width: 941
+        height: 1353
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb54445be5714a40800000000000000
+      internalID: 5350687485884390379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rusa (2)_31
+      rect:
+        serializedVersion: 2
+        x: 9597
+        y: 2432
+        width: 942
+        height: 1318
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5870a5fa4eb6462b0800000000000000
+      internalID: -5592226207348684923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rusa (2)_72
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 789
+        width: 593
+        height: 1390
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9617bd54972d620b0800000000000000
+      internalID: -5753680055614344855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rusa (2)_73
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 789
+        width: 591
+        height: 1390
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 839817c074f272ed0800000000000000
+      internalID: -2438928690999883464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rusa (2)_74
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 789
+        width: 589
+        height: 1390
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ba170ca345ba8e0800000000000000
+      internalID: -1681157424579237034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d6c6d0039dec10d479c02eed2f39e763
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rusa (2)_0: 5186670658841192193
+      Rusa (2)_1: -7387875079699491282
+      Rusa (2)_10: -6953799039548826126
+      Rusa (2)_11: 6401061135908932243
+      Rusa (2)_12: 7154065387194573865
+      Rusa (2)_13: 5312645334832620112
+      Rusa (2)_14: -2514591194889940436
+      Rusa (2)_15: -552446398209168451
+      Rusa (2)_16: 2020361940921144120
+      Rusa (2)_17: 4458683058077785044
+      Rusa (2)_18: -7212557142494236563
+      Rusa (2)_19: -6805191903352074029
+      Rusa (2)_2: 8050784832830393528
+      Rusa (2)_20: -8527790950095244293
+      Rusa (2)_21: 4829142040116217449
+      Rusa (2)_22: 7215624333633931084
+      Rusa (2)_23: 6372408742304398745
+      Rusa (2)_24: 3221366606818727987
+      Rusa (2)_25: -2438571176572425699
+      Rusa (2)_26: 2011919321409970844
+      Rusa (2)_27: 7152978406937077872
+      Rusa (2)_28: 5350687485884390379
+      Rusa (2)_29: -3837614311752662362
+      Rusa (2)_3: -9060688608087657855
+      Rusa (2)_30: -1719515351156519499
+      Rusa (2)_31: -5592226207348684923
+      Rusa (2)_32: -7565128717411643739
+      Rusa (2)_33: 777748904647797131
+      Rusa (2)_34: 6144139215025087380
+      Rusa (2)_35: -6784279918148024562
+      Rusa (2)_36: -5184598944111622023
+      Rusa (2)_37: 8559780149881434575
+      Rusa (2)_38: 7110086950724929770
+      Rusa (2)_39: 3315756539442313766
+      Rusa (2)_4: 1194767836153128053
+      Rusa (2)_40: 1330190010596301867
+      Rusa (2)_41: 5852425087731359576
+      Rusa (2)_42: 6618564306381238668
+      Rusa (2)_43: -8388079821101676800
+      Rusa (2)_44: 1662437483145330164
+      Rusa (2)_45: 107052800061753022
+      Rusa (2)_46: 1550436550740129013
+      Rusa (2)_47: -2467629289353840622
+      Rusa (2)_48: 780916862665121806
+      Rusa (2)_49: 6480115847417073482
+      Rusa (2)_5: 6016935488314248164
+      Rusa (2)_50: 9093882710054816314
+      Rusa (2)_51: 516492860350357064
+      Rusa (2)_52: 6792299052285196431
+      Rusa (2)_53: -6239143574963783573
+      Rusa (2)_54: -5852074493019743986
+      Rusa (2)_55: 7390879147854541412
+      Rusa (2)_56: -4830980569394482791
+      Rusa (2)_57: 6856423074051982103
+      Rusa (2)_58: 4781527666287356544
+      Rusa (2)_59: 7185560627552317695
+      Rusa (2)_6: -2741871690541093575
+      Rusa (2)_60: 5366133483369683673
+      Rusa (2)_61: 6153429593666117718
+      Rusa (2)_62: 4006474062963678615
+      Rusa (2)_63: 8123538718124887399
+      Rusa (2)_64: 4992760769422465717
+      Rusa (2)_65: 8956527395080852475
+      Rusa (2)_66: -6470933789310369754
+      Rusa (2)_67: 1943112533515337295
+      Rusa (2)_68: -3393336387651581287
+      Rusa (2)_69: 6396820606749667009
+      Rusa (2)_7: 7618868187262679096
+      Rusa (2)_70: -3591374720705243135
+      Rusa (2)_71: 8663368965519941979
+      Rusa (2)_72: -5753680055614344855
+      Rusa (2)_73: -2438928690999883464
+      Rusa (2)_74: -1681157424579237034
+      Rusa (2)_75: 4015857336192580383
+      Rusa (2)_76: 7547526398094431820
+      Rusa (2)_77: 4500544689457535243
+      Rusa (2)_78: 9203047383045510855
+      Rusa (2)_79: -2667574623258645691
+      Rusa (2)_8: 1380155934088763029
+      Rusa (2)_80: 4549643476496098577
+      Rusa (2)_81: 2390009150110947879
+      Rusa (2)_82: 2046536884604410932
+      Rusa (2)_83: 2810655011351536754
+      Rusa (2)_84: 4797519958584118748
+      Rusa (2)_85: 6077684916721853189
+      Rusa (2)_86: 5652867862408757569
+      Rusa (2)_87: 457910247021192917
+      Rusa (2)_88: 3711425874716217939
+      Rusa (2)_9: -5961614053586620987
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

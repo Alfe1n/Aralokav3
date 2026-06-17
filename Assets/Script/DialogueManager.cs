@@ -10,7 +10,8 @@ public class DialogueManager : MonoBehaviour
 
     [Header("UI")]
     public GameObject dialoguePanel;
-    public GameObject interactPrompt;
+    public GameObject interactPromptBara;
+    public GameObject interactPromptOrangUtan;
 
     public TMP_Text dialogueText;
     public TMP_Text nameText;
@@ -36,8 +37,6 @@ public class DialogueManager : MonoBehaviour
 
     private Coroutine typingCoroutine;
 
-    private PlayerMovement playerMovement;
-
     private bool canPressNext = false;
 
     void Awake()
@@ -54,9 +53,6 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
-        playerMovement =
-            FindFirstObjectByType<PlayerMovement>();
-
         HideDialogue();
         HidePrompt();
     }
@@ -93,9 +89,10 @@ public class DialogueManager : MonoBehaviour
         canPressNext = false;
 
         // LOCK PLAYER
-        if (playerMovement != null)
+        PlayerMovement activePlayer = FindFirstObjectByType<PlayerMovement>();
+        if (activePlayer != null)
         {
-            playerMovement.canMove = false;
+            activePlayer.canMove = false;
         }
 
         dialoguePanel.SetActive(true);
@@ -123,9 +120,10 @@ public class DialogueManager : MonoBehaviour
         dialogueActive = true;
 
         // LOCK PLAYER
-        if (playerMovement != null)
+        PlayerMovement activePlayer = FindFirstObjectByType<PlayerMovement>();
+        if (activePlayer != null)
         {
-            playerMovement.canMove = false;
+            activePlayer.canMove = false;
         }
 
         HidePrompt();
@@ -262,9 +260,10 @@ public class DialogueManager : MonoBehaviour
         isTyping = false;
 
         // UNLOCK PLAYER
-        if (playerMovement != null)
+        PlayerMovement activePlayer = FindFirstObjectByType<PlayerMovement>();
+        if (activePlayer != null)
         {
-            playerMovement.canMove = true;
+            activePlayer.canMove = true;
         }
     }
 
@@ -273,20 +272,23 @@ public class DialogueManager : MonoBehaviour
         return dialogueActive;
     }
 
+    public int GetCurrentIndex()
+    {
+        return currentIndex;
+    }
+
     public void ShowPrompt()
     {
-        if (interactPrompt == null) return;
-
         if (!dialogueActive)
         {
-            interactPrompt.SetActive(true);
+            if (interactPromptBara != null) interactPromptBara.SetActive(true);
+            if (interactPromptOrangUtan != null) interactPromptOrangUtan.SetActive(true);
         }
     }
 
     public void HidePrompt()
     {
-        if (interactPrompt == null) return;
-
-        interactPrompt.SetActive(false);
+        if (interactPromptBara != null) interactPromptBara.SetActive(false);
+        if (interactPromptOrangUtan != null) interactPromptOrangUtan.SetActive(false);
     }
 }

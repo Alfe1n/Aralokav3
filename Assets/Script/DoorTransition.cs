@@ -64,12 +64,17 @@ public class DoorTransition : MonoBehaviour
             currentScene
         );
 
+        if (QuestManager.Instance != null)
+        {
+            QuestManager.Instance.SaveLastScene(targetScene, spawnPointName);
+        }
+
         isTransitioning = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") || other.CompareTag("Player-Orang Utan"))
         {
             playerInside = true;
 
@@ -84,7 +89,7 @@ public class DoorTransition : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") || other.CompareTag("Player-Orang Utan"))
         {
             playerInside = false;
 

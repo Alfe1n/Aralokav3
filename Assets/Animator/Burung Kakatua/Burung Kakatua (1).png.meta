@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: afd298231238e304685ac333355e5ea3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6985700548320882172
+    second: Burung Kakatua (1)_0
+  - first:
+      213: 9170512393685782748
+    second: Burung Kakatua (1)_1
+  - first:
+      213: -2019517229687397693
+    second: Burung Kakatua (1)_2
+  - first:
+      213: -3577368120046271347
+    second: Burung Kakatua (1)_3
+  - first:
+      213: -7968131759870062537
+    second: Burung Kakatua (1)_4
+  - first:
+      213: -6726206901776555557
+    second: Burung Kakatua (1)_5
+  - first:
+      213: 8415986419538504649
+    second: Burung Kakatua (1)_6
+  - first:
+      213: -2928748048569150343
+    second: Burung Kakatua (1)_7
+  - first:
+      213: 6027257095400118500
+    second: Burung Kakatua (1)_8
+  - first:
+      213: -2639472792654601869
+    second: Burung Kakatua (1)_9
+  - first:
+      213: -4096896133372779121
+    second: Burung Kakatua (1)_10
+  - first:
+      213: 3173533502879975149
+    second: Burung Kakatua (1)_11
+  - first:
+      213: 4476970525478915453
+    second: Burung Kakatua (1)_12
+  - first:
+      213: -4335656384229656781
+    second: Burung Kakatua (1)_13
+  - first:
+      213: -6138978486927819271
+    second: Burung Kakatua (1)_14
+  - first:
+      213: 6655884350161386901
+    second: Burung Kakatua (1)_15
+  - first:
+      213: -1174709631319380912
+    second: Burung Kakatua (1)_16
+  - first:
+      213: 7878321666765246124
+    second: Burung Kakatua (1)_17
+  - first:
+      213: 447115107040430359
+    second: Burung Kakatua (1)_18
+  - first:
+      213: 685099716040197558
+    second: Burung Kakatua (1)_19
+  - first:
+      213: -9164917075779674855
+    second: Burung Kakatua (1)_20
+  - first:
+      213: 598792466638524777
+    second: Burung Kakatua (1)_21
+  - first:
+      213: 6747349060839523766
+    second: Burung Kakatua (1)_22
+  - first:
+      213: -3572517583720344859
+    second: Burung Kakatua (1)_23
+  - first:
+      213: 7949087583580588617
+    second: Burung Kakatua (1)_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Burung Kakatua (1)_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 220
+        width: 120
+        height: 179
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4021516fc5ecd0f90800000000000000
+      internalID: -6985700548320882172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burung Kakatua (1)_1
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 220
+        width: 121
+        height: 179
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd055f14f64344f70800000000000000
+      internalID: 9170512393685782748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burung Kakatua (1)_2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 220
+        width: 119
+        height: 179
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2a3ba87cb39f3e0800000000000000
+      internalID: -2019517229687397693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burung Kakatua (1)_3
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 220
+        width: 119
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84c5d506a2aa5ec0800000000000000
+      internalID: -3577368120046271347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burung Kakatua (1)_4
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 220
+        width: 119
+        height: 179
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730df61a1628b6190800000000000000
+      internalID: -7968131759870062537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burung Kakatua (1)_5
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 220
+        width: 120
+        height: 179
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1e3d5b576b7a2a0800000000000000
+      internalID: -6726206901776555557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burung Kakatua (1)_19
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 4
+        width: 111
+        height: 146
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b50c4adf86f18900800000000000000
+      internalID: 685099716040197558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burung Kakatua (1)_20
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 4
+        width: 112
+        height: 141
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d9d363a7cafc080800000000000000
+      internalID: -9164917075779674855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burung Kakatua (1)_21
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 4
+        width: 112
+        height: 144
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9615b2c63965f4800800000000000000
+      internalID: 598792466638524777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burung Kakatua (1)_22
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 2
+        width: 111
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5c7eac83663ad50800000000000000
+      internalID: 6747349060839523766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burung Kakatua (1)_23
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 2
+        width: 111
+        height: 144
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e213848f2edb6ec0800000000000000
+      internalID: -3572517583720344859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burung Kakatua (1)_24
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 2
+        width: 113
+        height: 148
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a0acb8a05d05e60800000000000000
+      internalID: 7949087583580588617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 996a7d83f753d1145a65dfd78e0e1eef
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Burung Kakatua (1)_0: -6985700548320882172
+      Burung Kakatua (1)_1: 9170512393685782748
+      Burung Kakatua (1)_10: -4096896133372779121
+      Burung Kakatua (1)_11: 3173533502879975149
+      Burung Kakatua (1)_12: 4476970525478915453
+      Burung Kakatua (1)_13: -4335656384229656781
+      Burung Kakatua (1)_14: -6138978486927819271
+      Burung Kakatua (1)_15: 6655884350161386901
+      Burung Kakatua (1)_16: -1174709631319380912
+      Burung Kakatua (1)_17: 7878321666765246124
+      Burung Kakatua (1)_18: 447115107040430359
+      Burung Kakatua (1)_19: 685099716040197558
+      Burung Kakatua (1)_2: -2019517229687397693
+      Burung Kakatua (1)_20: -9164917075779674855
+      Burung Kakatua (1)_21: 598792466638524777
+      Burung Kakatua (1)_22: 6747349060839523766
+      Burung Kakatua (1)_23: -3572517583720344859
+      Burung Kakatua (1)_24: 7949087583580588617
+      Burung Kakatua (1)_3: -3577368120046271347
+      Burung Kakatua (1)_4: -7968131759870062537
+      Burung Kakatua (1)_5: -6726206901776555557
+      Burung Kakatua (1)_6: 8415986419538504649
+      Burung Kakatua (1)_7: -2928748048569150343
+      Burung Kakatua (1)_8: 6027257095400118500
+      Burung Kakatua (1)_9: -2639472792654601869
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

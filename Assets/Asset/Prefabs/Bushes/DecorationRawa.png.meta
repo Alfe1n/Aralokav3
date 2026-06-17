@@ -1,0 +1,1177 @@
+fileFormatVersion: 2
+guid: ae82d9ac0f0dc5f4781cccf3076d4ab9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8351527638084485551
+    second: DecorationRawa_0
+  - first:
+      213: 1883538569278154521
+    second: DecorationRawa_1
+  - first:
+      213: 6597598489671830840
+    second: DecorationRawa_2
+  - first:
+      213: 9188066760707778782
+    second: DecorationRawa_3
+  - first:
+      213: -6934761017153843288
+    second: DecorationRawa_4
+  - first:
+      213: -3322912035612529276
+    second: DecorationRawa_5
+  - first:
+      213: 8690119877131350495
+    second: DecorationRawa_6
+  - first:
+      213: -131351090325014996
+    second: DecorationRawa_7
+  - first:
+      213: 69232281717534271
+    second: DecorationRawa_8
+  - first:
+      213: -5672309004593232454
+    second: DecorationRawa_9
+  - first:
+      213: -6277940094402187287
+    second: DecorationRawa_10
+  - first:
+      213: 2619032864472834138
+    second: DecorationRawa_11
+  - first:
+      213: 8462408541464341873
+    second: DecorationRawa_12
+  - first:
+      213: 2572463562588031118
+    second: DecorationRawa_13
+  - first:
+      213: 4900061890205230975
+    second: DecorationRawa_14
+  - first:
+      213: -6623621015212783806
+    second: DecorationRawa_15
+  - first:
+      213: 6448484703103590407
+    second: DecorationRawa_16
+  - first:
+      213: 613045348948647762
+    second: DecorationRawa_17
+  - first:
+      213: 4033455718080752197
+    second: DecorationRawa_18
+  - first:
+      213: 8458473737258875821
+    second: DecorationRawa_19
+  - first:
+      213: 6127630627464353501
+    second: DecorationRawa_20
+  - first:
+      213: 7846705364621465228
+    second: DecorationRawa_21
+  - first:
+      213: 2305340270426356733
+    second: DecorationRawa_22
+  - first:
+      213: -1228165637957819679
+    second: DecorationRawa_23
+  - first:
+      213: -8717812458125976096
+    second: DecorationRawa_24
+  - first:
+      213: 2268445011927792875
+    second: DecorationRawa_25
+  - first:
+      213: -1335721019557659944
+    second: DecorationRawa_26
+  - first:
+      213: 3503571437298228578
+    second: DecorationRawa_27
+  - first:
+      213: 7869539576787695889
+    second: DecorationRawa_28
+  - first:
+      213: 5828172906063947740
+    second: DecorationRawa_29
+  - first:
+      213: 1605993997619942883
+    second: DecorationRawa_30
+  - first:
+      213: -5951553568799338516
+    second: DecorationRawa_31
+  - first:
+      213: -5218443997508157849
+    second: DecorationRawa_32
+  - first:
+      213: 3296482853571051053
+    second: DecorationRawa_33
+  - first:
+      213: 6120710325603468387
+    second: DecorationRawa_34
+  - first:
+      213: -1810883237708036718
+    second: DecorationRawa_35
+  - first:
+      213: 5225999080955620680
+    second: DecorationRawa_36
+  - first:
+      213: -2142899749832245091
+    second: DecorationRawa_37
+  - first:
+      213: 5024656908910798050
+    second: DecorationRawa_38
+  - first:
+      213: -7419206246624639632
+    second: DecorationRawa_39
+  - first:
+      213: 8653788294855264246
+    second: DecorationRawa_40
+  - first:
+      213: -721982461014851695
+    second: DecorationRawa_41
+  - first:
+      213: -2064076169358541493
+    second: DecorationRawa_42
+  - first:
+      213: -6431129318189516379
+    second: DecorationRawa_43
+  - first:
+      213: 6600086821013945875
+    second: DecorationRawa_44
+  - first:
+      213: -5652804531213110521
+    second: DecorationRawa_45
+  - first:
+      213: -2780202723511420056
+    second: DecorationRawa_46
+  - first:
+      213: -7213201446736265308
+    second: DecorationRawa_47
+  - first:
+      213: -2258099298142300823
+    second: DecorationRawa_48
+  - first:
+      213: 2794396342293147312
+    second: DecorationRawa_49
+  - first:
+      213: -2787916802892291020
+    second: DecorationRawa_50
+  - first:
+      213: -2801978859372585317
+    second: DecorationRawa_51
+  - first:
+      213: -8904329728174015762
+    second: DecorationRawa_52
+  - first:
+      213: 3354676491730964981
+    second: DecorationRawa_53
+  - first:
+      213: -1200406002524895668
+    second: DecorationRawa_54
+  - first:
+      213: -5037140318073325882
+    second: DecorationRawa_55
+  - first:
+      213: -6263024729279981656
+    second: DecorationRawa_56
+  - first:
+      213: 7174565014984743234
+    second: DecorationRawa_57
+  - first:
+      213: 4382576025330308616
+    second: DecorationRawa_58
+  - first:
+      213: 5823517686639025235
+    second: DecorationRawa_59
+  - first:
+      213: -8467609109935023722
+    second: DecorationRawa_60
+  - first:
+      213: -3313920139434891512
+    second: DecorationRawa_61
+  - first:
+      213: -3696525603095787909
+    second: DecorationRawa_62
+  - first:
+      213: 6529986917914182106
+    second: DecorationRawa_63
+  - first:
+      213: 2412993327998620431
+    second: DecorationRawa_64
+  - first:
+      213: 6694579916067878074
+    second: DecorationRawa_65
+  - first:
+      213: -3482982131733844247
+    second: DecorationRawa_66
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DecorationRawa_4
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 622
+        width: 152
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8af815ac897c2cf90800000000000000
+      internalID: -6934761017153843288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_5
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 672
+        width: 98
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48de171fb15a2e1d0800000000000000
+      internalID: -3322912035612529276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_6
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 663
+        width: 138
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd1b9fb6cf1899870800000000000000
+      internalID: 8690119877131350495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_7
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 649
+        width: 155
+        height: 117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c26315811e85d2ef0800000000000000
+      internalID: -131351090325014996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_8
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 584
+        width: 151
+        height: 246
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e63c6b466f5f000800000000000000
+      internalID: 69232281717534271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_9
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 575
+        width: 120
+        height: 230
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab588f47309e741b0800000000000000
+      internalID: -5672309004593232454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_10
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 626
+        width: 209
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9efa9fffeb640e8a0800000000000000
+      internalID: -6277940094402187287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_11
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 629
+        width: 226
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a502af5938ca85420800000000000000
+      internalID: 2619032864472834138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_13
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 687
+        width: 76
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8802bd0bf933b320800000000000000
+      internalID: 2572463562588031118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_25
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 625
+        width: 166
+        height: 107
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec767838b22b7f10800000000000000
+      internalID: 2268445011927792875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_40
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 538
+        width: 102
+        height: 103
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7084cba9e681870800000000000000
+      internalID: 8653788294855264246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_41
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 537
+        width: 105
+        height: 102
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19fb525e6c00bf5f0800000000000000
+      internalID: -721982461014851695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_42
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 535
+        width: 99
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4df800f8adea53e0800000000000000
+      internalID: -2064076169358541493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_43
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 458
+        width: 208
+        height: 138
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9b6bc65f900c6a0800000000000000
+      internalID: -6431129318189516379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_44
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 459
+        width: 162
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ef545bef7389b50800000000000000
+      internalID: 6600086821013945875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_45
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 568
+        width: 73
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703f25c8a343d81b0800000000000000
+      internalID: -5652804531213110521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 477
+        width: 101
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b37856a5cba69d0800000000000000
+      internalID: -2780202723511420056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_47
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 466
+        width: 152
+        height: 101
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af73f9508f85eb90800000000000000
+      internalID: -7213201446736265308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_48
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 478
+        width: 100
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9655baaf6ae99a0e0800000000000000
+      internalID: -2258099298142300823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_49
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 365
+        width: 174
+        height: 137
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bea8000ba0b7c620800000000000000
+      internalID: 2794396342293147312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_50
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 361
+        width: 58
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 434234450745f49d0800000000000000
+      internalID: -2787916802892291020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_51
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 307
+        width: 135
+        height: 245
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e51faa21f5d19d0800000000000000
+      internalID: -2801978859372585317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_52
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 304
+        width: 101
+        height: 225
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeabc351a477d6480800000000000000
+      internalID: -8904329728174015762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_53
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 290
+        width: 110
+        height: 166
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f15af1de743e8e20800000000000000
+      internalID: 3354676491730964981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_54
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 302
+        width: 119
+        height: 140
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46c149c91d475fe0800000000000000
+      internalID: -1200406002524895668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_55
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 287
+        width: 148
+        height: 171
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6f071919b781ab0800000000000000
+      internalID: -5037140318073325882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_56
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 284
+        width: 180
+        height: 171
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a797cf01344519a0800000000000000
+      internalID: -6263024729279981656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_57
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 284
+        width: 194
+        height: 173
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2495c106edc219360800000000000000
+      internalID: 7174565014984743234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_58
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 375
+        width: 168
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 806d4f6dca902dc30800000000000000
+      internalID: 4382576025330308616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_59
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 176
+        width: 127
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35cd25f4b7a41d050800000000000000
+      internalID: 5823517686639025235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_60
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 181
+        width: 115
+        height: 127
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6991679b0620d7a80800000000000000
+      internalID: -8467609109935023722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_62
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 180
+        width: 111
+        height: 118
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76c65c8c8d43bcc0800000000000000
+      internalID: -3696525603095787909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_63
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 11
+        width: 117
+        height: 211
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad10936218c2f9a50800000000000000
+      internalID: 6529986917914182106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_64
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 7
+        width: 121
+        height: 230
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03deb0b5acac7120800000000000000
+      internalID: 2412993327998620431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_65
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 0
+        width: 131
+        height: 148
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4b0b9d6fce7ec50800000000000000
+      internalID: 6694579916067878074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationRawa_66
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 7
+        width: 131
+        height: 136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eea8fe6436f9afc0800000000000000
+      internalID: -3482982131733844247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 81fa11a56cbe1e9468796a74d85ab970
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DecorationRawa_0: -8351527638084485551
+      DecorationRawa_1: 1883538569278154521
+      DecorationRawa_10: -6277940094402187287
+      DecorationRawa_11: 2619032864472834138
+      DecorationRawa_12: 8462408541464341873
+      DecorationRawa_13: 2572463562588031118
+      DecorationRawa_14: 4900061890205230975
+      DecorationRawa_15: -6623621015212783806
+      DecorationRawa_16: 6448484703103590407
+      DecorationRawa_17: 613045348948647762
+      DecorationRawa_18: 4033455718080752197
+      DecorationRawa_19: 8458473737258875821
+      DecorationRawa_2: 6597598489671830840
+      DecorationRawa_20: 6127630627464353501
+      DecorationRawa_21: 7846705364621465228
+      DecorationRawa_22: 2305340270426356733
+      DecorationRawa_23: -1228165637957819679
+      DecorationRawa_24: -8717812458125976096
+      DecorationRawa_25: 2268445011927792875
+      DecorationRawa_26: -1335721019557659944
+      DecorationRawa_27: 3503571437298228578
+      DecorationRawa_28: 7869539576787695889
+      DecorationRawa_29: 5828172906063947740
+      DecorationRawa_3: 9188066760707778782
+      DecorationRawa_30: 1605993997619942883
+      DecorationRawa_31: -5951553568799338516
+      DecorationRawa_32: -5218443997508157849
+      DecorationRawa_33: 3296482853571051053
+      DecorationRawa_34: 6120710325603468387
+      DecorationRawa_35: -1810883237708036718
+      DecorationRawa_36: 5225999080955620680
+      DecorationRawa_37: -2142899749832245091
+      DecorationRawa_38: 5024656908910798050
+      DecorationRawa_39: -7419206246624639632
+      DecorationRawa_4: -6934761017153843288
+      DecorationRawa_40: 8653788294855264246
+      DecorationRawa_41: -721982461014851695
+      DecorationRawa_42: -2064076169358541493
+      DecorationRawa_43: -6431129318189516379
+      DecorationRawa_44: 6600086821013945875
+      DecorationRawa_45: -5652804531213110521
+      DecorationRawa_46: -2780202723511420056
+      DecorationRawa_47: -7213201446736265308
+      DecorationRawa_48: -2258099298142300823
+      DecorationRawa_49: 2794396342293147312
+      DecorationRawa_5: -3322912035612529276
+      DecorationRawa_50: -2787916802892291020
+      DecorationRawa_51: -2801978859372585317
+      DecorationRawa_52: -8904329728174015762
+      DecorationRawa_53: 3354676491730964981
+      DecorationRawa_54: -1200406002524895668
+      DecorationRawa_55: -5037140318073325882
+      DecorationRawa_56: -6263024729279981656
+      DecorationRawa_57: 7174565014984743234
+      DecorationRawa_58: 4382576025330308616
+      DecorationRawa_59: 5823517686639025235
+      DecorationRawa_6: 8690119877131350495
+      DecorationRawa_60: -8467609109935023722
+      DecorationRawa_61: -3313920139434891512
+      DecorationRawa_62: -3696525603095787909
+      DecorationRawa_63: 6529986917914182106
+      DecorationRawa_64: 2412993327998620431
+      DecorationRawa_65: 6694579916067878074
+      DecorationRawa_66: -3482982131733844247
+      DecorationRawa_7: -131351090325014996
+      DecorationRawa_8: 69232281717534271
+      DecorationRawa_9: -5672309004593232454
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

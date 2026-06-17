@@ -1,0 +1,543 @@
+fileFormatVersion: 2
+guid: dc05296099fd74a4d94472e7d3817c5e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5183897397003237597
+    second: Orang Utan_0
+  - first:
+      213: 4019800098398309192
+    second: Orang Utan_1
+  - first:
+      213: 1248307025568969745
+    second: Orang Utan_2
+  - first:
+      213: -2505153531261020214
+    second: Orang Utan_3
+  - first:
+      213: 2187707809344461027
+    second: Orang Utan_4
+  - first:
+      213: -1093340209637741622
+    second: Orang Utan_5
+  - first:
+      213: -4799565279337826941
+    second: Orang Utan_6
+  - first:
+      213: -2307281500034228590
+    second: Orang Utan_7
+  - first:
+      213: -5491732390334841686
+    second: Orang Utan_8
+  - first:
+      213: -7135861094232931635
+    second: Orang Utan_9
+  - first:
+      213: -7442666539792664496
+    second: Orang Utan_10
+  - first:
+      213: 7048207227419768000
+    second: Orang Utan_11
+  - first:
+      213: 3993354488658453809
+    second: Orang Utan_12
+  - first:
+      213: 6537102781946768804
+    second: Orang Utan_13
+  - first:
+      213: -8994456844083315225
+    second: Orang Utan_14
+  - first:
+      213: 3471116169503257313
+    second: Orang Utan_15
+  - first:
+      213: 5449830690053232181
+    second: Orang Utan_16
+  - first:
+      213: -289325096700784470
+    second: Orang Utan_17
+  - first:
+      213: 2652113297022527475
+    second: Orang Utan_18
+  - first:
+      213: 5888039534432735221
+    second: Orang Utan_19
+  - first:
+      213: -9052905365323701072
+    second: Orang Utan_20
+  - first:
+      213: -4389975806644504950
+    second: Orang Utan_21
+  - first:
+      213: -4326932898496426874
+    second: Orang Utan_22
+  - first:
+      213: 8840978877431761485
+    second: Orang Utan_23
+  - first:
+      213: -5519044369489283400
+    second: Orang Utan_24
+  - first:
+      213: -8852383728447465502
+    second: Orang Utan_25
+  - first:
+      213: -219277605710797429
+    second: Orang Utan_26
+  - first:
+      213: -7466659199768711480
+    second: Orang Utan_27
+  - first:
+      213: -6083629130696643504
+    second: Orang Utan_28
+  - first:
+      213: 1375227182091128378
+    second: Orang Utan_29
+  - first:
+      213: -6373769398716446641
+    second: Orang Utan_30
+  - first:
+      213: -3323592314314620547
+    second: Orang Utan_31
+  - first:
+      213: -3500293223072249696
+    second: Orang Utan_32
+  - first:
+      213: 6003792067229819609
+    second: Orang Utan_33
+  - first:
+      213: 2423843513610182394
+    second: Orang Utan_34
+  - first:
+      213: -4084801681495971441
+    second: Orang Utan_35
+  - first:
+      213: -6620718014942687197
+    second: Orang Utan_36
+  - first:
+      213: -5505845166198326454
+    second: Orang Utan_37
+  - first:
+      213: -5541826884087657098
+    second: Orang Utan_38
+  - first:
+      213: 8655378900647192909
+    second: Orang Utan_39
+  - first:
+      213: -6850045955665966292
+    second: Orang Utan_40
+  - first:
+      213: 6679961417655177520
+    second: Orang Utan_41
+  - first:
+      213: -6447617789887806012
+    second: Orang Utan_42
+  - first:
+      213: -2868484010653433826
+    second: Orang Utan_43
+  - first:
+      213: -3760671386461778898
+    second: Orang Utan_44
+  - first:
+      213: -5962695182944845268
+    second: Orang Utan_45
+  - first:
+      213: 935354660560601167
+    second: Orang Utan_46
+  - first:
+      213: 2120246718785008583
+    second: Orang Utan_47
+  - first:
+      213: -4218513786394970665
+    second: Orang Utan_48
+  - first:
+      213: 7820884475784086144
+    second: Orang Utan_49
+  - first:
+      213: 3746547076884011678
+    second: Orang Utan_50
+  - first:
+      213: -5259807132357780361
+    second: Orang Utan_51
+  - first:
+      213: 1818094986253787477
+    second: Orang Utan_52
+  - first:
+      213: -5792843917689072908
+    second: Orang Utan_53
+  - first:
+      213: 266536198009511343
+    second: Orang Utan_54
+  - first:
+      213: 1591707791652066612
+    second: Orang Utan_55
+  - first:
+      213: -2323130461796834499
+    second: Orang Utan_56
+  - first:
+      213: -7091014277079947634
+    second: Orang Utan_57
+  - first:
+      213: 2793035030132118107
+    second: Orang Utan_58
+  - first:
+      213: 8133521660692055918
+    second: Orang Utan_59
+  - first:
+      213: 3908653711882945743
+    second: Orang Utan_60
+  - first:
+      213: -3141560231698143268
+    second: Orang Utan_61
+  - first:
+      213: 6798504560301325724
+    second: Orang Utan_62
+  - first:
+      213: -5451376300690918969
+    second: Orang Utan_63
+  - first:
+      213: -3562244859986055853
+    second: Orang Utan_64
+  - first:
+      213: -4210589831417890570
+    second: Orang Utan_65
+  - first:
+      213: -5613083432501569047
+    second: Orang Utan_66
+  - first:
+      213: 2620839135385189323
+    second: Orang Utan_67
+  - first:
+      213: 3772754220417222997
+    second: Orang Utan_68
+  - first:
+      213: -1868997130035090378
+    second: Orang Utan_69
+  - first:
+      213: 7632657284823304739
+    second: Orang Utan_70
+  - first:
+      213: -6714811281420784153
+    second: Orang Utan_71
+  - first:
+      213: 53360595940184520
+    second: Orang Utan_72
+  - first:
+      213: -5888364968029762913
+    second: Orang Utan_73
+  - first:
+      213: 946621114943659969
+    second: Orang Utan_74
+  - first:
+      213: 656592995630518956
+    second: Orang Utan_75
+  - first:
+      213: 2868098307121777816
+    second: Orang Utan_76
+  - first:
+      213: 7933640903824198564
+    second: Orang Utan_77
+  - first:
+      213: -6668896378578197248
+    second: Orang Utan_78
+  - first:
+      213: -450121407816647630
+    second: Orang Utan_79
+  - first:
+      213: 5319344114519903559
+    second: Orang Utan_80
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 550
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Orang Utan_77
+      rect:
+        serializedVersion: 2
+        x: 3207
+        y: 246
+        width: 657
+        height: 803
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab43f72e54f91e60800000000000000
+      internalID: 7933640903824198564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_78
+      rect:
+        serializedVersion: 2
+        x: 4558
+        y: 250
+        width: 663
+        height: 793
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00525f6b3125373a0800000000000000
+      internalID: -6668896378578197248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_79
+      rect:
+        serializedVersion: 2
+        x: 5931
+        y: 250
+        width: 660
+        height: 793
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c3a45e6f8d0c9f0800000000000000
+      internalID: -450121407816647630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_80
+      rect:
+        serializedVersion: 2
+        x: 7282
+        y: 250
+        width: 660
+        height: 793
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d06000a4b12d940800000000000000
+      internalID: 5319344114519903559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5068f29481e7dee47bb79107e910d1d7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Orang Utan 1_0: 534009567
+      Orang Utan_0: -5183897397003237597
+      Orang Utan_1: 4019800098398309192
+      Orang Utan_10: -7442666539792664496
+      Orang Utan_11: 7048207227419768000
+      Orang Utan_12: 3993354488658453809
+      Orang Utan_13: 6537102781946768804
+      Orang Utan_14: -8994456844083315225
+      Orang Utan_15: 3471116169503257313
+      Orang Utan_16: 5449830690053232181
+      Orang Utan_17: -289325096700784470
+      Orang Utan_18: 2652113297022527475
+      Orang Utan_19: 5888039534432735221
+      Orang Utan_2: 1248307025568969745
+      Orang Utan_20: -9052905365323701072
+      Orang Utan_21: -4389975806644504950
+      Orang Utan_22: -4326932898496426874
+      Orang Utan_23: 8840978877431761485
+      Orang Utan_24: -5519044369489283400
+      Orang Utan_25: -8852383728447465502
+      Orang Utan_26: -219277605710797429
+      Orang Utan_27: -7466659199768711480
+      Orang Utan_28: -6083629130696643504
+      Orang Utan_29: 1375227182091128378
+      Orang Utan_3: -2505153531261020214
+      Orang Utan_30: -6373769398716446641
+      Orang Utan_31: -3323592314314620547
+      Orang Utan_32: -3500293223072249696
+      Orang Utan_33: 6003792067229819609
+      Orang Utan_34: 2423843513610182394
+      Orang Utan_35: -4084801681495971441
+      Orang Utan_36: -6620718014942687197
+      Orang Utan_37: -5505845166198326454
+      Orang Utan_38: -5541826884087657098
+      Orang Utan_39: 8655378900647192909
+      Orang Utan_4: 2187707809344461027
+      Orang Utan_40: -6850045955665966292
+      Orang Utan_41: 6679961417655177520
+      Orang Utan_42: -6447617789887806012
+      Orang Utan_43: -2868484010653433826
+      Orang Utan_44: -3760671386461778898
+      Orang Utan_45: -5962695182944845268
+      Orang Utan_46: 935354660560601167
+      Orang Utan_47: 2120246718785008583
+      Orang Utan_48: -4218513786394970665
+      Orang Utan_49: 7820884475784086144
+      Orang Utan_5: -1093340209637741622
+      Orang Utan_50: 3746547076884011678
+      Orang Utan_51: -5259807132357780361
+      Orang Utan_52: 1818094986253787477
+      Orang Utan_53: -5792843917689072908
+      Orang Utan_54: 266536198009511343
+      Orang Utan_55: 1591707791652066612
+      Orang Utan_56: -2323130461796834499
+      Orang Utan_57: -7091014277079947634
+      Orang Utan_58: 2793035030132118107
+      Orang Utan_59: 8133521660692055918
+      Orang Utan_6: -4799565279337826941
+      Orang Utan_60: 3908653711882945743
+      Orang Utan_61: -3141560231698143268
+      Orang Utan_62: 6798504560301325724
+      Orang Utan_63: -5451376300690918969
+      Orang Utan_64: -3562244859986055853
+      Orang Utan_65: -4210589831417890570
+      Orang Utan_66: -5613083432501569047
+      Orang Utan_67: 2620839135385189323
+      Orang Utan_68: 3772754220417222997
+      Orang Utan_69: -1868997130035090378
+      Orang Utan_7: -2307281500034228590
+      Orang Utan_70: 7632657284823304739
+      Orang Utan_71: -6714811281420784153
+      Orang Utan_72: 53360595940184520
+      Orang Utan_73: -5888364968029762913
+      Orang Utan_74: 946621114943659969
+      Orang Utan_75: 656592995630518956
+      Orang Utan_76: 2868098307121777816
+      Orang Utan_77: 7933640903824198564
+      Orang Utan_78: -6668896378578197248
+      Orang Utan_79: -450121407816647630
+      Orang Utan_8: -5491732390334841686
+      Orang Utan_80: 5319344114519903559
+      Orang Utan_9: -7135861094232931635
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

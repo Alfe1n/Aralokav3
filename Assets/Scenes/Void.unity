@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 0072d6b00a36082498a47ceb57c0ed15, type: 2}
+  m_Texture: {fileID: 8400000, guid: 657f7b4b74c7f7146979e3aece113c92, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -427,7 +427,7 @@ Transform:
   m_GameObject: {fileID: 974242677}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.92, y: 30.04, z: 0}
+  m_LocalPosition: {x: 0, y: 30.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -458,6 +458,22 @@ MonoBehaviour:
   targetScene: Hutan
   targetSpawnPoint: Spawn_Utama
   transitionQuest: 3
+  transitionFade: 1
+  requireSpawnerCleared: 0
+  requiredSpawners: []
+  giveItem: 0
+  itemId: 
+  destroyAfterPickup: 1
+  onInteractComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  isRescueInteraction: 0
+  rescueId: 
+  npcVisual: {fileID: 0}
+  fader: {fileID: 0}
+  crystalToActivate: {fileID: 0}
+  isCrystalCutscene: 0
+  postCutsceneLines: []
 --- !u!68 &974242682
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -665,11 +681,11 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993652497}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 1101dfa3ad2aef94eaaa1e6589e54cab, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: c03798b660c44834f9bee9d0f977eba1, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: 0072d6b00a36082498a47ceb57c0ed15, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 657f7b4b74c7f7146979e3aece113c92, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>

@@ -1,0 +1,745 @@
+fileFormatVersion: 2
+guid: 8ce4458cfb607264380132a964886b38
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6344210076676026386
+    second: Batu batuan (1)_0
+  - first:
+      213: 6550372709343700837
+    second: Batu batuan (1)_1
+  - first:
+      213: 8299227850061697177
+    second: Batu batuan (1)_2
+  - first:
+      213: -8090030687592846535
+    second: Batu batuan (1)_3
+  - first:
+      213: 13686035676927128
+    second: Batu batuan (1)_4
+  - first:
+      213: 5810388773266873826
+    second: Batu batuan (1)_5
+  - first:
+      213: 3381708644465075621
+    second: Batu batuan (1)_6
+  - first:
+      213: -1583219991163217591
+    second: Batu batuan (1)_7
+  - first:
+      213: -1771651143937094558
+    second: Batu batuan (1)_8
+  - first:
+      213: 4113864690260605840
+    second: Batu batuan (1)_9
+  - first:
+      213: 646536065654478884
+    second: Batu batuan (1)_10
+  - first:
+      213: -5381699639530580908
+    second: Batu batuan (1)_11
+  - first:
+      213: 4267132727739033944
+    second: Batu batuan (1)_12
+  - first:
+      213: -2870532231428098917
+    second: Batu batuan (1)_13
+  - first:
+      213: 5097622327735094664
+    second: Batu batuan (1)_14
+  - first:
+      213: 6751456511927751852
+    second: Batu batuan (1)_15
+  - first:
+      213: 5938819792443426309
+    second: Batu batuan (1)_16
+  - first:
+      213: 4402527570952737313
+    second: Batu batuan (1)_17
+  - first:
+      213: 2544823595868051295
+    second: Batu batuan (1)_18
+  - first:
+      213: 6106169946372820777
+    second: Batu batuan (1)_19
+  - first:
+      213: -9072529849369260919
+    second: Batu batuan (1)_20
+  - first:
+      213: -2078239548489159033
+    second: Batu batuan (1)_21
+  - first:
+      213: -3755248985413251451
+    second: Batu batuan (1)_22
+  - first:
+      213: 5088326323394984659
+    second: Batu batuan (1)_23
+  - first:
+      213: -1431080610004612906
+    second: Batu batuan (1)_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Batu batuan (1)_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 851
+        width: 228
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2107ab0a3792b0850800000000000000
+      internalID: 6344210076676026386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_1
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 835
+        width: 223
+        height: 216
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56728d6164997ea50800000000000000
+      internalID: 6550372709343700837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_2
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 841
+        width: 265
+        height: 210
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990d4f822c7cc2370800000000000000
+      internalID: 8299227850061697177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_4
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 837
+        width: 240
+        height: 234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89418ee706f903000800000000000000
+      internalID: 13686035676927128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_5
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 838
+        width: 236
+        height: 145
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed5d75fdc5a2a050800000000000000
+      internalID: 5810388773266873826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 840
+        width: 246
+        height: 191
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a56537581e3eee20800000000000000
+      internalID: 3381708644465075621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_7
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 587
+        width: 202
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9495b696ec5470ae0800000000000000
+      internalID: -1583219991163217591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_8
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 586
+        width: 225
+        height: 202
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c07b3dba4d967e0800000000000000
+      internalID: -1771651143937094558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_9
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 586
+        width: 189
+        height: 194
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b710db322671930800000000000000
+      internalID: 4113864690260605840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_10
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 577
+        width: 226
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42850df4025f8f800800000000000000
+      internalID: 646536065654478884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_11
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 578
+        width: 255
+        height: 197
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4549ee9f0bc5055b0800000000000000
+      internalID: -5381699639530580908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_12
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 577
+        width: 226
+        height: 198
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 859245e8b96e73b30800000000000000
+      internalID: 4267132727739033944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_13
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 363
+        width: 250
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b943b6de422d928d0800000000000000
+      internalID: -2870532231428098917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_14
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 352
+        width: 229
+        height: 177
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d00cbaf746eb640800000000000000
+      internalID: 5097622327735094664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_15
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 349
+        width: 230
+        height: 158
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca493f54dedf1bd50800000000000000
+      internalID: 6751456511927751852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 347
+        width: 222
+        height: 182
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50646a1d22dea6250800000000000000
+      internalID: 5938819792443426309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_17
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 346
+        width: 233
+        height: 194
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122508c008be81d30800000000000000
+      internalID: 4402527570952737313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_18
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 349
+        width: 242
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f575fbfc397015320800000000000000
+      internalID: 2544823595868051295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_19
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 86
+        width: 218
+        height: 214
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92fc7bfd6397db450800000000000000
+      internalID: 6106169946372820777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_20
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 86
+        width: 235
+        height: 194
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c873a9b26e71280800000000000000
+      internalID: -9072529849369260919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_21
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 86
+        width: 222
+        height: 214
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ea222442c9823e0800000000000000
+      internalID: -2078239548489159033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_22
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 93
+        width: 233
+        height: 152
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e0c45a1fca2ebc0800000000000000
+      internalID: -3755248985413251451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_23
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 91
+        width: 280
+        height: 177
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da3a3ff4dd5d9640800000000000000
+      internalID: 5088326323394984659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batu batuan (1)_24
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 86
+        width: 209
+        height: 177
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d8c9b374c7c32ce0800000000000000
+      internalID: -1431080610004612906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cf555bd002785a24bb6b86a177bcacbc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Batu batuan (1)_0: 6344210076676026386
+      Batu batuan (1)_1: 6550372709343700837
+      Batu batuan (1)_10: 646536065654478884
+      Batu batuan (1)_11: -5381699639530580908
+      Batu batuan (1)_12: 4267132727739033944
+      Batu batuan (1)_13: -2870532231428098917
+      Batu batuan (1)_14: 5097622327735094664
+      Batu batuan (1)_15: 6751456511927751852
+      Batu batuan (1)_16: 5938819792443426309
+      Batu batuan (1)_17: 4402527570952737313
+      Batu batuan (1)_18: 2544823595868051295
+      Batu batuan (1)_19: 6106169946372820777
+      Batu batuan (1)_2: 8299227850061697177
+      Batu batuan (1)_20: -9072529849369260919
+      Batu batuan (1)_21: -2078239548489159033
+      Batu batuan (1)_22: -3755248985413251451
+      Batu batuan (1)_23: 5088326323394984659
+      Batu batuan (1)_24: -1431080610004612906
+      Batu batuan (1)_3: -8090030687592846535
+      Batu batuan (1)_4: 13686035676927128
+      Batu batuan (1)_5: 5810388773266873826
+      Batu batuan (1)_6: 3381708644465075621
+      Batu batuan (1)_7: -1583219991163217591
+      Batu batuan (1)_8: -1771651143937094558
+      Batu batuan (1)_9: 4113864690260605840
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

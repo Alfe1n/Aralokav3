@@ -48,31 +48,109 @@ public class LoadingManager : MonoBehaviour
         float timer = 0f;
 
         // =========================
-        // LOAD CORE SCENE
+        // LOAD CORE SCENE (WITH SELF-HEALING RE-LOAD CHECK)
         // =========================
 
-        if (
-            !SceneManager
-            .GetSceneByName("Core Scene")
-            .isLoaded
-        )
+        if (SceneManager.GetSceneByName("Core Scene").isLoaded)
         {
-            yield return SceneManager
-                .LoadSceneAsync(
-                    "Core Scene",
-                    LoadSceneMode.Additive
-                );
+            // Cek apakah Core Scene rusak/tidak lengkap
+            bool isCoreSceneBroken = QuestManager.Instance == null || GameObject.Find("Canvas") == null;
+            if (isCoreSceneBroken)
+            {
+                Debug.Log("[LoadingManager] Core Scene terdeteksi rusak/tidak lengkap. Memuat ulang secara fresh...");
+                yield return SceneManager.UnloadSceneAsync("Core Scene");
+            }
+        }
+
+        if (!SceneManager.GetSceneByName("Core Scene").isLoaded)
+        {
+            yield return SceneManager.LoadSceneAsync(
+                "Core Scene",
+                LoadSceneMode.Additive
+            );
+        }
+
+        // =========================
+        // TENTUKAN SCENE GAMEPLAY TARGET
+        // Baca dari PlayerPrefs agar Continue bisa masuk ke scene yang benar
+        // =========================
+
+        string targetGameplayScene = PlayerPrefs.GetString("LastScene", "Kamar Bara");
+        string savedSpawn = PlayerPrefs.GetString("LastSpawn", "");
+
+        Debug.Log($"[LoadingManager] Loading gameplay scene: {targetGameplayScene}, spawn: {savedSpawn}");
+
+        // Set spawn point agar PlayerSpawn tahu di mana harus spawn
+        if (!string.IsNullOrEmpty(savedSpawn))
+        {
+            SpawnManager.spawnPointName = savedSpawn;
+        }
+
+        // =========================
+        // INITIAL SWITCH PLAYER LOGIC (Manusia vs Orang Utan)
+        // =========================
+
+        PlayerMovement[] allPlayers = Resources.FindObjectsOfTypeAll<PlayerMovement>();
+        bool useOrangUtan = targetGameplayScene.Contains("Hutan");
+        Transform newTarget = null;
+
+        foreach (PlayerMovement p in allPlayers)
+        {
+            // Abaikan prefab
+            if (string.IsNullOrEmpty(p.gameObject.scene.name)) continue;
+
+            if (p.CompareTag("Player-Orang Utan"))
+            {
+                p.gameObject.SetActive(useOrangUtan);
+                if (useOrangUtan) newTarget = p.transform;
+            }
+            else if (p.CompareTag("Player"))
+            {
+                p.gameObject.SetActive(!useOrangUtan);
+                if (!useOrangUtan) newTarget = p.transform;
+            }
+        }
+
+        // UPDATE CINEMACHINE CAMERA TARGET (Version Agnostic)
+        if (newTarget != null)
+        {
+            MonoBehaviour[] allScripts = Resources.FindObjectsOfTypeAll<MonoBehaviour>();
+            foreach (var script in allScripts)
+            {
+                string scriptName = script.GetType().Name;
+                if (scriptName == "CinemachineVirtualCamera" || scriptName == "CinemachineCamera")
+                {
+                    var followProp = script.GetType().GetProperty("Follow");
+                    if (followProp != null)
+                    {
+                        followProp.SetValue(script, newTarget);
+                    }
+                    else
+                    {
+                        var targetProp = script.GetType().GetProperty("Target");
+                        if (targetProp != null)
+                        {
+                            object targetStruct = targetProp.GetValue(script);
+                            var trackingField = targetStruct.GetType().GetField("TrackingTarget");
+                            if (trackingField != null)
+                            {
+                                trackingField.SetValue(targetStruct, newTarget);
+                                targetProp.SetValue(script, targetStruct);
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         // =========================
         // LOAD GAMEPLAY SCENE
         // =========================
 
-        AsyncOperation gameplayLoad =
-            SceneManager.LoadSceneAsync(
-                "Kamar Bara",
-                LoadSceneMode.Additive
-            );
+        AsyncOperation gameplayLoad = SceneManager.LoadSceneAsync(
+            targetGameplayScene,
+            LoadSceneMode.Additive
+        );
 
         while (!gameplayLoad.isDone)
         {
@@ -94,17 +172,54 @@ public class LoadingManager : MonoBehaviour
         // SET ACTIVE SCENE
         // =========================
 
-        Scene gameplay =
-            SceneManager.GetSceneByName(
-                "Kamar Bara"
-            );
-
-        SceneManager.SetActiveScene(
-            gameplay
-        );
+        Scene gameplay = SceneManager.GetSceneByName(targetGameplayScene);
+        SceneManager.SetActiveScene(gameplay);
 
         yield return null;
         yield return null;
+
+        // =========================
+        // TELEPORT PLAYER KE SAVED SPAWN (UNTUK CONTINUE)
+        // =========================
+
+        if (!string.IsNullOrEmpty(savedSpawn) && newTarget != null)
+        {
+            GameObject spawnObj = null;
+            // Cari di scene gameplay yang baru dimuat
+            GameObject[] rootObjects = gameplay.GetRootGameObjects();
+            foreach (GameObject rootObj in rootObjects)
+            {
+                if (rootObj.name == savedSpawn)
+                {
+                    spawnObj = rootObj;
+                    break;
+                }
+                var children = rootObj.GetComponentsInChildren<Transform>(true);
+                foreach (var c in children)
+                {
+                    if (c.name == savedSpawn)
+                    {
+                        spawnObj = c.gameObject;
+                        break;
+                    }
+                }
+                if (spawnObj != null) break;
+            }
+
+            // Fallback: cari secara global
+            if (spawnObj == null)
+                spawnObj = GameObject.Find(savedSpawn);
+
+            if (spawnObj != null)
+            {
+                newTarget.position = spawnObj.transform.position;
+                Debug.Log($"[LoadingManager] Continue: teleported player to {savedSpawn} at {spawnObj.transform.position}");
+            }
+            else
+            {
+                Debug.LogWarning($"[LoadingManager] Continue: spawn point '{savedSpawn}' not found in scene {targetGameplayScene}");
+            }
+        }
 
         // =========================
         // STOP VIDEO
@@ -130,9 +245,7 @@ public class LoadingManager : MonoBehaviour
         // TUNGGU SEBENTAR
         // =========================
 
-        yield return new WaitForSeconds(
-            0.5f
-        );
+        yield return new WaitForSeconds(0.5f);
 
         // =========================
         // SHOW QUEST UI
@@ -150,9 +263,6 @@ public class LoadingManager : MonoBehaviour
         // UNLOAD LOADING SCENE
         // =========================
 
-        yield return SceneManager
-            .UnloadSceneAsync(
-                "LoadingScene"
-            );
+        yield return SceneManager.UnloadSceneAsync("LoadingScene");
     }
 }

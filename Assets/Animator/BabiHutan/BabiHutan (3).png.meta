@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: 1d6ef96275365c140a4d0e928215fbd6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2405913647081328967
+    second: BabiHutan (3)_0
+  - first:
+      213: 282164902124454378
+    second: BabiHutan (3)_1
+  - first:
+      213: 688280645990707143
+    second: BabiHutan (3)_2
+  - first:
+      213: -821166760874318997
+    second: BabiHutan (3)_3
+  - first:
+      213: 1180132962717575602
+    second: BabiHutan (3)_4
+  - first:
+      213: -6396693247754139914
+    second: BabiHutan (3)_5
+  - first:
+      213: -8834290467417662841
+    second: BabiHutan (3)_6
+  - first:
+      213: 2700831052951788551
+    second: BabiHutan (3)_7
+  - first:
+      213: 5190899342861816288
+    second: BabiHutan (3)_8
+  - first:
+      213: 705769863772369168
+    second: BabiHutan (3)_9
+  - first:
+      213: -7479479847792964882
+    second: BabiHutan (3)_10
+  - first:
+      213: 5490198206271514348
+    second: BabiHutan (3)_11
+  - first:
+      213: -2381840128080278364
+    second: BabiHutan (3)_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BabiHutan (3)_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 71
+        width: 223
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7411c8607b5836120800000000000000
+      internalID: 2405913647081328967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BabiHutan (3)_1
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 70
+        width: 216
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae10637cb737ae300800000000000000
+      internalID: 282164902124454378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BabiHutan (3)_3
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 68
+        width: 219
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b636ab48e21aa94f0800000000000000
+      internalID: -821166760874318997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BabiHutan (3)_4
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 67
+        width: 204
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9a28e4daca06010800000000000000
+      internalID: 1180132962717575602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BabiHutan (3)_5
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 72
+        width: 207
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6897ed1616a37a0800000000000000
+      internalID: -6396693247754139914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BabiHutan (3)_6
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 71
+        width: 204
+        height: 138
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a53fe30ab466580800000000000000
+      internalID: -8834290467417662841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BabiHutan (3)_7
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 71
+        width: 214
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c198578874b7520800000000000000
+      internalID: 2700831052951788551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BabiHutan (3)_8
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 70
+        width: 210
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e156142377c90840800000000000000
+      internalID: 5190899342861816288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b95d5e4c66ea6f94ca319d3f28ff11da
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BabiHutan (3)_0: 2405913647081328967
+      BabiHutan (3)_1: 282164902124454378
+      BabiHutan (3)_10: -7479479847792964882
+      BabiHutan (3)_11: 5490198206271514348
+      BabiHutan (3)_12: -2381840128080278364
+      BabiHutan (3)_2: 688280645990707143
+      BabiHutan (3)_3: -821166760874318997
+      BabiHutan (3)_4: 1180132962717575602
+      BabiHutan (3)_5: -6396693247754139914
+      BabiHutan (3)_6: -8834290467417662841
+      BabiHutan (3)_7: 2700831052951788551
+      BabiHutan (3)_8: 5190899342861816288
+      BabiHutan (3)_9: 705769863772369168
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

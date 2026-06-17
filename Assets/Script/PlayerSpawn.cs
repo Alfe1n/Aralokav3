@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
@@ -32,6 +32,13 @@ public class PlayerSpawn : MonoBehaviour
             return;
         }
 
+        // Jika sedang dalam transisi aktif yang diatur oleh TransitionManager,
+        // biarkan TransitionManager yang mengurus pemindahan player agar terhindar dari deadlock/double teleport
+        if (TransitionManager.Instance != null && TransitionManager.Instance.isTransitioning)
+        {
+            return;
+        }
+
         StartCoroutine(
             SpawnRoutine()
         );
@@ -39,37 +46,38 @@ public class PlayerSpawn : MonoBehaviour
 
     IEnumerator SpawnRoutine()
     {
-        // tunggu scene siap
-        yield return null;
+        // 1. Tunggu sampai scene lama benar-benar di-unload.
+        // Karena kita pakai LoadSceneMode.Additive, scene lama dan baru sempat bertumpuk sebentar.
+        // Jika kita langsung mencari "Spawn_Utama", Unity bisa salah mencari di scene yang lama!
+        // Kita tunggu sampai total scene aktif kembali menjadi 2 (yaitu Core Scene + 1 Scene Gameplay).
+        while (SceneManager.sceneCount > 2)
+        {
+            yield return null;
+        }
+
+        // 2. Beri waktu tambahan 1 frame agar Unity membersihkan memory object lama
         yield return null;
 
-        string spawnName =
-            SpawnManager.spawnPointName;
+        // Pastikan hanya player yang aktif yang menjalankan teleport
+        if (!gameObject.activeInHierarchy) yield break;
+
+        string spawnName = SpawnManager.spawnPointName;
 
         if (string.IsNullOrEmpty(spawnName))
         {
             spawnName = "Spawn_Utama";
         }
 
-        GameObject spawn =
-            GameObject.Find(spawnName);
+        GameObject spawn = GameObject.Find(spawnName);
 
         if (spawn != null)
         {
-            Debug.Log(
-                "Spawn ditemukan: "
-                + spawnName
-            );
-
-            transform.position =
-                spawn.transform.position;
+            Debug.Log($"[PlayerSpawn] Teleporting {gameObject.name} to {spawnName} at {spawn.transform.position}");
+            transform.position = spawn.transform.position;
         }
         else
         {
-            Debug.LogWarning(
-                "Spawn point tidak ditemukan: "
-                + spawnName
-            );
+            Debug.LogWarning($"[PlayerSpawn] Spawn point tidak ditemukan: {spawnName}");
         }
     }
 }

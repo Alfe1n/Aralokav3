@@ -1,0 +1,373 @@
+fileFormatVersion: 2
+guid: 2ba43404d99a695489a6ee0dc1ff1b1d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4557005259232600177
+    second: Manusia 1_0
+  - first:
+      213: -1792449138574311557
+    second: Manusia 1_1
+  - first:
+      213: 3383295625271957339
+    second: Manusia 1_2
+  - first:
+      213: 4435886774413139541
+    second: Manusia 1_3
+  - first:
+      213: -7514030131639773510
+    second: Manusia 1_4
+  - first:
+      213: -4661791848003016245
+    second: Manusia 1_5
+  - first:
+      213: 8461794093050227846
+    second: Manusia 1_6
+  - first:
+      213: 2539708061806121814
+    second: Manusia 1_7
+  - first:
+      213: 8244149722909433610
+    second: Manusia 1_8
+  - first:
+      213: 2757611662528062600
+    second: Manusia 1_9
+  - first:
+      213: -6138636154979039364
+    second: Manusia 1_10
+  - first:
+      213: 7327881250290780147
+    second: Manusia 1_11
+  - first:
+      213: -3837780897846958358
+    second: Manusia 1_12
+  - first:
+      213: 3948972201928140508
+    second: Manusia 1_13
+  - first:
+      213: 5837977782791932121
+    second: Manusia 1_14
+  - first:
+      213: -7762333101704135122
+    second: Manusia 1_15
+  - first:
+      213: -8469106388276369065
+    second: Manusia 1_16
+  - first:
+      213: 6450339354090782580
+    second: Manusia 1_17
+  - first:
+      213: 698096100571543538
+    second: Manusia 1_18
+  - first:
+      213: -4479103941782995618
+    second: Manusia 1_19
+  - first:
+      213: 1619807084313177853
+    second: Manusia 1_20
+  - first:
+      213: -1097766807530747078
+    second: Manusia 1_21
+  - first:
+      213: 1077667110870151557
+    second: Manusia 1_22
+  - first:
+      213: -6111413519261096054
+    second: Manusia 1_23
+  - first:
+      213: -4757216727783940055
+    second: Manusia 1_24
+  - first:
+      213: 796159181221500889
+    second: Manusia 1_25
+  - first:
+      213: 2849831849352801513
+    second: Manusia 1_26
+  - first:
+      213: -3238704334460230139
+    second: Manusia 1_27
+  - first:
+      213: 8446881046708894055
+    second: Manusia 1_28
+  - first:
+      213: 7738871399609818785
+    second: Manusia 1_29
+  - first:
+      213: -5444637511485017925
+    second: Manusia 1_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Manusia 1_10
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1096
+        width: 561
+        height: 319
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77ca11e0fe2fcaa0800000000000000
+      internalID: -6138636154979039364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manusia 1_11
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1084
+        width: 581
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7c3df1c2dd1b560800000000000000
+      internalID: 7327881250290780147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manusia 1_27
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 674
+        width: 582
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506eaf3319fcd03d0800000000000000
+      internalID: -3238704334460230139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manusia 1_28
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 673
+        width: 584
+        height: 326
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7693019fe89593570800000000000000
+      internalID: 8446881046708894055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manusia 1_29
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 212
+        width: 590
+        height: 389
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae5c20298ef56b60800000000000000
+      internalID: 7738871399609818785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manusia 1_30
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 212
+        width: 588
+        height: 383
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb03b2db703c074b0800000000000000
+      internalID: -5444637511485017925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e855790bf93c0d747a300b5b707bd395
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Manusia 1_0: -4557005259232600177
+      Manusia 1_1: -1792449138574311557
+      Manusia 1_10: -6138636154979039364
+      Manusia 1_11: 7327881250290780147
+      Manusia 1_12: -3837780897846958358
+      Manusia 1_13: 3948972201928140508
+      Manusia 1_14: 5837977782791932121
+      Manusia 1_15: -7762333101704135122
+      Manusia 1_16: -8469106388276369065
+      Manusia 1_17: 6450339354090782580
+      Manusia 1_18: 698096100571543538
+      Manusia 1_19: -4479103941782995618
+      Manusia 1_2: 3383295625271957339
+      Manusia 1_20: 1619807084313177853
+      Manusia 1_21: -1097766807530747078
+      Manusia 1_22: 1077667110870151557
+      Manusia 1_23: -6111413519261096054
+      Manusia 1_24: -4757216727783940055
+      Manusia 1_25: 796159181221500889
+      Manusia 1_26: 2849831849352801513
+      Manusia 1_27: -3238704334460230139
+      Manusia 1_28: 8446881046708894055
+      Manusia 1_29: 7738871399609818785
+      Manusia 1_3: 4435886774413139541
+      Manusia 1_30: -5444637511485017925
+      Manusia 1_4: -7514030131639773510
+      Manusia 1_5: -4661791848003016245
+      Manusia 1_6: 8461794093050227846
+      Manusia 1_7: 2539708061806121814
+      Manusia 1_8: 8244149722909433610
+      Manusia 1_9: 2757611662528062600
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

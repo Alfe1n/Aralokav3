@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2682931422763279988}
   - component: {fileID: 2536239923413271677}
   - component: {fileID: 2677955373340495415}
+  - component: {fileID: 1434528071147159512}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -134,7 +135,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 175fdfd1b6dc4024aa9a3adb42ed1960, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -175,6 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 3
   canMove: 1
+  isInWater: 0
   footstepSource: {fileID: 0}
   footstepClips: []
   footstepDelay: 1
@@ -309,3 +311,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!210 &1434528071147159512
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8524288886814966490}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0

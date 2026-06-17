@@ -1,0 +1,593 @@
+fileFormatVersion: 2
+guid: 6cf0c40196c915f49969c9c04caa6b32
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7046362281623975461
+    second: Cage_0
+  - first:
+      213: 1871782220165995333
+    second: Cage_1
+  - first:
+      213: -1412805860740260291
+    second: Cage_2
+  - first:
+      213: -5484599824723000379
+    second: Cage_3
+  - first:
+      213: -7313993428090253360
+    second: Cage_4
+  - first:
+      213: 3191832837769519640
+    second: Cage_5
+  - first:
+      213: 8763021776278695869
+    second: Cage_6
+  - first:
+      213: 1370693088585086196
+    second: Cage_7
+  - first:
+      213: -1456936875670832679
+    second: Cage_8
+  - first:
+      213: -8616382300310321340
+    second: Cage_9
+  - first:
+      213: 740279232681754996
+    second: Cage_10
+  - first:
+      213: -5642215000364777973
+    second: Cage_11
+  - first:
+      213: 2422354036335609286
+    second: Cage_12
+  - first:
+      213: 460354570139896526
+    second: Cage_13
+  - first:
+      213: -999554772720934038
+    second: Cage_14
+  - first:
+      213: -5407641941030653426
+    second: Cage_15
+  - first:
+      213: 4519736709254082861
+    second: Cage_16
+  - first:
+      213: -5830963470676660391
+    second: Cage_17
+  - first:
+      213: 5795403572480510201
+    second: Cage_18
+  - first:
+      213: -160971214903429535
+    second: Cage_19
+  - first:
+      213: -7768296477492184112
+    second: Cage_20
+  - first:
+      213: 1514249759971125944
+    second: Cage_21
+  - first:
+      213: -5475857227055087434
+    second: Cage_22
+  - first:
+      213: 4436690634632064790
+    second: Cage_23
+  - first:
+      213: -4161661571411226867
+    second: Cage_24
+  - first:
+      213: -3565094410086197670
+    second: Cage_25
+  - first:
+      213: -401319757598088722
+    second: Cage_26
+  - first:
+      213: 7431986066639729650
+    second: Cage_27
+  - first:
+      213: 8062517983576171821
+    second: Cage_28
+  - first:
+      213: 2849667154586483953
+    second: Cage_29
+  - first:
+      213: -7439439742513350494
+    second: Cage_30
+  - first:
+      213: -712327501534468954
+    second: Cage_31
+  - first:
+      213: -1802613187837891272
+    second: Cage_32
+  - first:
+      213: 6330631839488417405
+    second: Cage_33
+  - first:
+      213: 5639778524060760759
+    second: Cage_34
+  - first:
+      213: -1194622376187468806
+    second: Cage_35
+  - first:
+      213: -7533283945574358621
+    second: Cage_36
+  - first:
+      213: 6669604535719248667
+    second: Cage_37
+  - first:
+      213: -5073002225102740444
+    second: Cage_38
+  - first:
+      213: 5497233387993732890
+    second: Cage_39
+  - first:
+      213: 1340194812748794167
+    second: Cage_40
+  - first:
+      213: -3427889204135853321
+    second: Cage_41
+  - first:
+      213: 3021529865081553013
+    second: Cage_42
+  - first:
+      213: 3211083338504146197
+    second: Cage_43
+  - first:
+      213: 1459653448819667722
+    second: Cage_44
+  - first:
+      213: 6268794026892161541
+    second: Cage_45
+  - first:
+      213: -9073834096630514129
+    second: Cage_46
+  - first:
+      213: -1996563198300319781
+    second: Cage_47
+  - first:
+      213: -5344603668398290198
+    second: Cage_48
+  - first:
+      213: -3785590648364294566
+    second: Cage_49
+  - first:
+      213: 2711492344380367087
+    second: Cage_50
+  - first:
+      213: -6458523815852371842
+    second: Cage_51
+  - first:
+      213: 133901116552612856
+    second: Cage_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cage_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 308
+        width: 182
+        height: 210
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52678e27925b9c160800000000000000
+      internalID: 7046362281623975461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 308
+        width: 182
+        height: 209
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54bd2e91308e9f910800000000000000
+      internalID: 1871782220165995333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_2
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 308
+        width: 179
+        height: 209
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e9cf51e84b46ce0800000000000000
+      internalID: -1412805860740260291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_3
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 284
+        width: 152
+        height: 219
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c34730a489c2e3b0800000000000000
+      internalID: -5484599824723000379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_4
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 283
+        width: 152
+        height: 218
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df83257ab97f7a90800000000000000
+      internalID: -7313993428090253360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_5
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 283
+        width: 155
+        height: 218
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812edad0e0bab4c20800000000000000
+      internalID: 3191832837769519640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_15
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 78
+        width: 183
+        height: 208
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e023d583e4234f4b0800000000000000
+      internalID: -5407641941030653426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_16
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 78
+        width: 186
+        height: 208
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d21f169279459be30800000000000000
+      internalID: 4519736709254082861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_17
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 78
+        width: 191
+        height: 208
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95fe9000e91441fa0800000000000000
+      internalID: -5830963470676660391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_37
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 49
+        width: 171
+        height: 212
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1341e7fcf13f8c50800000000000000
+      internalID: 6669604535719248667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_38
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 48
+        width: 173
+        height: 211
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4242cfbaa531999b0800000000000000
+      internalID: -5073002225102740444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cage_39
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 48
+        width: 194
+        height: 137
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1798ca04a81a4c40800000000000000
+      internalID: 5497233387993732890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cfb067ecd6c805c4c8efc54b96c635e7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cage_0: 7046362281623975461
+      Cage_1: 1871782220165995333
+      Cage_10: 740279232681754996
+      Cage_11: -5642215000364777973
+      Cage_12: 2422354036335609286
+      Cage_13: 460354570139896526
+      Cage_14: -999554772720934038
+      Cage_15: -5407641941030653426
+      Cage_16: 4519736709254082861
+      Cage_17: -5830963470676660391
+      Cage_18: 5795403572480510201
+      Cage_19: -160971214903429535
+      Cage_2: -1412805860740260291
+      Cage_20: -7768296477492184112
+      Cage_21: 1514249759971125944
+      Cage_22: -5475857227055087434
+      Cage_23: 4436690634632064790
+      Cage_24: -4161661571411226867
+      Cage_25: -3565094410086197670
+      Cage_26: -401319757598088722
+      Cage_27: 7431986066639729650
+      Cage_28: 8062517983576171821
+      Cage_29: 2849667154586483953
+      Cage_3: -5484599824723000379
+      Cage_30: -7439439742513350494
+      Cage_31: -712327501534468954
+      Cage_32: -1802613187837891272
+      Cage_33: 6330631839488417405
+      Cage_34: 5639778524060760759
+      Cage_35: -1194622376187468806
+      Cage_36: -7533283945574358621
+      Cage_37: 6669604535719248667
+      Cage_38: -5073002225102740444
+      Cage_39: 5497233387993732890
+      Cage_4: -7313993428090253360
+      Cage_40: 1340194812748794167
+      Cage_41: -3427889204135853321
+      Cage_42: 3021529865081553013
+      Cage_43: 3211083338504146197
+      Cage_44: 1459653448819667722
+      Cage_45: 6268794026892161541
+      Cage_46: -9073834096630514129
+      Cage_47: -1996563198300319781
+      Cage_48: -5344603668398290198
+      Cage_49: -3785590648364294566
+      Cage_5: 3191832837769519640
+      Cage_50: 2711492344380367087
+      Cage_51: -6458523815852371842
+      Cage_52: 133901116552612856
+      Cage_6: 8763021776278695869
+      Cage_7: 1370693088585086196
+      Cage_8: -1456936875670832679
+      Cage_9: -8616382300310321340
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2113 @@
+fileFormatVersion: 2
+guid: d41cf00244fce9c4aabf92e25b57b398
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5183897397003237597
+    second: Orang Utan_0
+  - first:
+      213: 4019800098398309192
+    second: Orang Utan_1
+  - first:
+      213: 1248307025568969745
+    second: Orang Utan_2
+  - first:
+      213: -2505153531261020214
+    second: Orang Utan_3
+  - first:
+      213: 2187707809344461027
+    second: Orang Utan_4
+  - first:
+      213: -1093340209637741622
+    second: Orang Utan_5
+  - first:
+      213: -4799565279337826941
+    second: Orang Utan_6
+  - first:
+      213: -2307281500034228590
+    second: Orang Utan_7
+  - first:
+      213: -5491732390334841686
+    second: Orang Utan_8
+  - first:
+      213: -7135861094232931635
+    second: Orang Utan_9
+  - first:
+      213: -7442666539792664496
+    second: Orang Utan_10
+  - first:
+      213: 7048207227419768000
+    second: Orang Utan_11
+  - first:
+      213: 3993354488658453809
+    second: Orang Utan_12
+  - first:
+      213: 6537102781946768804
+    second: Orang Utan_13
+  - first:
+      213: -8994456844083315225
+    second: Orang Utan_14
+  - first:
+      213: 3471116169503257313
+    second: Orang Utan_15
+  - first:
+      213: 5449830690053232181
+    second: Orang Utan_16
+  - first:
+      213: -289325096700784470
+    second: Orang Utan_17
+  - first:
+      213: 2652113297022527475
+    second: Orang Utan_18
+  - first:
+      213: 5888039534432735221
+    second: Orang Utan_19
+  - first:
+      213: -9052905365323701072
+    second: Orang Utan_20
+  - first:
+      213: -4389975806644504950
+    second: Orang Utan_21
+  - first:
+      213: -4326932898496426874
+    second: Orang Utan_22
+  - first:
+      213: 8840978877431761485
+    second: Orang Utan_23
+  - first:
+      213: -5519044369489283400
+    second: Orang Utan_24
+  - first:
+      213: -8852383728447465502
+    second: Orang Utan_25
+  - first:
+      213: -219277605710797429
+    second: Orang Utan_26
+  - first:
+      213: -7466659199768711480
+    second: Orang Utan_27
+  - first:
+      213: -6083629130696643504
+    second: Orang Utan_28
+  - first:
+      213: 1375227182091128378
+    second: Orang Utan_29
+  - first:
+      213: -6373769398716446641
+    second: Orang Utan_30
+  - first:
+      213: -3323592314314620547
+    second: Orang Utan_31
+  - first:
+      213: -3500293223072249696
+    second: Orang Utan_32
+  - first:
+      213: 6003792067229819609
+    second: Orang Utan_33
+  - first:
+      213: 2423843513610182394
+    second: Orang Utan_34
+  - first:
+      213: -4084801681495971441
+    second: Orang Utan_35
+  - first:
+      213: -6620718014942687197
+    second: Orang Utan_36
+  - first:
+      213: -5505845166198326454
+    second: Orang Utan_37
+  - first:
+      213: -5541826884087657098
+    second: Orang Utan_38
+  - first:
+      213: 8655378900647192909
+    second: Orang Utan_39
+  - first:
+      213: -6850045955665966292
+    second: Orang Utan_40
+  - first:
+      213: 6679961417655177520
+    second: Orang Utan_41
+  - first:
+      213: -6447617789887806012
+    second: Orang Utan_42
+  - first:
+      213: -2868484010653433826
+    second: Orang Utan_43
+  - first:
+      213: -3760671386461778898
+    second: Orang Utan_44
+  - first:
+      213: -5962695182944845268
+    second: Orang Utan_45
+  - first:
+      213: 935354660560601167
+    second: Orang Utan_46
+  - first:
+      213: 2120246718785008583
+    second: Orang Utan_47
+  - first:
+      213: -4218513786394970665
+    second: Orang Utan_48
+  - first:
+      213: 7820884475784086144
+    second: Orang Utan_49
+  - first:
+      213: 3746547076884011678
+    second: Orang Utan_50
+  - first:
+      213: -5259807132357780361
+    second: Orang Utan_51
+  - first:
+      213: 1818094986253787477
+    second: Orang Utan_52
+  - first:
+      213: -5792843917689072908
+    second: Orang Utan_53
+  - first:
+      213: 266536198009511343
+    second: Orang Utan_54
+  - first:
+      213: 1591707791652066612
+    second: Orang Utan_55
+  - first:
+      213: -2323130461796834499
+    second: Orang Utan_56
+  - first:
+      213: -7091014277079947634
+    second: Orang Utan_57
+  - first:
+      213: 2793035030132118107
+    second: Orang Utan_58
+  - first:
+      213: 8133521660692055918
+    second: Orang Utan_59
+  - first:
+      213: 3908653711882945743
+    second: Orang Utan_60
+  - first:
+      213: -3141560231698143268
+    second: Orang Utan_61
+  - first:
+      213: 6798504560301325724
+    second: Orang Utan_62
+  - first:
+      213: -5451376300690918969
+    second: Orang Utan_63
+  - first:
+      213: -3562244859986055853
+    second: Orang Utan_64
+  - first:
+      213: -4210589831417890570
+    second: Orang Utan_65
+  - first:
+      213: -5613083432501569047
+    second: Orang Utan_66
+  - first:
+      213: 2620839135385189323
+    second: Orang Utan_67
+  - first:
+      213: 3772754220417222997
+    second: Orang Utan_68
+  - first:
+      213: -1868997130035090378
+    second: Orang Utan_69
+  - first:
+      213: 7632657284823304739
+    second: Orang Utan_70
+  - first:
+      213: -6714811281420784153
+    second: Orang Utan_71
+  - first:
+      213: 53360595940184520
+    second: Orang Utan_72
+  - first:
+      213: -5888364968029762913
+    second: Orang Utan_73
+  - first:
+      213: 946621114943659969
+    second: Orang Utan_74
+  - first:
+      213: 656592995630518956
+    second: Orang Utan_75
+  - first:
+      213: 2868098307121777816
+    second: Orang Utan_76
+  - first:
+      213: 7933640903824198564
+    second: Orang Utan_77
+  - first:
+      213: -6668896378578197248
+    second: Orang Utan_78
+  - first:
+      213: -450121407816647630
+    second: Orang Utan_79
+  - first:
+      213: 5319344114519903559
+    second: Orang Utan_80
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 550
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Orang Utan_0
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 5201
+        width: 559
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 327cc8b68c81f08b0800000000000000
+      internalID: -5183897397003237597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_1
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 5198
+        width: 559
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b8c1544e239c730800000000000000
+      internalID: 4019800098398309192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_2
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 5183
+        width: 559
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114b9ad30a0e25110800000000000000
+      internalID: 1248307025568969745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_3
+      rect:
+        serializedVersion: 2
+        x: 2282
+        y: 5197
+        width: 559
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac71f5dd228eb3dd0800000000000000
+      internalID: -2505153531261020214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_4
+      rect:
+        serializedVersion: 2
+        x: 2971
+        y: 5191
+        width: 559
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8135069ac4c5e10800000000000000
+      internalID: 2187707809344461027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_5
+      rect:
+        serializedVersion: 2
+        x: 3687
+        y: 5191
+        width: 446
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acb24e14fdca3d0f0800000000000000
+      internalID: -1093340209637741622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_6
+      rect:
+        serializedVersion: 2
+        x: 4343
+        y: 5180
+        width: 472
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38535c0cec4846db0800000000000000
+      internalID: -4799565279337826941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_7
+      rect:
+        serializedVersion: 2
+        x: 4988
+        y: 5222
+        width: 472
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e11a143b3eaffd0800000000000000
+      internalID: -2307281500034228590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_9
+      rect:
+        serializedVersion: 2
+        x: 5707
+        y: 5179
+        width: 450
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc247b7642458fc90800000000000000
+      internalID: -7135861094232931635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_10
+      rect:
+        serializedVersion: 2
+        x: 6354
+        y: 5202
+        width: 460
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 058f8f9073656b890800000000000000
+      internalID: -7442666539792664496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_11
+      rect:
+        serializedVersion: 2
+        x: 7017
+        y: 5204
+        width: 467
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c432bd512340d160800000000000000
+      internalID: 7048207227419768000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_12
+      rect:
+        serializedVersion: 2
+        x: 7672
+        y: 5202
+        width: 437
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 135e2beefbe3b6730800000000000000
+      internalID: 3993354488658453809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_13
+      rect:
+        serializedVersion: 2
+        x: 8354
+        y: 5199
+        width: 503
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ada72a585478ba50800000000000000
+      internalID: 6537102781946768804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_14
+      rect:
+        serializedVersion: 2
+        x: 9027
+        y: 5220
+        width: 503
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed35dca7254d2380800000000000000
+      internalID: -8994456844083315225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_15
+      rect:
+        serializedVersion: 2
+        x: 9681
+        y: 5209
+        width: 507
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e23b51f3c1eb2030800000000000000
+      internalID: 3471116169503257313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_16
+      rect:
+        serializedVersion: 2
+        x: 10341
+        y: 5212
+        width: 508
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53615ae5320b1ab40800000000000000
+      internalID: 5449830690053232181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_17
+      rect:
+        serializedVersion: 2
+        x: 11323
+        y: 5133
+        width: 606
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa05b828b5c1cfbf0800000000000000
+      internalID: -289325096700784470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_18
+      rect:
+        serializedVersion: 2
+        x: 12248
+        y: 5127
+        width: 607
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f72e1dfdf23ec420800000000000000
+      internalID: 2652113297022527475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_20
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 4073
+        width: 533
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b427aad88e9d5280800000000000000
+      internalID: -9052905365323701072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_21
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 4080
+        width: 535
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a863560534ca313c0800000000000000
+      internalID: -4389975806644504950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_22
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 4067
+        width: 533
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c4b223475a3f3c0800000000000000
+      internalID: -4326932898496426874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_23
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 4076
+        width: 540
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a4d00927771ba70800000000000000
+      internalID: 8840978877431761485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_24
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 4064
+        width: 459
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6b8f8136a6863b0800000000000000
+      internalID: -5519044369489283400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_25
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 4030
+        width: 437
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7d072a6e3062580800000000000000
+      internalID: -8852383728447465502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_26
+      rect:
+        serializedVersion: 2
+        x: 4387
+        y: 4051
+        width: 397
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b85e86ced28f4fcf0800000000000000
+      internalID: -219277605710797429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_27
+      rect:
+        serializedVersion: 2
+        x: 5024
+        y: 4047
+        width: 422
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce22e29409116890800000000000000
+      internalID: -7466659199768711480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_28
+      rect:
+        serializedVersion: 2
+        x: 5707
+        y: 4048
+        width: 443
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05cab9fb98b929ba0800000000000000
+      internalID: -6083629130696643504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_29
+      rect:
+        serializedVersion: 2
+        x: 6367
+        y: 4059
+        width: 434
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ec00af5d9c51310800000000000000
+      internalID: 1375227182091128378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_30
+      rect:
+        serializedVersion: 2
+        x: 7012
+        y: 4047
+        width: 471
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4840456082db87a0800000000000000
+      internalID: -6373769398716446641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_31
+      rect:
+        serializedVersion: 2
+        x: 7714
+        y: 4049
+        width: 426
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d710f07366a30e1d0800000000000000
+      internalID: -3323592314314620547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_32
+      rect:
+        serializedVersion: 2
+        x: 8352
+        y: 4060
+        width: 499
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a84215ebd57c6fc0800000000000000
+      internalID: -3500293223072249696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_33
+      rect:
+        serializedVersion: 2
+        x: 9028
+        y: 4080
+        width: 504
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d2aa806311c15350800000000000000
+      internalID: 6003792067229819609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_34
+      rect:
+        serializedVersion: 2
+        x: 9681
+        y: 4061
+        width: 507
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe9ed365d833a120800000000000000
+      internalID: 2423843513610182394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_35
+      rect:
+        serializedVersion: 2
+        x: 10345
+        y: 4050
+        width: 507
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f89a38c438edf47c0800000000000000
+      internalID: -4084801681495971441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_36
+      rect:
+        serializedVersion: 2
+        x: 11936
+        y: 4109
+        width: 607
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320df412b0c7e14a0800000000000000
+      internalID: -6620718014942687197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_37
+      rect:
+        serializedVersion: 2
+        x: 12769
+        y: 4105
+        width: 607
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b72781efe4793b0800000000000000
+      internalID: -5505845166198326454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_38
+      rect:
+        serializedVersion: 2
+        x: 14419
+        y: 4116
+        width: 606
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67dce3f8fc97713b0800000000000000
+      internalID: -5541826884087657098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_39
+      rect:
+        serializedVersion: 2
+        x: 15235
+        y: 4116
+        width: 608
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d49ac7180451e1870800000000000000
+      internalID: 8655378900647192909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_40
+      rect:
+        serializedVersion: 2
+        x: 16103
+        y: 4113
+        width: 608
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2bcd651f7fbfe0a0800000000000000
+      internalID: -6850045955665966292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_42
+      rect:
+        serializedVersion: 2
+        x: 7181
+        y: 3597
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c58f32f7c57586a0800000000000000
+      internalID: -6447617789887806012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_43
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 2533
+        width: 533
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e104d1d7df81138d0800000000000000
+      internalID: -2868484010653433826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_44
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 2531
+        width: 538
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c48f48c496fcbc0800000000000000
+      internalID: -3760671386461778898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_45
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 2528
+        width: 539
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c22c3a4a250404da0800000000000000
+      internalID: -5962695182944845268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_46
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 2529
+        width: 538
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4088b9ab1c0bfc00800000000000000
+      internalID: 935354660560601167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_47
+      rect:
+        serializedVersion: 2
+        x: 2984
+        y: 2526
+        width: 498
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c33e5d3821ac6d10800000000000000
+      internalID: 2120246718785008583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_48
+      rect:
+        serializedVersion: 2
+        x: 3655
+        y: 2529
+        width: 516
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5f6d9df04d475c0800000000000000
+      internalID: -4218513786394970665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_49
+      rect:
+        serializedVersion: 2
+        x: 4365
+        y: 2562
+        width: 454
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0824a707efc598c60800000000000000
+      internalID: 7820884475784086144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_50
+      rect:
+        serializedVersion: 2
+        x: 4982
+        y: 2557
+        width: 478
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a13f367b86ef330800000000000000
+      internalID: 3746547076884011678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_51
+      rect:
+        serializedVersion: 2
+        x: 5745
+        y: 2526
+        width: 390
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c9fb0e7496107b0800000000000000
+      internalID: -5259807132357780361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_52
+      rect:
+        serializedVersion: 2
+        x: 6370
+        y: 2531
+        width: 432
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551639fd1cb2b3910800000000000000
+      internalID: 1818094986253787477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_53
+      rect:
+        serializedVersion: 2
+        x: 7031
+        y: 2530
+        width: 442
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f25cde062fab9fa0800000000000000
+      internalID: -5792843917689072908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_54
+      rect:
+        serializedVersion: 2
+        x: 7707
+        y: 2507
+        width: 424
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fadd32a824de2b300800000000000000
+      internalID: 266536198009511343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_55
+      rect:
+        serializedVersion: 2
+        x: 8357
+        y: 2530
+        width: 520
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43594a3adc1e61610800000000000000
+      internalID: 1591707791652066612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_56
+      rect:
+        serializedVersion: 2
+        x: 9006
+        y: 2516
+        width: 524
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33e5b9472592cfd0800000000000000
+      internalID: -2323130461796834499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_57
+      rect:
+        serializedVersion: 2
+        x: 9663
+        y: 2526
+        width: 527
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e862d65b518a79d90800000000000000
+      internalID: -7091014277079947634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_58
+      rect:
+        serializedVersion: 2
+        x: 10326
+        y: 2529
+        width: 515
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b525f30df8ad2c620800000000000000
+      internalID: 2793035030132118107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_59
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1488
+        width: 525
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e67ce7e6bd210e070800000000000000
+      internalID: 8133521660692055918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_60
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1489
+        width: 507
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc48bce87d35e3630800000000000000
+      internalID: 3908653711882945743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_61
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1487
+        width: 535
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7632d2d9fe664d0800000000000000
+      internalID: -3141560231698143268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_62
+      rect:
+        serializedVersion: 2
+        x: 2321
+        y: 1487
+        width: 503
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d32a8a0e3295e50800000000000000
+      internalID: 6798504560301325724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_63
+      rect:
+        serializedVersion: 2
+        x: 3045
+        y: 1487
+        width: 419
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1b55c1322d854b0800000000000000
+      internalID: -5451376300690918969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_64
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 1487
+        width: 445
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35de1956c2d509ec0800000000000000
+      internalID: -3562244859986055853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_65
+      rect:
+        serializedVersion: 2
+        x: 4359
+        y: 1488
+        width: 434
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8f6736bdaf095c0800000000000000
+      internalID: -4210589831417890570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_66
+      rect:
+        serializedVersion: 2
+        x: 5027
+        y: 1468
+        width: 415
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e91d178b525a12b0800000000000000
+      internalID: -5613083432501569047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_67
+      rect:
+        serializedVersion: 2
+        x: 5703
+        y: 1464
+        width: 423
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb731ece471f5420800000000000000
+      internalID: 2620839135385189323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_68
+      rect:
+        serializedVersion: 2
+        x: 6370
+        y: 1493
+        width: 436
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55903dc79f38b5430800000000000000
+      internalID: 3772754220417222997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_69
+      rect:
+        serializedVersion: 2
+        x: 7028
+        y: 1482
+        width: 436
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ca80a330dff06e0800000000000000
+      internalID: -1868997130035090378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_70
+      rect:
+        serializedVersion: 2
+        x: 7710
+        y: 1488
+        width: 417
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ac03a6c55ace960800000000000000
+      internalID: 7632657284823304739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_71
+      rect:
+        serializedVersion: 2
+        x: 8391
+        y: 1487
+        width: 442
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ede02557b230d2a0800000000000000
+      internalID: -6714811281420784153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_72
+      rect:
+        serializedVersion: 2
+        x: 9063
+        y: 1487
+        width: 423
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c19406ed239db000800000000000000
+      internalID: 53360595940184520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_73
+      rect:
+        serializedVersion: 2
+        x: 9703
+        y: 1487
+        width: 441
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a4bbc6243584ea0800000000000000
+      internalID: -5888364968029762913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_74
+      rect:
+        serializedVersion: 2
+        x: 10383
+        y: 1507
+        width: 411
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cfd91d73e2132d00800000000000000
+      internalID: 946621114943659969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_77
+      rect:
+        serializedVersion: 2
+        x: 3207
+        y: 246
+        width: 657
+        height: 803
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab43f72e54f91e60800000000000000
+      internalID: 7933640903824198564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_78
+      rect:
+        serializedVersion: 2
+        x: 4558
+        y: 250
+        width: 663
+        height: 793
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00525f6b3125373a0800000000000000
+      internalID: -6668896378578197248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_79
+      rect:
+        serializedVersion: 2
+        x: 5931
+        y: 250
+        width: 660
+        height: 793
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c3a45e6f8d0c9f0800000000000000
+      internalID: -450121407816647630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orang Utan_80
+      rect:
+        serializedVersion: 2
+        x: 7282
+        y: 250
+        width: 660
+        height: 793
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d06000a4b12d940800000000000000
+      internalID: 5319344114519903559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5068f29481e7dee47bb79107e910d1d7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Orang Utan_0: -5183897397003237597
+      Orang Utan_1: 4019800098398309192
+      Orang Utan_10: -7442666539792664496
+      Orang Utan_11: 7048207227419768000
+      Orang Utan_12: 3993354488658453809
+      Orang Utan_13: 6537102781946768804
+      Orang Utan_14: -8994456844083315225
+      Orang Utan_15: 3471116169503257313
+      Orang Utan_16: 5449830690053232181
+      Orang Utan_17: -289325096700784470
+      Orang Utan_18: 2652113297022527475
+      Orang Utan_19: 5888039534432735221
+      Orang Utan_2: 1248307025568969745
+      Orang Utan_20: -9052905365323701072
+      Orang Utan_21: -4389975806644504950
+      Orang Utan_22: -4326932898496426874
+      Orang Utan_23: 8840978877431761485
+      Orang Utan_24: -5519044369489283400
+      Orang Utan_25: -8852383728447465502
+      Orang Utan_26: -219277605710797429
+      Orang Utan_27: -7466659199768711480
+      Orang Utan_28: -6083629130696643504
+      Orang Utan_29: 1375227182091128378
+      Orang Utan_3: -2505153531261020214
+      Orang Utan_30: -6373769398716446641
+      Orang Utan_31: -3323592314314620547
+      Orang Utan_32: -3500293223072249696
+      Orang Utan_33: 6003792067229819609
+      Orang Utan_34: 2423843513610182394
+      Orang Utan_35: -4084801681495971441
+      Orang Utan_36: -6620718014942687197
+      Orang Utan_37: -5505845166198326454
+      Orang Utan_38: -5541826884087657098
+      Orang Utan_39: 8655378900647192909
+      Orang Utan_4: 2187707809344461027
+      Orang Utan_40: -6850045955665966292
+      Orang Utan_41: 6679961417655177520
+      Orang Utan_42: -6447617789887806012
+      Orang Utan_43: -2868484010653433826
+      Orang Utan_44: -3760671386461778898
+      Orang Utan_45: -5962695182944845268
+      Orang Utan_46: 935354660560601167
+      Orang Utan_47: 2120246718785008583
+      Orang Utan_48: -4218513786394970665
+      Orang Utan_49: 7820884475784086144
+      Orang Utan_5: -1093340209637741622
+      Orang Utan_50: 3746547076884011678
+      Orang Utan_51: -5259807132357780361
+      Orang Utan_52: 1818094986253787477
+      Orang Utan_53: -5792843917689072908
+      Orang Utan_54: 266536198009511343
+      Orang Utan_55: 1591707791652066612
+      Orang Utan_56: -2323130461796834499
+      Orang Utan_57: -7091014277079947634
+      Orang Utan_58: 2793035030132118107
+      Orang Utan_59: 8133521660692055918
+      Orang Utan_6: -4799565279337826941
+      Orang Utan_60: 3908653711882945743
+      Orang Utan_61: -3141560231698143268
+      Orang Utan_62: 6798504560301325724
+      Orang Utan_63: -5451376300690918969
+      Orang Utan_64: -3562244859986055853
+      Orang Utan_65: -4210589831417890570
+      Orang Utan_66: -5613083432501569047
+      Orang Utan_67: 2620839135385189323
+      Orang Utan_68: 3772754220417222997
+      Orang Utan_69: -1868997130035090378
+      Orang Utan_7: -2307281500034228590
+      Orang Utan_70: 7632657284823304739
+      Orang Utan_71: -6714811281420784153
+      Orang Utan_72: 53360595940184520
+      Orang Utan_73: -5888364968029762913
+      Orang Utan_74: 946621114943659969
+      Orang Utan_75: 656592995630518956
+      Orang Utan_76: 2868098307121777816
+      Orang Utan_77: 7933640903824198564
+      Orang Utan_78: -6668896378578197248
+      Orang Utan_79: -450121407816647630
+      Orang Utan_8: -5491732390334841686
+      Orang Utan_80: 5319344114519903559
+      Orang Utan_9: -7135861094232931635
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -16,6 +16,8 @@ public class QuestManager : MonoBehaviour
     [SerializeField]
     private int currentQuest = 0;
 
+    private int checkpointQuest = 0;
+
     public int CurrentQuest => currentQuest;
 
     private void Awake()
@@ -33,10 +35,99 @@ public class QuestManager : MonoBehaviour
 
     private void Start()
     {
+        currentQuest = PlayerPrefs.GetInt("CurrentQuest", 0);
+        checkpointQuest = PlayerPrefs.GetInt("CheckpointQuest", currentQuest);
+        Debug.Log($"[QuestManager] Loaded quest: {currentQuest}, checkpoint quest: {checkpointQuest}");
+
         HideObjective();
+        UpdateObjective();
+        ShowObjective();
+    }
+
+    // =============================================
+    // SAVE / LOAD SCENE DATA
+    // =============================================
+
+    /// <summary>
+    /// Menyimpan scene terakhir yang dikunjungi untuk fitur Continue.
+    /// Dipanggil setiap kali checkpoint quest disimpan (saat transisi scene).
+    /// </summary>
+    public void SaveLastScene(string sceneName, string spawnName)
+    {
+        PlayerPrefs.SetString("LastScene", sceneName);
+        PlayerPrefs.SetString("LastSpawn", spawnName);
+        PlayerPrefs.SetInt("HasSaveData", 1);
+        PlayerPrefs.Save();
+        Debug.Log($"[QuestManager] Last scene saved: {sceneName} @ {spawnName}");
+    }
+
+    /// <summary>
+    /// Apakah ada data simpan untuk fitur Continue.
+    /// </summary>
+    public static bool HasSaveData()
+    {
+        return PlayerPrefs.GetInt("HasSaveData", 0) == 1;
+    }
+
+    /// <summary>
+    /// Nama scene terakhir yang disimpan (default: Kamar Bara).
+    /// </summary>
+    public static string GetLastScene()
+    {
+        return PlayerPrefs.GetString("LastScene", "Kamar Bara");
+    }
+
+    /// <summary>
+    /// Nama spawn point terakhir yang disimpan.
+    /// </summary>
+    public static string GetLastSpawn()
+    {
+        return PlayerPrefs.GetString("LastSpawn", "");
+    }
+
+    /// <summary>
+    /// Reset semua data quest (quest index dan scene simpan) ke awal.
+    /// Dipanggil saat New Game dimulai.
+    /// </summary>
+    public void ResetAllData()
+    {
+        currentQuest = 0;
+        checkpointQuest = 0;
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+
+        if (Inventory.instance != null)
+        {
+            Inventory.instance.Clear();
+        }
 
         UpdateObjective();
+        HideObjective();
+
+        Debug.Log("[QuestManager] All save data reset for New Game.");
     }
+
+    // =============================================
+    // CHECKPOINT QUEST
+    // =============================================
+
+    public void SaveCheckpointQuest()
+    {
+        checkpointQuest = currentQuest;
+        PlayerPrefs.SetInt("CheckpointQuest", checkpointQuest);
+        PlayerPrefs.Save();
+        Debug.Log($"[QuestManager] Checkpoint quest saved: {checkpointQuest}");
+    }
+
+    public void ResetToCheckpointQuest()
+    {
+        SetQuest(checkpointQuest);
+        Debug.Log($"[QuestManager] Reset quest to checkpoint: {currentQuest}");
+    }
+
+    // =============================================
+    // OBJECTIVE UI
+    // =============================================
 
     public void ShowObjective()
     {
@@ -70,12 +161,13 @@ public class QuestManager : MonoBehaviour
             return;
 
         currentQuest = id;
+        PlayerPrefs.SetInt("CurrentQuest", currentQuest);
+        PlayerPrefs.Save();
 
-        Debug.Log(
-            $"QUEST CHANGED -> {currentQuest}"
-        );
+        Debug.Log($"QUEST CHANGED -> {currentQuest}");
 
         UpdateObjective();
+        ShowObjective();
     }
 
     public void NextQuest()
@@ -94,11 +186,28 @@ public class QuestManager : MonoBehaviour
         if (currentQuest >= quests.Count)
             return;
 
-        Debug.Log(
-            "Quest Update: " + currentQuest
-        );
+        Debug.Log("Quest Update: " + currentQuest);
 
-        objectiveText.text =
-            quests[currentQuest].objectiveText;
+        objectiveText.text = quests[currentQuest].objectiveText;
     }
+
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.BackQuote))
+        {
+            PlayerPrefs.DeleteAll();
+            PlayerPrefs.Save();
+            if (Inventory.instance != null)
+            {
+                Inventory.instance.Clear();
+            }
+            Debug.Log("[Araloka Debug] PlayerPrefs and Inventory cleared via debug hotkey!");
+            currentQuest = 0;
+            checkpointQuest = 0;
+            string activeScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(activeScene);
+        }
+    }
+#endif
 }

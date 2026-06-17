@@ -31,7 +31,22 @@ EditorBuildSettings:
     guid: 905a40b7434db644ba42f00e3dbfa0a3
   - enabled: 1
     path: Assets/Scenes/Hutan.unity
-    guid: 8e9b6aa8fd224574ba27d04d70c086b7
+    guid: d3c484845e43a71429bebfb4d69e1966
+  - enabled: 1
+    path: Assets/Scenes/Hutan1.unity
+    guid: d087442d56c1f8342a9c131fe06f0721
+  - enabled: 1
+    path: Assets/Scenes/Hutan2.unity
+    guid: daa9c2d12b5c3de48acb81bf1ed73020
+  - enabled: 1
+    path: Assets/Scenes/Hutan3.unity
+    guid: f51da926c7e7f1c4b8efb9b54d9cb49d
+  - enabled: 1
+    path: Assets/Scenes/Hutan4.unity
+    guid: 68dd13bd64fdf064fa6a9c6707f91fc7
+  - enabled: 1
+    path: Assets/Scenes/Hutan5.unity
+    guid: fe536526ffa7e0f4f95fdf02896007dc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
