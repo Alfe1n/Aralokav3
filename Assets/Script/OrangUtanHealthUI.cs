@@ -16,14 +16,13 @@ public class OrangUtanHealthUI : MonoBehaviour
 
     void Start()
     {
-        if (uiRoot == null || heartImages == null || heartImages.Length < 3 || healthFullSprite == null || healthEmptySprite == null)
+        if (uiRoot != null) uiRoot.SetActive(false);
+
+        if (uiRoot == null || heartImages == null || heartImages.Length < 3
+            || healthFullSprite == null || healthEmptySprite == null)
         {
             Debug.LogError("[OrangUtanHealthUI] Missing references in inspector!");
-        }
-        else
-        {
-            // Initially hide the GUI
-            uiRoot.SetActive(false);
+            return;
         }
     }
 

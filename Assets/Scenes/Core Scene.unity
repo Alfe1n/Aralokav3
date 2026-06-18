@@ -2355,7 +2355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &794346247
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3188,6 +3188,10 @@ PrefabInstance:
     - target: {fileID: 2462185056458089336, guid: 48d24476d94c3be40ab5928804a035d1, type: 3}
       propertyPath: m_Name
       value: Player-Orang Utan
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462185056458089336, guid: 48d24476d94c3be40ab5928804a035d1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6309748602632546486, guid: 48d24476d94c3be40ab5928804a035d1, type: 3}
       propertyPath: m_LocalPosition.x

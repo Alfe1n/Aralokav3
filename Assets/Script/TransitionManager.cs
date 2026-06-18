@@ -74,11 +74,6 @@ public class TransitionManager : MonoBehaviour
 
         try
         {
-            if (QuestManager.Instance != null)
-            {
-                QuestManager.Instance.HideObjective();
-            }
-
             // Kunci gerakan player aktif saat ini sebelum transisi dimulai
             PlayerMovement currentActivePlayer = PlayerMovement.ActivePlayerInstance;
             if (currentActivePlayer == null)

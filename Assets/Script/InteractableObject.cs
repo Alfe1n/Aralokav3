@@ -225,7 +225,7 @@ public class InteractableObject : MonoBehaviour
         playerMovement = FindFirstObjectByType<PlayerMovement>();
         if (playerMovement != null) playerMovement.canMove = false;
 
-        if (QuestManager.Instance != null)
+        if (QuestManager.Instance != null && !useSceneTransition)
         {
             QuestManager.Instance.HideObjective();
         }

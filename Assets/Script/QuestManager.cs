@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class QuestManager : MonoBehaviour
 {
@@ -41,7 +42,9 @@ public class QuestManager : MonoBehaviour
 
         HideObjective();
         UpdateObjective();
-        ShowObjective();
+        string activeScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        if (activeScene != "MainMenu" && activeScene != "Boot Scene")
+            ShowObjective();
     }
 
     // =============================================
