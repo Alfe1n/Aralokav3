@@ -20,13 +20,18 @@ public class QuestObjectToggle : MonoBehaviour
         UpdateObjects();
     }
 
-    void Update()
+    void OnEnable()
     {
-        if (QuestManager.Instance != null && QuestManager.Instance.CurrentQuest != lastQuest)
-        {
-            UpdateObjects();
-        }
+        QuestManager.OnQuestChanged += OnQuestChangedHandler;
+        UpdateObjects();
     }
+
+    void OnDisable()
+    {
+        QuestManager.OnQuestChanged -= OnQuestChangedHandler;
+    }
+
+    void OnQuestChangedHandler(int _) => UpdateObjects();
 
     public void UpdateObjects()
     {

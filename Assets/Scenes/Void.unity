@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &193529203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 193529204}
+  m_Layer: 0
+  m_Name: Cermin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &193529204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193529203}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.29, y: 29.55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &508854467
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +480,10 @@ MonoBehaviour:
   useQuest: 0
   requiredQuest: -1
   nextQuest: -1
+  useFadeBeforeQuestAdvance: 0
+  useQuestRange: 0
+  minQuest: -1
+  maxQuest: -1
   useCutscene: 1
   cutscenePanel: {fileID: 1688750015}
   videoPlayer: {fileID: 1993652499}
@@ -464,6 +499,10 @@ MonoBehaviour:
   giveItem: 0
   itemId: 
   destroyAfterPickup: 1
+  requireItem: 0
+  requiredItemId: 
+  removeItemOnUse: 0
+  additionalObjectToDestroy: {fileID: 0}
   onInteractComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -474,6 +513,9 @@ MonoBehaviour:
   crystalToActivate: {fileID: 0}
   isCrystalCutscene: 0
   postCutsceneLines: []
+  triggerOnce: 0
+  triggerOncePersistent: 0
+  customPersistentKey: 
 --- !u!68 &974242682
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -533,6 +575,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1144021794}
+  - component: {fileID: 1144021795}
   m_Layer: 0
   m_Name: Spawn_Utama
   m_TagString: Untagged
@@ -555,6 +598,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1144021795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144021793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4a2ab63b400b44f8c3f9a3691e0eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventAreaTrigger
+  triggerOnce: 1
+  useInitialDelay: 1
+  initialDelayDuration: 0.5
+  cameraTarget: {fileID: 0}
+  cameraStayDuration: 2
+  useSmoothPan: 1
+  panSpeed: 5
+  playerWalkTarget: {fileID: 0}
+  playerWalkStopDistance: 0.5
+  movePlayerAtDialogIndex: -1
+  useDialogue: 1
+  dialogueLines:
+  - text: Hoam..
+    speaker: Bara
+    portrait: {fileID: 5796402981298746748, guid: 1e009e4812a5f3b47ac1a20460f7c9d4, type: 3}
+  - text: Aku kebangun ya..
+    speaker: Bara
+    portrait: {fileID: 1979321724376584997, guid: 1e009e4812a5f3b47ac1a20460f7c9d4, type: 3}
+  - text: Tempat ini terasa asing... namun anehnya terasa sangat tenang.
+    speaker: Bara
+    portrait: {fileID: 248901697488008595, guid: 1e009e4812a5f3b47ac1a20460f7c9d4, type: 3}
+  - text: Aku capek, ngantuk banget
+    speaker: Bara
+    portrait: {fileID: 1979321724376584997, guid: 1e009e4812a5f3b47ac1a20460f7c9d4, type: 3}
+  moveCameraAtDialogIndex: 0
+  returnCameraAtDialogIndex: 99
+  useQuest: 0
+  requiredQuest: -1
+  nextQuest: -1
+  triggerOncePersistent: 0
+  customPersistentKey: 
 --- !u!1 &1473449379
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,6 +723,125 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1699709261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1699709264}
+  - component: {fileID: 1699709263}
+  - component: {fileID: 1699709262}
+  m_Layer: 0
+  m_Name: Cermintrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1699709262
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699709261}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.07552242, y: 0.24544907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 20.107183, y: 1.4908981}
+  m_EdgeRadius: 0
+--- !u!114 &1699709263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699709261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4a2ab63b400b44f8c3f9a3691e0eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventAreaTrigger
+  triggerOnce: 1
+  useInitialDelay: 1
+  initialDelayDuration: 0.5
+  cameraTarget: {fileID: 193529204}
+  cameraStayDuration: 2
+  useSmoothPan: 1
+  panSpeed: 5
+  playerWalkTarget: {fileID: 0}
+  playerWalkStopDistance: 0.5
+  movePlayerAtDialogIndex: -1
+  useDialogue: 1
+  dialogueLines:
+  - text: Cermin?
+    speaker: Bara
+    portrait: {fileID: -4433109054721328824, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
+  - text: Kenapa ada cermin di sini?
+    speaker: Bara
+    portrait: {fileID: 4182958441366693114, guid: 1e009e4812a5f3b47ac1a20460f7c9d4, type: 3}
+  - text: Kayanya aku harus cuci muka di sana, biar melek
+    speaker: Bara
+    portrait: {fileID: 248901697488008595, guid: 1e009e4812a5f3b47ac1a20460f7c9d4, type: 3}
+  moveCameraAtDialogIndex: 0
+  returnCameraAtDialogIndex: 99
+  useQuest: 0
+  requiredQuest: -1
+  nextQuest: -1
+  triggerOncePersistent: 0
+  customPersistentKey: 
+--- !u!4 &1699709264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699709261}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 21.91, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1993652497
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,3 +1013,5 @@ SceneRoots:
   - {fileID: 1473449381}
   - {fileID: 974242680}
   - {fileID: 918261972}
+  - {fileID: 1699709264}
+  - {fileID: 193529204}

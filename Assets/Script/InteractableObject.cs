@@ -225,16 +225,19 @@ public class InteractableObject : MonoBehaviour
         playerMovement = FindFirstObjectByType<PlayerMovement>();
         if (playerMovement != null) playerMovement.canMove = false;
 
-        if (QuestManager.Instance != null)
+        if (QuestManager.Instance != null && !useSceneTransition)
         {
             QuestManager.Instance.HideObjective();
         }
+
+        OrangUtanUIVisibility.Instance?.ForceHide();
 
         // === CRYSTAL CUTSCENE MODE ===
         if (isCrystalCutscene)
         {
             yield return StartCoroutine(CrystalCutsceneSequence());
             if (playerMovement != null) playerMovement.canMove = true;
+            OrangUtanUIVisibility.Instance?.ForceRefresh();
             isInteracting = false;
             Destroy(gameObject);
             yield break;
@@ -399,6 +402,8 @@ public class InteractableObject : MonoBehaviour
         {
             QuestManager.Instance.ShowObjective();
         }
+
+        OrangUtanUIVisibility.Instance?.ForceRefresh();
  
         if (triggerOnce)
         {

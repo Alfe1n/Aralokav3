@@ -243,39 +243,20 @@ public class GameOverManager : MonoBehaviour
 
     private void CleanPersistentObjects()
     {
-        // Hancurkan objek manager yang persisten
+        // Hancurkan hanya manager-manager yang DontDestroyOnLoad
+        // agar tidak duplikat saat Boot Scene me-load Core Scene fresh.
+        // JANGAN hancurkan Camera/Canvas — SceneManager.LoadScene("Boot Scene")
+        // akan otomatis unload semua scene saat ini termasuk Core Scene.
+
         QuestManager[] questManagers = Object.FindObjectsByType<QuestManager>(FindObjectsSortMode.None);
         foreach (var q in questManagers) Destroy(q.gameObject);
 
         TransitionManager[] transitionManagers = Object.FindObjectsByType<TransitionManager>(FindObjectsSortMode.None);
         foreach (var t in transitionManagers) Destroy(t.gameObject);
 
-        // Hancurkan RescueManager yang persisten
-        RescueManager[] rescueManagers = Object.FindObjectsByType<RescueManager>(FindObjectsSortMode.None);
-        foreach (var r in rescueManagers) Destroy(r.gameObject);
-
         // Hancurkan player yang persisten
         PlayerMovement[] players = Object.FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
         foreach (var p in players) Destroy(p.gameObject);
-
-        // Hancurkan Canvas dari Core Scene agar tidak bertumpuk
-        Canvas parentCanvas = GetComponentInParent<Canvas>(true);
-        if (parentCanvas != null)
-        {
-            Destroy(parentCanvas.gameObject);
-        }
-        else
-        {
-            GameObject coreCanvas = GameObject.Find("Canvas");
-            if (coreCanvas != null) Destroy(coreCanvas);
-        }
-
-        GameObject coreCamera = GameObject.Find("Camera");
-        if (coreCamera != null) Destroy(coreCamera);
-
-        // Hancurkan DontDestroyOnLoad container jika ada
-        GameObject dontDestroyObj = GameObject.Find("DontDestroyOnLoad");
-        if (dontDestroyObj != null) Destroy(dontDestroyObj);
     }
 
     private IEnumerator ResetAndRespawnRoutine()

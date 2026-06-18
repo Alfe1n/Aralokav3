@@ -884,6 +884,10 @@ MonoBehaviour:
   useQuest: 1
   requiredQuest: 1
   nextQuest: -1
+  useFadeBeforeQuestAdvance: 0
+  useQuestRange: 0
+  minQuest: -1
+  maxQuest: -1
   useCutscene: 1
   cutscenePanel: {fileID: 2126998869}
   videoPlayer: {fileID: 851118636}
@@ -899,6 +903,10 @@ MonoBehaviour:
   giveItem: 0
   itemId: 
   destroyAfterPickup: 1
+  requireItem: 0
+  requiredItemId: 
+  removeItemOnUse: 0
+  additionalObjectToDestroy: {fileID: 0}
   onInteractComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -909,6 +917,9 @@ MonoBehaviour:
   crystalToActivate: {fileID: 0}
   isCrystalCutscene: 0
   postCutsceneLines: []
+  triggerOnce: 0
+  triggerOncePersistent: 0
+  customPersistentKey: 
 --- !u!61 &747668647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1373,10 +1384,14 @@ MonoBehaviour:
     portrait: {fileID: -4433109054721328824, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
   - text: Sudah lama sekali..
     speaker: Bara
-    portrait: {fileID: -7085337736244605806, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
+    portrait: {fileID: 4182958441366693114, guid: 1e009e4812a5f3b47ac1a20460f7c9d4, type: 3}
   useQuest: 0
   requiredQuest: -1
   nextQuest: -1
+  useFadeBeforeQuestAdvance: 0
+  useQuestRange: 0
+  minQuest: -1
+  maxQuest: -1
   useCutscene: 0
   cutscenePanel: {fileID: 0}
   videoPlayer: {fileID: 0}
@@ -1392,6 +1407,10 @@ MonoBehaviour:
   giveItem: 0
   itemId: 
   destroyAfterPickup: 1
+  requireItem: 0
+  requiredItemId: 
+  removeItemOnUse: 0
+  additionalObjectToDestroy: {fileID: 0}
   onInteractComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -1402,6 +1421,9 @@ MonoBehaviour:
   crystalToActivate: {fileID: 0}
   isCrystalCutscene: 0
   postCutsceneLines: []
+  triggerOnce: 0
+  triggerOncePersistent: 0
+  customPersistentKey: 
 --- !u!61 &1626699928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1651,6 +1673,10 @@ MonoBehaviour:
   useQuest: 0
   requiredQuest: -1
   nextQuest: -1
+  useFadeBeforeQuestAdvance: 0
+  useQuestRange: 0
+  minQuest: -1
+  maxQuest: -1
   useCutscene: 0
   cutscenePanel: {fileID: 0}
   videoPlayer: {fileID: 0}
@@ -1666,6 +1692,10 @@ MonoBehaviour:
   giveItem: 0
   itemId: 
   destroyAfterPickup: 1
+  requireItem: 0
+  requiredItemId: 
+  removeItemOnUse: 0
+  additionalObjectToDestroy: {fileID: 0}
   onInteractComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -1676,6 +1706,9 @@ MonoBehaviour:
   crystalToActivate: {fileID: 0}
   isCrystalCutscene: 0
   postCutsceneLines: []
+  triggerOnce: 0
+  triggerOncePersistent: 0
+  customPersistentKey: 
 --- !u!1 &1739634530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1856,10 +1889,14 @@ MonoBehaviour:
   dialogueLines:
   - text: Rak yang tersusun rapih
     speaker: Bara
-    portrait: {fileID: 654078645604073550, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
+    portrait: {fileID: 3063982380085596617, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
   useQuest: 0
   requiredQuest: -1
   nextQuest: -1
+  useFadeBeforeQuestAdvance: 0
+  useQuestRange: 0
+  minQuest: -1
+  maxQuest: -1
   useCutscene: 0
   cutscenePanel: {fileID: 0}
   videoPlayer: {fileID: 0}
@@ -1875,6 +1912,10 @@ MonoBehaviour:
   giveItem: 0
   itemId: 
   destroyAfterPickup: 1
+  requireItem: 0
+  requiredItemId: 
+  removeItemOnUse: 0
+  additionalObjectToDestroy: {fileID: 0}
   onInteractComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -1885,6 +1926,9 @@ MonoBehaviour:
   crystalToActivate: {fileID: 0}
   isCrystalCutscene: 0
   postCutsceneLines: []
+  triggerOnce: 0
+  triggerOncePersistent: 0
+  customPersistentKey: 
 --- !u!61 &1740343724
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2123,10 +2167,14 @@ MonoBehaviour:
   dialogueLines:
   - text: Seseorang menyimpan barangnya di sini
     speaker: Bara
-    portrait: {fileID: 3063982380085596617, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
+    portrait: {fileID: 4182958441366693114, guid: 1e009e4812a5f3b47ac1a20460f7c9d4, type: 3}
   useQuest: 0
   requiredQuest: -1
   nextQuest: -1
+  useFadeBeforeQuestAdvance: 0
+  useQuestRange: 0
+  minQuest: -1
+  maxQuest: -1
   useCutscene: 0
   cutscenePanel: {fileID: 0}
   videoPlayer: {fileID: 0}
@@ -2142,6 +2190,10 @@ MonoBehaviour:
   giveItem: 0
   itemId: 
   destroyAfterPickup: 1
+  requireItem: 0
+  requiredItemId: 
+  removeItemOnUse: 0
+  additionalObjectToDestroy: {fileID: 0}
   onInteractComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -2152,6 +2204,9 @@ MonoBehaviour:
   crystalToActivate: {fileID: 0}
   isCrystalCutscene: 0
   postCutsceneLines: []
+  triggerOnce: 0
+  triggerOncePersistent: 0
+  customPersistentKey: 
 --- !u!61 &1962646989
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2296,15 +2351,19 @@ MonoBehaviour:
   - text: Besok pagi temui saya di hutan samsara
     speaker: Bos Proyek
     portrait: {fileID: 1681846763715156584, guid: f90397f7f6a027b48a1a19ce43d084ae, type: 3}
-  - text: Wih, ada proyek nih!
+  - text: Projek lagi..
     speaker: Bara
-    portrait: {fileID: -4433109054721328824, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
-  - text: Langsung cus istirahat yuk
+    portrait: {fileID: 248901697488008595, guid: 1e009e4812a5f3b47ac1a20460f7c9d4, type: 3}
+  - text: Langsung tidur saja hari ini
     speaker: Bara
-    portrait: {fileID: 654078645604073550, guid: c7a3d8acac6e97a44b2b183638df1cc2, type: 3}
+    portrait: {fileID: 4182958441366693114, guid: 1e009e4812a5f3b47ac1a20460f7c9d4, type: 3}
   useQuest: 1
   requiredQuest: 0
   nextQuest: 1
+  useFadeBeforeQuestAdvance: 0
+  useQuestRange: 0
+  minQuest: -1
+  maxQuest: -1
   useCutscene: 1
   cutscenePanel: {fileID: 625443245}
   videoPlayer: {fileID: 740638760}
@@ -2320,6 +2379,10 @@ MonoBehaviour:
   giveItem: 0
   itemId: 
   destroyAfterPickup: 1
+  requireItem: 0
+  requiredItemId: 
+  removeItemOnUse: 0
+  additionalObjectToDestroy: {fileID: 0}
   onInteractComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -2330,6 +2393,9 @@ MonoBehaviour:
   crystalToActivate: {fileID: 0}
   isCrystalCutscene: 0
   postCutsceneLines: []
+  triggerOnce: 0
+  triggerOncePersistent: 0
+  customPersistentKey: 
 --- !u!1 &2107926604
 GameObject:
   m_ObjectHideFlags: 0
