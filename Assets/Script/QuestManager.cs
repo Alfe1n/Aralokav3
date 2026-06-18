@@ -7,6 +7,12 @@ public class QuestManager : MonoBehaviour
 {
     public static QuestManager Instance;
 
+    /// <summary>
+    /// Dipanggil setiap kali quest berubah. Digunakan oleh QuestObjectToggle
+    /// agar tidak perlu polling di Update() setiap frame.
+    /// </summary>
+    public static event System.Action<int> OnQuestChanged;
+
     [Header("UI")]
     public TMP_Text objectiveText;
     public GameObject objectivePanel;
@@ -34,6 +40,36 @@ public class QuestManager : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    /// <summary>
+    /// Setelah Core Scene di-reload, cari ulang referensi UI yang mungkin menjadi null.
+    /// </summary>
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name != "Core Scene") return;
+
+        if (objectivePanel == null)
+        {
+            GameObject questUI = GameObject.Find("QuestUI");
+            if (questUI != null) objectivePanel = questUI;
+        }
+        if (objectiveText == null)
+        {
+            var found = GameObject.Find("ObjectiveText");
+            if (found != null) objectiveText = found.GetComponent<TMPro.TMP_Text>();
+        }
+        Debug.Log($"[QuestManager] OnSceneLoaded Core Scene: objectivePanel={objectivePanel}, objectiveText={objectiveText}");
+    }
+
     private void Start()
     {
         currentQuest = PlayerPrefs.GetInt("CurrentQuest", 0);
@@ -42,9 +78,18 @@ public class QuestManager : MonoBehaviour
 
         HideObjective();
         UpdateObjective();
-        string activeScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-        if (activeScene != "MainMenu" && activeScene != "Boot Scene")
+
+        string activeScene = SceneManager.GetActiveScene().name;
+        bool isMenuOrSystemScene = activeScene == "MainMenu"
+            || activeScene == "Boot Scene"
+            || activeScene == "LoadingScene"
+            || activeScene == "OpeningScene";
+
+        if (!isMenuOrSystemScene)
             ShowObjective();
+
+        // Notify subscribers agar QuestObjectToggle bisa langsung update
+        OnQuestChanged?.Invoke(currentQuest);
     }
 
     // =============================================
@@ -168,6 +213,19 @@ public class QuestManager : MonoBehaviour
         PlayerPrefs.Save();
 
         Debug.Log($"QUEST CHANGED -> {currentQuest}");
+
+        // Auto-save scene & quest setiap kali quest berganti di dalam gameplay scene
+        string activeScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        if (activeScene != "MainMenu" && activeScene != "Boot Scene" && activeScene != "LoadingScene" && activeScene != "OpeningScene")
+        {
+            // Pertahankan spawn terakhir yang tersimpan — jangan hapus posisi saat transisi
+            string lastSpawn = PlayerPrefs.GetString("LastSpawn", "");
+            SaveLastScene(activeScene, lastSpawn);
+            SaveCheckpointQuest();
+        }
+
+        // Notify subscribers (QuestObjectToggle, dll)
+        OnQuestChanged?.Invoke(currentQuest);
 
         UpdateObjective();
         ShowObjective();

@@ -121,11 +121,12 @@ public class EventAreaTrigger : MonoBehaviour
     {
         isEventRunning = true;
 
-        // Sembunyikan objective quest selama event berlangsung
+        // Sembunyikan objective quest dan GUI OrangUtan selama event berlangsung
         if (QuestManager.Instance != null)
         {
             QuestManager.Instance.HideObjective();
         }
+        OrangUtanUIVisibility.Instance?.ForceHide();
 
         // 1. Kunci pergerakan player
         if (activePlayer != null)
@@ -235,6 +236,7 @@ public class EventAreaTrigger : MonoBehaviour
         {
             QuestManager.Instance.ShowObjective();
         }
+        OrangUtanUIVisibility.Instance?.ForceRefresh();
 
         isEventRunning = false;
         if (triggerOnce)

@@ -230,11 +230,14 @@ public class InteractableObject : MonoBehaviour
             QuestManager.Instance.HideObjective();
         }
 
+        OrangUtanUIVisibility.Instance?.ForceHide();
+
         // === CRYSTAL CUTSCENE MODE ===
         if (isCrystalCutscene)
         {
             yield return StartCoroutine(CrystalCutsceneSequence());
             if (playerMovement != null) playerMovement.canMove = true;
+            OrangUtanUIVisibility.Instance?.ForceRefresh();
             isInteracting = false;
             Destroy(gameObject);
             yield break;
@@ -399,6 +402,8 @@ public class InteractableObject : MonoBehaviour
         {
             QuestManager.Instance.ShowObjective();
         }
+
+        OrangUtanUIVisibility.Instance?.ForceRefresh();
  
         if (triggerOnce)
         {

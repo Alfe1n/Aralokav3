@@ -52,6 +52,10 @@ public class DecisionManager : MonoBehaviour
 
     public IEnumerator ShowDecision()
     {
+        // Sembunyikan GUI OrangUtan selama cutscene pilihan berlangsung
+        OrangUtanUIVisibility.Instance?.ForceHide();
+        if (QuestManager.Instance != null) QuestManager.Instance.HideObjective();
+
         // 1. Fade ke hitam
         FadeUI activeFader = GetActiveFader();
         if (activeFader != null)
@@ -164,5 +168,9 @@ public class DecisionManager : MonoBehaviour
         // 9. Fade balik ke game — player sudah di posisi baru
         if (activeFader != null)
             yield return StartCoroutine(activeFader.FadeIn());
+
+        // Restore GUI OrangUtan dan Quest UI setelah cutscene selesai
+        OrangUtanUIVisibility.Instance?.ForceRefresh();
+        if (QuestManager.Instance != null) QuestManager.Instance.ShowObjective();
     }
 }

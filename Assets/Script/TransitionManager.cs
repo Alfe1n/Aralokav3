@@ -71,6 +71,7 @@ public class TransitionManager : MonoBehaviour
     {
         isTransitioning = true;
         Debug.Log($"TRANSITION -> {targetScene} (useFade: {useFade})");
+        OrangUtanUIVisibility.Instance?.ForceHide();
 
         try
         {
@@ -86,6 +87,7 @@ public class TransitionManager : MonoBehaviour
             }
 
             SpawnManager.spawnPointName = targetSpawn;
+            PlayerPrefs.SetString("LastSpawn", targetSpawn); // cache awal agar auto-save punya spawn name yang benar
             Scene currentScene = SceneManager.GetActiveScene();
 
             FadeUI activeFader = GetFader();
@@ -350,6 +352,8 @@ public class TransitionManager : MonoBehaviour
             {
                 QuestManager.Instance.ShowObjective();
             }
+
+            OrangUtanUIVisibility.Instance?.ForceRefresh();
 
             Debug.Log("TRANSITION FINISHED");
         }

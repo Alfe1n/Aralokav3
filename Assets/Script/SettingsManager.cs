@@ -110,30 +110,17 @@ public class SettingsManager : MonoBehaviour
         // reset pause
         Time.timeScale = 1f;
 
-        // Hancurkan objek manager yang persisten
+        // Hancurkan hanya manager DontDestroyOnLoad agar tidak duplikat
+        // JANGAN unload Core Scene manual \u2014 SceneManager.LoadScene("Boot Scene")
+        // akan otomatis unload semua scene termasuk Core Scene.
         QuestManager[] questManagers = Object.FindObjectsByType<QuestManager>(FindObjectsSortMode.None);
         foreach (var q in questManagers) Destroy(q.gameObject);
 
         TransitionManager[] transitionManagers = Object.FindObjectsByType<TransitionManager>(FindObjectsSortMode.None);
         foreach (var t in transitionManagers) Destroy(t.gameObject);
 
-        RescueManager[] rescueManagers = Object.FindObjectsByType<RescueManager>(FindObjectsSortMode.None);
-        foreach (var r in rescueManagers) Destroy(r.gameObject);
-
-        // Hancurkan player yang persisten
         PlayerMovement[] players = Object.FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
         foreach (var p in players) Destroy(p.gameObject);
-
-        // Hancurkan DontDestroyOnLoad container jika ada
-        GameObject dontDestroyObj = GameObject.Find("DontDestroyOnLoad");
-        if (dontDestroyObj != null) Destroy(dontDestroyObj);
-
-        // Unload Core Scene secara additive agar bisa dimuat ulang dengan fresh
-        Scene coreScene = SceneManager.GetSceneByName("Core Scene");
-        if (coreScene.isLoaded)
-        {
-            SceneManager.UnloadSceneAsync(coreScene);
-        }
 
         // tutup setting
         optionsPanel.SetActive(false);

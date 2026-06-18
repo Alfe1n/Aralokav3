@@ -37,12 +37,12 @@ public class LoadingManager : MonoBehaviour
         }
 
         // =========================
-        // PLAY VIDEO
+        // PREPARE VIDEO (non-blocking — biarkan prepare sambil scene loading)
         // =========================
 
         if (videoPlayer != null)
         {
-            videoPlayer.Play();
+            videoPlayer.Prepare();
         }
 
         float timer = 0f;
@@ -54,10 +54,17 @@ public class LoadingManager : MonoBehaviour
         if (SceneManager.GetSceneByName("Core Scene").isLoaded)
         {
             // Cek apakah Core Scene rusak/tidak lengkap
-            bool isCoreSceneBroken = QuestManager.Instance == null || GameObject.Find("Canvas") == null;
+            // Termasuk kasus QuestManager masih ada di DontDestroyOnLoad
+            // tapi objectivePanel-nya null (stale reference setelah pindah scene)
+            bool isCoreSceneBroken = QuestManager.Instance == null
+                || QuestManager.Instance.objectivePanel == null
+                || GameObject.Find("Canvas") == null;
             if (isCoreSceneBroken)
             {
                 Debug.Log("[LoadingManager] Core Scene terdeteksi rusak/tidak lengkap. Memuat ulang secara fresh...");
+                // Hancurkan QuestManager lama agar yang baru dari Core Scene bisa initialize
+                if (QuestManager.Instance != null) Destroy(QuestManager.Instance.gameObject);
+                if (TransitionManager.Instance != null) Destroy(TransitionManager.Instance.gameObject);
                 yield return SceneManager.UnloadSceneAsync("Core Scene");
             }
         }
@@ -156,6 +163,20 @@ public class LoadingManager : MonoBehaviour
         {
             timer += Time.deltaTime;
             yield return null;
+        }
+
+        // =========================
+        // PLAY VIDEO SEKARANG (semua scene selesai dimuat, CPU lebih bebas)
+        // Audio tidak akan terpotong karena loading sudah beres
+        // =========================
+
+        if (videoPlayer != null)
+        {
+            // Tunggu prepare selesai (biasanya sudah selesai sejak lama)
+            while (!videoPlayer.isPrepared)
+                yield return null;
+
+            videoPlayer.Play();
         }
 
         // =========================

@@ -4441,6 +4441,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5968921337254244124, guid: 54fea031981d59c489b599f202d125f6, type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5968921337254244124, guid: 54fea031981d59c489b599f202d125f6, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5968921337254244124, guid: 54fea031981d59c489b599f202d125f6, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5968921337254244124, guid: 54fea031981d59c489b599f202d125f6, type: 3}
+      propertyPath: portraitImage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6638203174959425997, guid: 54fea031981d59c489b599f202d125f6, type: 3}
       propertyPath: m_Name
       value: UI
@@ -4450,21 +4466,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1105376919394674238, guid: 54fea031981d59c489b599f202d125f6, type: 3}
+    - {fileID: 5921988572670260930, guid: 54fea031981d59c489b599f202d125f6, type: 3}
+    - {fileID: 8015097659170863665, guid: 54fea031981d59c489b599f202d125f6, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54fea031981d59c489b599f202d125f6, type: 3}
---- !u!114 &322073047 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6253848305531339836, guid: 54fea031981d59c489b599f202d125f6, type: 3}
-  m_PrefabInstance: {fileID: 322073046}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9163b7cac0e9494882ffcba53ceedbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FadeUI
 --- !u!114 &322073048 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2182566850656928129, guid: 54fea031981d59c489b599f202d125f6, type: 3}
@@ -9249,7 +9257,7 @@ MonoBehaviour:
   isRescueInteraction: 1
   rescueId: kakaktua
   npcVisual: {fileID: 802296286}
-  fader: {fileID: 322073047}
+  fader: {fileID: 0}
   crystalToActivate: {fileID: 882901275}
   isCrystalCutscene: 0
   postCutsceneLines: []
@@ -10106,7 +10114,7 @@ PrefabInstance:
     - target: {fileID: 8060994495636320733, guid: bae917cf0f119e149b2d057a5c1f9fcc, type: 3}
       propertyPath: fader
       value: 
-      objectReference: {fileID: 322073047}
+      objectReference: {fileID: 0}
     - target: {fileID: 8060994495636320733, guid: bae917cf0f119e149b2d057a5c1f9fcc, type: 3}
       propertyPath: videoPlayer
       value: 
