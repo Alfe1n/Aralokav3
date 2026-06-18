@@ -95,7 +95,7 @@ public class TransitionManager : MonoBehaviour
             // =====================================
             if (useFade && activeFader != null)
             {
-                activeFader.SetBlackInstant();
+                yield return StartCoroutine(activeFader.FadeOut());
             }
 
             // =====================================
@@ -258,8 +258,14 @@ public class TransitionManager : MonoBehaviour
 
             if (spawnObj != null && newTarget != null)
             {
-                newTarget.position = spawnObj.transform.position;
-                Debug.Log($"[TransitionManager] Teleported player {newTarget.name} to {targetSpawn} at {spawnObj.transform.position}");
+                // Reset water state sebelum teleport agar tidak terbawa ke scene baru
+                WaterInteractor wi = newTarget.GetComponent<WaterInteractor>();
+                if (wi != null) wi.ForceExitWater();
+
+                Vector3 spawnPos = spawnObj.transform.position;
+                spawnPos.z = 1f;
+                newTarget.position = spawnPos;
+                Debug.Log($"[TransitionManager] Teleported player {newTarget.name} to {targetSpawn} at {spawnPos}");
             }
             else
             {

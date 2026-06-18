@@ -15,6 +15,7 @@ public class ArenaManager : MonoBehaviour
 {
     [Header("Setup")]
     public GameObject[] enemies;
+    public HutanSpawner[] hutanSpawners;
     public GameObject wallNorth;
 
     [Header("Dialog Setelah Arena")]
@@ -51,7 +52,10 @@ public class ArenaManager : MonoBehaviour
     void Update()
     {
         if (arenaCleared) return;
-        if (enemies == null || enemies.Length == 0) return;
+
+        bool hasEnemies = (enemies != null && enemies.Length > 0) ||
+                          (hutanSpawners != null && hutanSpawners.Length > 0);
+        if (!hasEnemies) return;
 
         if (AllEnemiesDead())
         {
@@ -66,6 +70,11 @@ public class ArenaManager : MonoBehaviour
         foreach (GameObject enemy in enemies)
         {
             if (enemy != null && enemy.activeInHierarchy)
+                return false;
+        }
+        foreach (HutanSpawner spawner in hutanSpawners)
+        {
+            if (spawner != null && !spawner.IsAllDead())
                 return false;
         }
         return true;

@@ -38,6 +38,9 @@ public class WaterInteractor : MonoBehaviour
     private BabiHutanAI babiHutanAI;
     private UlarAI ularAI;
 
+    private float lastSplashTime = -99f;
+    private const float SPLASH_COOLDOWN = 0.5f;
+
     private Sprite solidSquareSprite;
 
     private Sprite GetSolidSquareSprite()
@@ -108,9 +111,13 @@ public class WaterInteractor : MonoBehaviour
 
         ModifySpeed(zone.slowMultiplier);
 
-        if (zone.sfxSource != null && zone.splashEnterClip != null)
+        if (playerMovement != null && zone.sfxSource != null && zone.splashEnterClip != null)
         {
-            zone.sfxSource.PlayOneShot(zone.splashEnterClip);
+            if (Time.time - lastSplashTime >= SPLASH_COOLDOWN)
+            {
+                zone.sfxSource.PlayOneShot(zone.splashEnterClip);
+                lastSplashTime = Time.time;
+            }
         }
 
         SetupSpriteMask();
@@ -161,7 +168,7 @@ public class WaterInteractor : MonoBehaviour
 
         // Restore Z coordinate (from original WaterZone.cs)
         Vector3 pos = transform.position;
-        pos.z = originalZ;
+        pos.z = originalZ > 0f ? originalZ : 1f;
         transform.position = pos;
 
         // Restore original collider offset and size
@@ -173,9 +180,13 @@ public class WaterInteractor : MonoBehaviour
 
         RestoreSpeed();
 
-        if (currentZone != null && currentZone.sfxSource != null && currentZone.splashExitClip != null)
+        if (playerMovement != null && currentZone != null && currentZone.sfxSource != null && currentZone.splashExitClip != null)
         {
-            currentZone.sfxSource.PlayOneShot(currentZone.splashExitClip);
+            if (Time.time - lastSplashTime >= SPLASH_COOLDOWN)
+            {
+                currentZone.sfxSource.PlayOneShot(currentZone.splashExitClip);
+                lastSplashTime = Time.time;
+            }
         }
 
         if (waterMask != null)
@@ -275,6 +286,28 @@ public class WaterInteractor : MonoBehaviour
         }
         originalSpeed = -1f;
         originalChargeSpeed = -1f;
+    }
+
+    public void ForceExitWater()
+    {
+        if (!isInWater) return;
+        isInWater = false;
+        currentZone = null;
+
+        RestoreSpeed();
+
+        Vector3 pos = transform.position;
+        pos.z = originalZ > 0f ? originalZ : 1f;
+        transform.position = pos;
+
+        if (hasCapsuleCollider && capsuleCollider != null)
+        {
+            capsuleCollider.offset = originalCapsuleOffset;
+            capsuleCollider.size = originalCapsuleSize;
+        }
+
+        if (waterMask != null) waterMask.enabled = false;
+        if (sr != null) sr.maskInteraction = SpriteMaskInteraction.None;
     }
 
     private void OnDisable()

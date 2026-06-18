@@ -13,13 +13,13 @@ GameObject:
   - component: {fileID: 6966595101802334616}
   - component: {fileID: 2065321965162694228}
   - component: {fileID: 386563303340844211}
-  - component: {fileID: -750229717664192124}
-  - component: {fileID: 2281921602325105157}
-  - component: {fileID: 8143128234330548025}
+  - component: {fileID: 1850160865837540992}
+  - component: {fileID: 1317557165217379359}
+  - component: {fileID: 2732946106287695195}
   - component: {fileID: 8700859347878881545}
   - component: {fileID: 974586976584587218}
-  - component: {fileID: -8746027326594253095}
   - component: {fileID: 7616941497728366699}
+  - component: {fileID: 3041969465305930697}
   m_Layer: 0
   m_Name: Buaya
   m_TagString: Enemy
@@ -90,7 +90,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -2049415159
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 2
   m_Sprite: {fileID: -8131761260938231150, guid: c9506d3ba1a08b54db791be9794490f0, type: 3}
@@ -189,7 +189,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-750229717664192124
+--- !u!114 &1850160865837540992
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,10 +198,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2698347527410525794}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2c16740dba39674da9646aea1cf4594, type: 3}
+  m_Script: {fileID: 11500000, guid: a95f04f9677b6d44bae9dc798d70fd79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitEffect
---- !u!114 &2281921602325105157
+--- !u!114 &1317557165217379359
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -210,27 +210,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 2698347527410525794}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36d64d9144b9b434fa649e636967a205, type: 3}
+  m_Script: {fileID: 11500000, guid: 8422e41a641e8ac46b06f8fb3bc64d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HitSound
+  audioSource: {fileID: 8700859347878881545}
+  hitClip: {fileID: 8300000, guid: 69519fc9dea444c4fa7618f507d1d0b3, type: 3}
+--- !u!114 &2732946106287695195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2698347527410525794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aee8a6ec16b6d4429510da0eeb67ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Knockback
   rb: {fileID: 386563303340844211}
   knockbackForce: 5
   knockbackDuration: 0.2
-  isKnockedBack: 0
---- !u!114 &8143128234330548025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2698347527410525794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f005323c0d50f8241a80ba9818c4d107, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HitSound
-  audioSource: {fileID: 8700859347878881545}
-  hitClip: {fileID: 8300000, guid: 69519fc9dea444c4fa7618f507d1d0b3, type: 3}
 --- !u!82 &8700859347878881545
 AudioSource:
   m_ObjectHideFlags: 0
@@ -355,21 +354,6 @@ MonoBehaviour:
   chargeDuration: 0.8
   recoverTime: 1.2
   attackDuration: 0.5
---- !u!114 &-8746027326594253095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2698347527410525794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7b2ba0b24f732c41a18887aa519ca10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Health
-  maxHealth: 5
-  currentHealth: 5
-  isPlayer: 0
 --- !u!114 &7616941497728366699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,6 +368,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WaterInteractor
   waterMask: {fileID: 7014522248769636517}
   colliderBottomOffset: 0
+--- !u!114 &3041969465305930697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2698347527410525794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d25c214e81f23439b38a2cfcaa592d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHealth: 3
+  currentHealth: 3
+  isPlayer: 0
 --- !u!1 &3915677981263835413
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,7 +393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7434954211808416956}
   - component: {fileID: 8902735364493998954}
-  - component: {fileID: 8303903513942962204}
+  - component: {fileID: 6595103898405853275}
   m_Layer: 0
   m_Name: EnemyAttackHitbox
   m_TagString: Untagged
@@ -463,7 +462,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.8431396, y: 1.3838196}
   m_EdgeRadius: 0
---- !u!114 &8303903513942962204
+--- !u!114 &6595103898405853275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -472,7 +471,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3915677981263835413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ef355b6439ca034983b0ca7e430ce97, type: 3}
+  m_Script: {fileID: 11500000, guid: 0fc8b5095ad675b45a197e20ab6cf32d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAttackHitbox
   damage: 1
@@ -553,14 +552,14 @@ SpriteMask:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -2049415159
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 718307971
   m_BackSortingLayerID: 0
-  m_FrontSortingLayer: 6
+  m_FrontSortingLayer: 0
   m_BackSortingLayer: 0
   m_FrontSortingOrder: 32767
   m_BackSortingOrder: -32768

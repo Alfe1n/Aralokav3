@@ -20,6 +20,9 @@ public class MazeDarkness : MonoBehaviour
     public float normalOrthoSize = 6f;
     public float mazeOrthoSize = 3.5f;
 
+    [Header("Wall Arena (Opsional)")]
+    public GameObject[] wallArena;
+
     private float targetIntensity;
     private float targetOrthoSize;
 
@@ -96,6 +99,9 @@ public class MazeDarkness : MonoBehaviour
         targetIntensity = darkIntensity;
         targetOrthoSize = mazeOrthoSize;
         if (playerLight) playerLight.enabled = true;
+
+        if (wallArena != null)
+            foreach (var wall in wallArena) if (wall != null) wall.SetActive(true);
     }
 
     public void ExitMaze()
@@ -104,6 +110,9 @@ public class MazeDarkness : MonoBehaviour
         targetIntensity = normalIntensity;
         targetOrthoSize = normalOrthoSize;
         if (playerLight) playerLight.enabled = false;
+
+        if (wallArena != null)
+            foreach (var wall in wallArena) if (wall != null) wall.SetActive(false);
     }
 
     void OnDestroy()

@@ -104,6 +104,28 @@ public class FadeUI : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    // ── Static helpers — pakai dari script manapun tanpa cari instance manual ──
+    public static IEnumerator Out()
+    {
+        if (instance != null) yield return instance.FadeOut();
+    }
+
+    public static IEnumerator In()
+    {
+        if (instance != null) yield return instance.FadeIn();
+    }
+
+    public static void BlackInstant()
+    {
+        if (instance != null) instance.SetBlackInstant();
+    }
+
+    public static void ClearInstant()
+    {
+        if (instance != null) instance.SetTransparentInstant();
+    }
+    // ─────────────────────────────────────────────────────────────────────────
+
     /// <summary>
     /// Fades the screen overlay from transparent (or current alpha) to solid black.
     /// </summary>

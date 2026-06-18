@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: 11bebe0725ce31e4ba484de2fe5602ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2094805944127777215
+    second: Crystal UI_0
+  - first:
+      213: -8219612113173692982
+    second: Crystal UI_1
+  - first:
+      213: -7173718081620854900
+    second: Crystal UI_2
+  - first:
+      213: -5208089618661256944
+    second: Crystal UI_3
+  - first:
+      213: -2099757527790683034
+    second: Crystal UI_4
+  - first:
+      213: -5064311943853346393
+    second: Crystal UI_5
+  - first:
+      213: -7466494763757613819
+    second: Crystal UI_6
+  - first:
+      213: 793646020006209352
+    second: Crystal UI_7
+  - first:
+      213: -5335829195577155957
+    second: Crystal UI_8
+  - first:
+      213: -2109403568260399531
+    second: Crystal UI_9
+  - first:
+      213: 1166354157660233032
+    second: Crystal UI_10
+  - first:
+      213: 8792725517633404374
+    second: Crystal UI_11
+  - first:
+      213: 5992553826631975495
+    second: Crystal UI_12
+  - first:
+      213: 4954099979299007779
+    second: Crystal UI_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Crystal UI_2
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 657
+        width: 215
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb9ec1d48ee321d10800000000000000
+      internalID: 2094805944127777215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal UI_1
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 662
+        width: 215
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdb8ca15521eed80800000000000000
+      internalID: -8219612113173692982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal UI_3
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 219
+        width: 232
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e1777fd9353f5b0800000000000000
+      internalID: -5335829195577155957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal UI_4
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 211
+        width: 244
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55eb5e971a4e9b2e0800000000000000
+      internalID: -2109403568260399531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crystal UI_5
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 210
+        width: 215
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d53a14de8bf2010800000000000000
+      internalID: 1166354157660233032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ebb197a66d21b3c4c8a6cad5727dae08
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      1: 2094805944127777215
+      Crystal UI_1: -8219612113173692982
+      Crystal UI_11: 8792725517633404374
+      Crystal UI_12: 5992553826631975495
+      Crystal UI_13: 4954099979299007779
+      Crystal UI_2: 2094805944127777215
+      Crystal UI_3: -5335829195577155957
+      Crystal UI_4: -2109403568260399531
+      Crystal UI_5: 1166354157660233032
+      Crystal UI_7: 793646020006209352
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

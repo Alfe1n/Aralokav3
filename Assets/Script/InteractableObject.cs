@@ -475,7 +475,7 @@ public class InteractableObject : MonoBehaviour
         }
 
         FadeUI activeFader = GetActiveFader();
-
+        Debug.Log("Fader found: " + (activeFader != null));
         // 2. Fade ke hitam
         if (activeFader != null)
             yield return StartCoroutine(activeFader.FadeOut());
@@ -524,6 +524,10 @@ public class InteractableObject : MonoBehaviour
             while (DialogueManager.instance.IsDialogueActive())
                 yield return null;
         }
+
+        // 10. Tampilkan UI crystal Pancarona
+        if (PancaronaCrystalUI.instance != null)
+            PancaronaCrystalUI.instance.CollectCrystal();
     }
 
     void OnTriggerEnter2D(Collider2D other)

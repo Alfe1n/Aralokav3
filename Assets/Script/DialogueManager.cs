@@ -272,6 +272,15 @@ public class DialogueManager : MonoBehaviour
         return dialogueActive;
     }
 
+    // Jalankan dialog dengan fade hitam sebelum dan sesudah
+    public IEnumerator StartDialogueWithFade(DialogueLine[] lines)
+    {
+        yield return StartCoroutine(FadeUI.Out());
+        StartDialogue(lines);
+        yield return StartCoroutine(FadeUI.In());
+        while (IsDialogueActive()) yield return null;
+    }
+
     public int GetCurrentIndex()
     {
         return currentIndex;

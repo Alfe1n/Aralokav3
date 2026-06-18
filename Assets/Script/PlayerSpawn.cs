@@ -72,8 +72,10 @@ public class PlayerSpawn : MonoBehaviour
 
         if (spawn != null)
         {
-            Debug.Log($"[PlayerSpawn] Teleporting {gameObject.name} to {spawnName} at {spawn.transform.position}");
-            transform.position = spawn.transform.position;
+            Vector3 spawnPos = spawn.transform.position;
+            spawnPos.z = 1f;
+            Debug.Log($"[PlayerSpawn] Teleporting {gameObject.name} to {spawnName} at {spawnPos}");
+            transform.position = spawnPos;
         }
         else
         {

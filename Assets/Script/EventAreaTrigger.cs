@@ -11,6 +11,12 @@ public class EventAreaTrigger : MonoBehaviour
     [Tooltip("Berapa detik menunggu sebelum event (kamera/dialog) dimulai")]
     public float initialDelayDuration = 2f;
 
+    [Header("Fade")]
+    [Tooltip("Fade ke hitam sebelum event dimulai")]
+    public bool useFadeIn = false;
+    [Tooltip("Fade balik terang setelah event selesai")]
+    public bool useFadeOut = false;
+
     [Header("Camera Panning")]
     [Tooltip("Target objek yang akan disorot kamera saat event terjadi")]
     public Transform cameraTarget;
@@ -127,6 +133,10 @@ public class EventAreaTrigger : MonoBehaviour
             activePlayer.canMove = false;
         }
 
+        // Fade ke hitam sebelum event
+        if (useFadeIn)
+            yield return StartCoroutine(FadeUI.Out());
+
         // --- TAMBAHAN BARU: INITIAL DELAY ---
         if (useInitialDelay && initialDelayDuration > 0f)
         {
@@ -204,6 +214,10 @@ public class EventAreaTrigger : MonoBehaviour
             // Beri jeda kecil setelah kamera kembali agar transisi terasa alami sebelum dilepas
             yield return new WaitForSeconds(0.2f);
         }
+
+        // Fade balik terang setelah event
+        if (useFadeOut)
+            yield return StartCoroutine(FadeUI.In());
 
         // 6. Lepaskan kunci pergerakan
         if (activePlayer != null)

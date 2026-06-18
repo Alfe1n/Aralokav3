@@ -58,6 +58,10 @@ public class PlayerMovement : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         knockback = GetComponent<Knockback>();
+
+        Vector3 pos = transform.position;
+        pos.z = 1f;
+        transform.position = pos;
     }
 
     void Update()
