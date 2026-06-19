@@ -283,6 +283,10 @@ public class GameOverManager : MonoBehaviour
         {
             Debug.Log($"[GameOverManager] Mereset scene '{activeGameplayScene}' dari awal...");
 
+            // Hapus PlayerPrefs health items agar bisa spawn ulang saat retry
+            HealthItemSpawner[] spawners = Object.FindObjectsByType<HealthItemSpawner>(FindObjectsSortMode.None);
+            foreach (var s in spawners) s.ClearPrefs();
+
             // Unload scene gameplay saat ini
             yield return SceneManager.UnloadSceneAsync(activeGameplayScene);
 
@@ -328,6 +332,7 @@ public class GameOverManager : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.currentHealth = playerHealth.maxHealth;
+                OrangUtanHealthUI.instance?.RefreshUI();
             }
 
             SpriteRenderer sr = activePlayer.GetComponent<SpriteRenderer>();

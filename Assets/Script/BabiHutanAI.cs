@@ -35,11 +35,16 @@ public class BabiHutanAI : MonoBehaviour
     private Vector2 patrolCenter;
     private Vector2 chaseTarget;
     private float chaseTimer;
+    private Vector3 hitboxDefaultLocalPos;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         patrolCenter = transform.position;
+
+        // Simpan posisi default hitbox dari prefab
+        if (attackHitbox != null)
+            hitboxDefaultLocalPos = attackHitbox.transform.localPosition;
 
         if (player == null || player == transform || player.GetComponent<PlayerMovement>() == null || !player.gameObject.activeInHierarchy)
             FindActivePlayer();
@@ -235,7 +240,8 @@ public class BabiHutanAI : MonoBehaviour
             if (attackHitbox != null)
             {
                 float frontOffset = Mathf.Max(1.0f, attackRange * 0.5f);
-                attackHitbox.transform.localPosition = new Vector3(frontOffset, 0f, 0f);
+                // Pertahankan Y dari posisi default prefab, hanya geser X ke depan
+                attackHitbox.transform.localPosition = new Vector3(frontOffset, hitboxDefaultLocalPos.y, 0f);
                 attackHitbox.SetActive(true);
             }
 
@@ -254,7 +260,10 @@ public class BabiHutanAI : MonoBehaviour
             }
 
             if (attackHitbox != null)
+            {
                 attackHitbox.SetActive(false);
+                attackHitbox.transform.localPosition = hitboxDefaultLocalPos; // reset ke posisi prefab
+            }
 
             // FASE DECELERATE
             float decelerateTimer = 0f;
@@ -288,7 +297,10 @@ public class BabiHutanAI : MonoBehaviour
             if (animator != null)
                 animator.speed = 1f;
             if (attackHitbox != null)
+            {
                 attackHitbox.SetActive(false);
+                attackHitbox.transform.localPosition = hitboxDefaultLocalPos;
+            }
             isAttacking = false;
         }
     }

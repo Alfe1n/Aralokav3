@@ -46,14 +46,19 @@ public class ArenaTrigger : MonoBehaviour
 
             arenaManager.enabled = true;
 
-            // Cari spawner yang menjadi child dari ArenaManager atau secara global dan picu spawn
+            // Picu EnemySpawner
             EnemySpawner[] spawners = arenaManager.GetComponentsInChildren<EnemySpawner>(true);
             foreach (EnemySpawner spawner in spawners)
             {
                 if (!spawner.spawnOnStart)
-                {
                     spawner.SpawnEnemies();
-                }
+            }
+
+            // Picu HutanSpawner (ular, buaya, dll)
+            foreach (HutanSpawner hs in arenaManager.hutanSpawners)
+            {
+                if (hs != null && !hs.spawnOnStart)
+                    hs.SpawnAll();
             }
         }
 

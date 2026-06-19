@@ -5,6 +5,9 @@ public class HealthItem : MonoBehaviour
     [Header("Heal")]
     public int healAmount = 1;
 
+    [Header("SFX")]
+    public AudioClip healSFX;
+
     [Header("Persistence")]
     [Tooltip("Centang agar item tidak muncul lagi setelah diambil (permanen)")]
     public bool persistent = true;
@@ -43,8 +46,15 @@ public class HealthItem : MonoBehaviour
         if (pm != null)
         {
             Health hp = pm.GetComponent<Health>();
-            if (hp != null) hp.Heal(healAmount);
+            if (hp != null)
+            {
+                hp.Heal(healAmount);
+                OrangUtanHealthUI.instance?.RefreshUI();
+            }
         }
+
+        if (healSFX != null)
+            AudioSource.PlayClipAtPoint(healSFX, transform.position);
 
         if (DialogueManager.instance != null)
             DialogueManager.instance.HidePrompt();

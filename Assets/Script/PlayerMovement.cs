@@ -16,11 +16,10 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Footstep Audio")]
     public AudioSource footstepSource;
-    public AudioClip[] footstepClips;
+    public AudioClip footstepClip;
+    public AudioClip waterFootstepClip;
 
-    public float footstepDelay = 0.4f;
-
-    private float footstepTimer;
+    private AudioClip lastFootstepClip;
 
     private Animator animator;
     private SpriteRenderer sr;
@@ -193,29 +192,32 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleFootstep()
     {
-        // kalau ga bisa gerak dan tidak sedang auto-walk → ga ada footstep
-        if (!canMove && autoMoveTarget == null) return;
+        if (footstepSource == null) return;
 
-        bool isMoving = (h != 0 || v != 0);
+        bool isMoving = (h != 0 || v != 0) && (canMove || autoMoveTarget != null);
+        AudioClip targetClip = (isInWater && waterFootstepClip != null)
+            ? waterFootstepClip
+            : footstepClip;
 
-        if (!isMoving) return;
-
-        // countdown timer
-        footstepTimer -= Time.deltaTime;
-
-        if (footstepTimer <= 0f)
+        if (isMoving && targetClip != null)
         {
-            if (footstepClips.Length > 0)
+            // Ganti clip jika berpindah antara darat/air
+            if (footstepSource.clip != targetClip)
             {
-                int randomIndex =
-                    Random.Range(0, footstepClips.Length);
-
-                footstepSource.PlayOneShot(
-                    footstepClips[randomIndex]
-                );
+                footstepSource.clip = targetClip;
+                footstepSource.loop = true;
+                footstepSource.Play();
             }
-
-            footstepTimer = footstepDelay;
+            else if (!footstepSource.isPlaying)
+            {
+                footstepSource.loop = true;
+                footstepSource.Play();
+            }
+        }
+        else
+        {
+            if (footstepSource.isPlaying)
+                footstepSource.Stop();
         }
     }
 

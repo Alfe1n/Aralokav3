@@ -43,20 +43,18 @@ public class SettingsManager : MonoBehaviour
 
     public void ToggleOptions()
     {
-        bool isActive =
-            !optionsPanel.activeSelf;
+        bool isActive = !optionsPanel.activeSelf;
 
         optionsPanel.SetActive(isActive);
+        Time.timeScale = isActive ? 0f : 1f;
 
-        Time.timeScale =
-            isActive ? 0f : 1f;
+        // Selalu tampilkan cursor saat pause, sembunyikan saat resume
+        Cursor.visible = isActive;
+        Cursor.lockState = isActive ? CursorLockMode.None : CursorLockMode.Locked;
 
-        // kalau buka setting
         if (isActive)
         {
-            // reset panel
             mainPanel.SetActive(true);
-
             soundsPanel.SetActive(false);
             controlsPanel.SetActive(false);
         }
@@ -80,18 +78,14 @@ public class SettingsManager : MonoBehaviour
 
     public void ResumeGame()
     {
-        // tutup semua sub panel
         soundsPanel.SetActive(false);
         controlsPanel.SetActive(false);
-
-        // balik ke main
         mainPanel.SetActive(true);
-
-        // hide setting
         optionsPanel.SetActive(false);
 
-        // resume game
         Time.timeScale = 1f;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void ToggleSound()
@@ -107,12 +101,14 @@ public class SettingsManager : MonoBehaviour
 
     public void ExitToMainMenu()
     {
-        // reset pause
         Time.timeScale = 1f;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.None;
 
-        // Hancurkan hanya manager DontDestroyOnLoad agar tidak duplikat
-        // JANGAN unload Core Scene manual \u2014 SceneManager.LoadScene("Boot Scene")
-        // akan otomatis unload semua scene termasuk Core Scene.
+        // Sembunyikan objective panel sebelum QuestManager di-destroy
+        if (QuestManager.Instance != null)
+            QuestManager.Instance.HideObjective();
+
         QuestManager[] questManagers = Object.FindObjectsByType<QuestManager>(FindObjectsSortMode.None);
         foreach (var q in questManagers) Destroy(q.gameObject);
 

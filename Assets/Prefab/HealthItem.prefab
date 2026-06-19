@@ -152,5 +152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthItem
   healAmount: 1
+  healSFX: {fileID: 8300000, guid: 92eeacbfce3eff74e947c7b1f7bde162, type: 3}
   persistent: 1
   persistentKey: 

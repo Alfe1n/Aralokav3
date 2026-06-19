@@ -105,12 +105,14 @@ public class TransitionManager : MonoBehaviour
             // =====================================
             // Harus Additive agar Core Scene (Player, Quest, UI) tidak ikut terhapus!
             Debug.Log($"[TransitionManager] Loading scene: {targetScene} additively. Current active scene is: {currentScene.name}");
-            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Additive);
-            
-            while (!asyncLoad.isDone)
+
+            // Cek apakah scene sudah ter-load (misal scene sedang terbuka di Editor)
+            if (!SceneManager.GetSceneByName(targetScene).isLoaded)
             {
-                yield return null;
+                AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Additive);
+                while (!asyncLoad.isDone) yield return null;
             }
+
             Debug.Log($"[TransitionManager] Additive load of scene: {targetScene} is done.");
 
             // Set scene baru sebagai scene aktif

@@ -103,7 +103,6 @@ public class LoadingManager : MonoBehaviour
 
         foreach (PlayerMovement p in allPlayers)
         {
-            // Abaikan prefab
             if (string.IsNullOrEmpty(p.gameObject.scene.name)) continue;
 
             if (p.CompareTag("Player-Orang Utan"))
@@ -115,38 +114,6 @@ public class LoadingManager : MonoBehaviour
             {
                 p.gameObject.SetActive(!useOrangUtan);
                 if (!useOrangUtan) newTarget = p.transform;
-            }
-        }
-
-        // UPDATE CINEMACHINE CAMERA TARGET (Version Agnostic)
-        if (newTarget != null)
-        {
-            MonoBehaviour[] allScripts = Resources.FindObjectsOfTypeAll<MonoBehaviour>();
-            foreach (var script in allScripts)
-            {
-                string scriptName = script.GetType().Name;
-                if (scriptName == "CinemachineVirtualCamera" || scriptName == "CinemachineCamera")
-                {
-                    var followProp = script.GetType().GetProperty("Follow");
-                    if (followProp != null)
-                    {
-                        followProp.SetValue(script, newTarget);
-                    }
-                    else
-                    {
-                        var targetProp = script.GetType().GetProperty("Target");
-                        if (targetProp != null)
-                        {
-                            object targetStruct = targetProp.GetValue(script);
-                            var trackingField = targetStruct.GetType().GetField("TrackingTarget");
-                            if (trackingField != null)
-                            {
-                                trackingField.SetValue(targetStruct, newTarget);
-                                targetProp.SetValue(script, targetStruct);
-                            }
-                        }
-                    }
-                }
             }
         }
 
@@ -163,6 +130,40 @@ public class LoadingManager : MonoBehaviour
         {
             timer += Time.deltaTime;
             yield return null;
+        }
+
+        // UPDATE CINEMACHINE CAMERA TARGET setelah scene dimuat
+        // agar kamera yang ada di dalam gameplay scene juga ikut ter-update
+        if (newTarget != null)
+        {
+            MonoBehaviour[] allScripts = Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+            foreach (var script in allScripts)
+            {
+                if (script == null) continue;
+                string scriptName = script.GetType().Name;
+                if (scriptName == "CinemachineVirtualCamera" || scriptName == "CinemachineCamera")
+                {
+                    var followProp = script.GetType().GetProperty("Follow");
+                    if (followProp != null)
+                    {
+                        followProp.SetValue(script, newTarget);
+                    }
+                    else
+                    {
+                        var targetProp = script.GetType().GetProperty("Target");
+                        if (targetProp != null)
+                        {
+                            object targetStruct = targetProp.GetValue(script);
+                            var trackingField = targetStruct?.GetType().GetField("TrackingTarget");
+                            if (trackingField != null)
+                            {
+                                trackingField.SetValue(targetStruct, newTarget);
+                                targetProp.SetValue(script, targetStruct);
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         // =========================

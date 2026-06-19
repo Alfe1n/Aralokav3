@@ -1,43 +1,50 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 using System.Collections;
-using System.Collections.Generic;
 
 public class GameStarter : MonoBehaviour
 {
     IEnumerator Start()
     {
-        // Kamera sementara: layar hitam solid agar tidak ada "No cameras rendering"
-        // selama jeda antara Boot Scene aktif dan scene lain belum dimuat
+        // Temp camera: depth sangat tinggi agar menutupi semua kamera lain
         GameObject tempCam = new GameObject("BootCamera");
         Camera cam = tempCam.AddComponent<Camera>();
         cam.backgroundColor = Color.black;
         cam.clearFlags = CameraClearFlags.SolidColor;
-        cam.depth = 99; // Depth TINGGI agar menimpa kamera Core Scene (mencegah flash)
+        cam.depth = 999;
 
-        // Load Core Scene first so managers (QuestManager, etc.) are always available
+        // Load Core Scene (managers, player, FadeUI, dll)
         if (!SceneManager.GetSceneByName("Core Scene").isLoaded)
         {
-            yield return SceneManager.LoadSceneAsync(
-                "Core Scene",
-                LoadSceneMode.Additive
-            );
+            yield return SceneManager.LoadSceneAsync("Core Scene", LoadSceneMode.Additive);
         }
 
-        // Then load Main Menu on top
-        yield return SceneManager.LoadSceneAsync(
-            "MainMenu",
-            LoadSceneMode.Additive
-        );
+        // Segera tutup layar dengan FadeUI agar kamera Core Scene tidak kelihatan
+        FadeUI.BlackInstant();
 
-        SceneManager.SetActiveScene(
-            SceneManager.GetSceneByName("MainMenu")
-        );
+        // Load MainMenu
+        yield return SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Additive);
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName("MainMenu"));
 
-        // Beri 1 frame agar MainMenu sepenuhnya tampil sebelum hapus kamera temp
-        yield return null;
+        // Tunggu VideoPlayer MainMenu siap sebelum fade in
+        VideoPlayer vp = Object.FindFirstObjectByType<VideoPlayer>();
+        if (vp != null && vp.clip != null)
+        {
+            vp.Prepare();
+            float timeout = 3f;
+            while (!vp.isPrepared && timeout > 0f)
+            {
+                timeout -= Time.deltaTime;
+                yield return null;
+            }
+            if (vp.isPrepared) vp.Play();
+        }
 
-        // Hapus kamera sementara — MainMenu sudah siap dan punya kamera sendiri
+        // Hapus temp camera — FadeUI sudah handle blackness
         Destroy(tempCam);
+
+        // Fade in untuk tampilkan MainMenu
+        yield return StartCoroutine(FadeUI.In());
     }
 }

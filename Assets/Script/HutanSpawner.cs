@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 // HutanSpawner — copy langsung, tidak ada dependency konflik
@@ -16,6 +17,7 @@ public class HutanSpawner : MonoBehaviour
     public SpawnEntry[] enemyTypes;
 
     [Header("Settings")]
+    public bool spawnOnStart = true; // matikan jika dipakai di arena (ArenaTrigger yang trigger)
     public bool respawnOnAllDead = true;
     public float respawnDelay = 5f;
 
@@ -24,7 +26,7 @@ public class HutanSpawner : MonoBehaviour
 
     void Start()
     {
-        SpawnAll();
+        if (spawnOnStart) SpawnAll();
     }
 
     void Update()
@@ -38,7 +40,7 @@ public class HutanSpawner : MonoBehaviour
         }
     }
 
-    void SpawnAll()
+    public void SpawnAll()
     {
         spawnedEnemies.RemoveAll(e => e == null);
         isRespawning = false;
@@ -56,6 +58,11 @@ public class HutanSpawner : MonoBehaviour
                 GameObject enemy = Instantiate(
                     entry.prefab, spawnPos, Quaternion.identity
                 );
+
+                // Paksa enemy masuk ke scene milik spawner, bukan active scene
+                if (enemy.scene != gameObject.scene)
+                    SceneManager.MoveGameObjectToScene(enemy, gameObject.scene);
+
                 spawnedEnemies.Add(enemy);
             }
         }

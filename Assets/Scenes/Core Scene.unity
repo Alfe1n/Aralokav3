@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7004}
   - component: {fileID: 7005}
+  - component: {fileID: 7006}
   m_Layer: 5
   m_Name: OrangUtanHealthUIManager
   m_TagString: Untagged
@@ -206,6 +207,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OrangUtanUIVisibility
   guiOrangUtan: {fileID: 7001}
+--- !u!114 &7006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce4458cfb607264380132a96488bc11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OrangUtanHealthUI
+  heartImages:
+  - {fileID: 7043}
+  - {fileID: 7053}
+  - {fileID: 7063}
+  fullSprite: {fileID: 1205695202943600739, guid: d1e3f1bf9e508704fb40059872db2938, type: 3}
+  emptySprite: {fileID: -5743240205760039168, guid: f513f2b3715e0f14b8d25293d7bb3b08, type: 3}
 --- !u!1 &7010
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,6 +3319,18 @@ PrefabInstance:
     - target: {fileID: 6309748602632546486, guid: 48d24476d94c3be40ab5928804a035d1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735600534084814907, guid: 48d24476d94c3be40ab5928804a035d1, type: 3}
+      propertyPath: footstepClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6e12fd1035284cf49b8d5f27ee5b0947, type: 3}
+    - target: {fileID: 6735600534084814907, guid: 48d24476d94c3be40ab5928804a035d1, type: 3}
+      propertyPath: waterFootstepClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 942527ed41888e44fbc0749c4a6ccbd8, type: 3}
+    - target: {fileID: 8421856703600743937, guid: 48d24476d94c3be40ab5928804a035d1, type: 3}
+      propertyPath: m_Resource
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
