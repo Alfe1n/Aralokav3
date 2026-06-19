@@ -1,34 +1,22 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class ChoiceOption : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+/// <summary>
+/// Attach to UI Button GameObject; set `choiceIndex` and wire button OnClick to `OnSelected()`
+/// </summary>
+public class ChoiceOption : MonoBehaviour
 {
-    public int choiceIndex; // 0 = manusia, 1 = harimau
+    [Tooltip("0 = choose manusia (bad), 1 = choose harimau (good) — align with DecisionManager")]
+    public int choiceIndex = 0;
 
-    [Header("Cursor")]
-    public Texture2D handCursor;
-    public Vector2 hotspot = Vector2.zero;
-
-    private DecisionManager decisionManager;
-
-    void Start()
+    public void OnSelected()
     {
-        decisionManager = FindFirstObjectByType<DecisionManager>();
-    }
-
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        Cursor.SetCursor(handCursor, hotspot, CursorMode.Auto);
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-    }
-
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-        decisionManager?.SelectChoice(choiceIndex);
+        if (DecisionManager.instance != null)
+        {
+            DecisionManager.instance.SelectChoice(choiceIndex);
+        }
+        else
+        {
+            Debug.LogWarning("[ChoiceOption] DecisionManager.instance is null.");
+        }
     }
 }
