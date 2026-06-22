@@ -329,6 +329,18 @@ public class TransitionManager : MonoBehaviour
             // =====================================
             // 4. MEMUDAR TERANG SECARA EKSPLISIT
             // =====================================
+            bool isMenuScene = targetScene == "MainMenu" || targetScene == "MainMenu2" ||
+                               targetScene == "OpeningScene" || targetScene == "LoadingScene";
+
+            // Sembunyikan semua gameplay UI sebelum fade-in ke menu (layar masih hitam)
+            if (isMenuScene)
+            {
+                if (QuestManager.Instance != null) QuestManager.Instance.HideObjective();
+                OrangUtanUIVisibility.Instance?.ForceHide();
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
+
             if (useFade && activeFader != null)
             {
                 yield return StartCoroutine(activeFader.FadeIn());
@@ -350,12 +362,15 @@ public class TransitionManager : MonoBehaviour
 
             yield return new WaitForSeconds(0.3f);
 
-            if (QuestManager.Instance != null)
+            if (!isMenuScene && QuestManager.Instance != null)
             {
                 QuestManager.Instance.ShowObjective();
             }
 
-            OrangUtanUIVisibility.Instance?.ForceRefresh();
+            if (!isMenuScene)
+                OrangUtanUIVisibility.Instance?.ForceRefresh();
+            else
+                OrangUtanUIVisibility.Instance?.ForceHide();
 
             Debug.Log("TRANSITION FINISHED");
         }

@@ -36,8 +36,12 @@ public class SettingsManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-
-            ToggleOptions();
+            string scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            bool isGameplay = scene != "MainMenu" && scene != "MainMenu2" &&
+                              scene != "OpeningScene" && scene != "LoadingScene" &&
+                              scene != "Boot Scene" && scene != "Core Scene";
+            if (isGameplay)
+                ToggleOptions();
         }
     }
 
@@ -48,9 +52,10 @@ public class SettingsManager : MonoBehaviour
         optionsPanel.SetActive(isActive);
         Time.timeScale = isActive ? 0f : 1f;
 
-        // Selalu tampilkan cursor saat pause, sembunyikan saat resume
+        // Tampilkan cursor saat pause, sembunyikan saat resume
+        // Tidak pakai Locked — game 2D tidak perlu lock cursor
         Cursor.visible = isActive;
-        Cursor.lockState = isActive ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.None;
 
         if (isActive)
         {
@@ -85,7 +90,7 @@ public class SettingsManager : MonoBehaviour
 
         Time.timeScale = 1f;
         Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void ToggleSound()

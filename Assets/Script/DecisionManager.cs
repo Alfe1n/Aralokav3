@@ -1,89 +1,125 @@
 using UnityEngine;
-using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
+using UnityEngine.Rendering;
 using TMPro;
 using System.Collections;
 
 /// <summary>
-/// DecisionManager: handles choice UI (existing behavior) and then runs a configurable
-/// ending sequence (images, dialogues, videos, final black text) per ending choice.
-/// Uses the existing `DialogueManager` for all dialogue and `TransitionManager` for scene transitions.
-/// Configure sequences from the Inspector.
+/// Alur ending Araloka:
+///   1. DecisionTrigger → dialog pra-keputusan → ShowDecision()
+///   2. Player pilih (SelectChoice) → dialog reaksi → fade balik ke game
+///   3. Player interaksi Harimau/Manusia → EndingTrigger → TriggerGoodEnding/TriggerBadEnding
+///   4. Dialog singkat (preEndingLines) → fade → RunEndingSequence
+///   5. Tekan E/Space untuk lanjut tiap step (gambar/narator/video/teks)
 /// </summary>
 public class DecisionManager : MonoBehaviour
 {
     public static DecisionManager instance;
 
-    [Header("Canvas")]
-    public GameObject decisionCanvas;
+    // ──────────────────────────────────────────────────────
+    //  Data types
+    // ──────────────────────────────────────────────────────
 
-    [Header("Fade")]
-    public FadeUI fader;
-
-    [Header("Dialog setelah pilih manusia (index 0)")]
-    public DialogueLine[] manusiaLines;
-
-    [Header("Dialog setelah pilih harimau (index 1)")]
-    public DialogueLine[] harimauLines;
-
-    [Header("Posisi player setelah memilih")]
-    public Transform spawnDekatManusia;
-    public Transform spawnDekatHarimau;
-
-    [Header("Animator karakter (objek di scene)")]
-    public Animator harimauAnimator;
-    public Animator manusiaAnimator;
-    public string harimauBerdiriTrigger = "Berdiri";
-
-
-
-    // --- Ending sequence configuration (set these in Inspector) ---
     [System.Serializable]
     public class SequenceStep
     {
-        public Sprite image;                 // optional: shown on `sequenceImage`
-        public DialogueLine[] lines;         // optional: DialogueManager will run these
-        public VideoClip videoClip;          // optional: played by a VideoPlayer on sequenceRawImage
-        public float displayDuration = 2f;   // optional: after image+dialogue/video, wait this long (if > 0)
-        public bool showBlackText = false;   // special step to show a black fullscreen text
+        [Header("Konten step")]
+        [Tooltip("Gambar CG yang ditampilkan (opsional)")]
+        public Sprite image;
+        [Tooltip("Video yang diputar (opsional)")]
+        public VideoClip videoClip;
+
+        [Header("Teks Narator (panel gelap, klik E/Space tiap baris)")]
+        public string[] narratorLines;
+
+        [Header("Teks Putih di Background Hitam")]
+        public bool showBlackText = false;
         [TextArea(1, 4)]
-        public string blackText;             // used if showBlackText == true
-        public float blackTextDuration = 3f;
+        public string blackText;
+
+        [Header("Navigasi")]
+        [Tooltip("Tekan E/Space untuk lanjut ke step berikutnya (default true). Jika false, pakai displayDuration.")]
+        public bool waitForInput = true;
+        [Tooltip("Dipakai jika waitForInput = false")]
+        public float displayDuration = 3f;
+
+        [Header("Fade")]
+        public bool fadeIn = false;
+        public bool fadeOut = false;
     }
 
     [System.Serializable]
     public class EndingSequence
     {
+        [Header("Dialog singkat saat interaksi (sebelum fade ke ending)")]
+        public DialogueLine[] preEndingLines;
+
+        [Header("Steps ending (gambar, narator, video, teks)")]
         public SequenceStep[] steps = new SequenceStep[0];
-        [Header("After sequence -> transition")]
-        public string nextScene = "";
+
+        [Header("Setelah sequence selesai")]
+        public string nextScene = "MainMenu";
         public string nextSpawn = "";
         public int nextQuest = -1;
         public bool useFade = true;
     }
 
+    // ──────────────────────────────────────────────────────
+    //  Inspector fields
+    // ──────────────────────────────────────────────────────
+
+    [Header("Canvas Keputusan")]
+    public GameObject decisionCanvas;
+
+    [Header("Fade")]
+    public FadeUI fader;
+
+    [Header("Dialog reaksi setelah pilih (kembali ke game)")]
+    public DialogueLine[] manusiaLines;
+    public DialogueLine[] harimauLines;
+
+    [Header("Posisi player setelah pilih")]
+    public Transform spawnDekatManusia;
+    public Transform spawnDekatHarimau;
+
+    [Header("Animator karakter")]
+    public Animator harimauAnimator;
+    public Animator manusiaAnimator;
+    public string harimauBerdiriTrigger = "Berdiri";
+
     [Header("Ending Sequences")]
     public EndingSequence badEnding;
     public EndingSequence goodEnding;
 
-    // UI components for sequence playback (assign in Inspector)
-    [Header("Sequence UI (assign from Inspector)")]
-    public GameObject sequencePanel;       // fullscreen panel to show image/video/text
-    public Image sequenceImage;           // for showing images
-    public RawImage sequenceRawImage;     // for showing video render texture
-    public VideoPlayer sequenceVideoPlayer; // VideoPlayer used for playback
-    public TMP_Text blackText;            // for final black text (set color background as needed)
+    [Header("Sequence UI")]
+    public GameObject sequencePanel;
+    public Image sequenceImage;
+    public RawImage sequenceRawImage;
+    public VideoPlayer sequenceVideoPlayer;
+    public TMP_Text blackText;
+
+    [Header("Narator Panel")]
+    public NarratorDialogue narratorDialogue;
+
+    [Header("Continue Hint (tampil saat tunggu E/Space di gambar/teks)")]
+    [Tooltip("Objek UI berisi teks 'Tekan E / Space untuk melanjutkan'")]
+    public GameObject sequenceContinueHint;
+
+    // ──────────────────────────────────────────────────────
+    //  Private state
+    // ──────────────────────────────────────────────────────
 
     private bool choiceMade = false;
+    private bool endingStarted = false;
 
     void Awake()
     {
         instance = this;
         if (decisionCanvas != null) decisionCanvas.SetActive(false);
         if (sequencePanel != null) sequencePanel.SetActive(false);
+        if (sequenceContinueHint != null) sequenceContinueHint.SetActive(false);
 
-        // Make sure VideoPlayer doesn't auto-play
         if (sequenceVideoPlayer != null)
         {
             sequenceVideoPlayer.playOnAwake = false;
@@ -92,66 +128,47 @@ public class DecisionManager : MonoBehaviour
         }
     }
 
-    private FadeUI GetActiveFader()
-    {
-        if (fader != null) return fader;
-        if (FadeUI.instance != null) return FadeUI.instance;
-        FadeUI[] faders = Resources.FindObjectsOfTypeAll<FadeUI>();
-        foreach (FadeUI f in faders)
-        {
-            if (f.gameObject.scene.name != null)
-            {
-                FadeUI.instance = f;
-                return f;
-            }
-        }
-        return null;
-    }
+    // ──────────────────────────────────────────────────────
+    //  1. Decision Screen
+    // ──────────────────────────────────────────────────────
 
+    /// <summary>Dipanggil oleh DecisionTrigger setelah dialog pra-keputusan.</summary>
     public IEnumerator ShowDecision()
     {
-        // Sembunyikan GUI OrangUtan selama cutscene pilihan berlangsung
         OrangUtanUIVisibility.Instance?.ForceHide();
         if (QuestManager.Instance != null) QuestManager.Instance.HideObjective();
 
-        // 1. Fade ke hitam
         FadeUI activeFader = GetActiveFader();
         if (activeFader != null)
             yield return StartCoroutine(activeFader.FadeOut());
-        else
-            Debug.LogWarning("[DecisionManager] No active fader found for FadeOut!");
 
-        // 2. Aktifkan canvas saat layar masih hitam
         if (decisionCanvas != null) decisionCanvas.SetActive(true);
 
-        // If a CustomCursor exists, enable it and hide the native cursor. Otherwise keep native cursor visible.
-        CustomCursor custom = FindObjectOfType<CustomCursor>();
-        if (custom != null)
+        // Pastikan cursor bisa bergerak bebas
+        Cursor.lockState = CursorLockMode.None;
+
+        CustomCursor custom = FindFirstObjectByType<CustomCursor>();
+        bool hasCursorSprite = custom != null && custom.cursorImage != null && custom.cursorImage.sprite != null;
+        if (hasCursorSprite)
         {
             custom.SetVisible(true);
             Cursor.visible = false;
         }
         else
         {
+            if (custom != null) custom.SetVisible(false);
             Cursor.visible = true;
         }
 
-        // 3. Tunggu video siap (prepare + play selesai) on decision background (optional)
-        DecisionVideoBackground videoBg = decisionCanvas.GetComponentInChildren<DecisionVideoBackground>();
+        DecisionVideoBackground videoBg = decisionCanvas?.GetComponentInChildren<DecisionVideoBackground>();
         if (videoBg != null)
             yield return new WaitUntil(() => videoBg.IsReady);
 
-        // tunggu 2 frame ekstra supaya RenderTexture sudah ada isinya
-        yield return null;
         yield return null;
 
-        // 4. Baru fade in — semua sudah siap, tidak ada blink
         if (activeFader != null)
             yield return StartCoroutine(activeFader.FadeIn());
-        else
-            Debug.LogWarning("[DecisionManager] No active fader found for FadeIn!");
 
-        // 5. Tunggu player pilih
         choiceMade = false;
         yield return new WaitUntil(() => choiceMade);
     }
@@ -163,222 +180,380 @@ public class DecisionManager : MonoBehaviour
         StartCoroutine(ProcessChoice(index));
     }
 
+    /// <summary>
+    /// Setelah pilih: dialog reaksi → fade → kembali ke game.
+    /// Player lanjut jalan ke karakter yang dipilih dan berinteraksi.
+    /// </summary>
     IEnumerator ProcessChoice(int index)
     {
-        // Save choice so other systems / continue logic can read it
         PlayerPrefs.SetInt("PlayerChoice", index);
         PlayerPrefs.Save();
 
-        // 6. Dialog hasil pilihan — canvas MASIH TERLIHAT
+        // Dialog reaksi (masih di decision canvas)
         DialogueLine[] lines = index == 0 ? manusiaLines : harimauLines;
         if (lines != null && lines.Length > 0 && DialogueManager.instance != null)
         {
+            // Sembunyikan cursor dulu saat dialog
+            CustomCursor custom = FindFirstObjectByType<CustomCursor>();
+            if (custom != null) custom.SetVisible(false);
+            Cursor.visible = false;
+
             DialogueManager.instance.StartDialogue(lines);
-            yield return null; // wait 1 frame for dialogue to initialize
+            yield return null;
             yield return new WaitUntil(() => !DialogueManager.instance.IsDialogueActive());
         }
 
-        // 7. Teleport player saat canvas masih menutupi game scene
-        GameObject player = null;
-        if (PlayerMovement.ActivePlayerInstance != null)
-        {
-            player = PlayerMovement.ActivePlayerInstance.gameObject;
-        }
-        else
-        {
-            player = GameObject.FindWithTag("Player");
-            if (player == null)
-            {
-                player = GameObject.FindWithTag("Player-Orang Utan");
-            }
-        }
-
-        if (player != null)
-        {
-            Transform target = index == 0 ? spawnDekatManusia : spawnDekatHarimau;
-            if (target != null)
-            {
-                Vector3 pos = target.position;
-                pos.z = 1f;
-                player.transform.position = pos;
-                Debug.Log($"[DecisionManager] Teleported player '{player.name}' to position: {pos}");
-            }
-            else
-            {
-                Debug.LogWarning($"[DecisionManager] Teleport target transform is null for choice index {index}!");
-            }
-        }
-        else
-        {
-            Debug.LogWarning("[DecisionManager] Player GameObject not found for teleportation!");
-        }
-
-        // 8. Baru fade ke hitam dan sembunyikan canvas
         FadeUI activeFader = GetActiveFader();
         if (activeFader != null)
             yield return StartCoroutine(activeFader.FadeOut());
 
+        // Sembunyikan decision canvas
         if (decisionCanvas != null) decisionCanvas.SetActive(false);
 
-        // Disable custom cursor if present (we'll control native cursor below)
-        CustomCursor custom = FindObjectOfType<CustomCursor>();
-        if (custom != null)
-        {
-            custom.SetVisible(false);
-        }
+        // Kursor game normal (tersembunyi)
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = false;
 
-        // Only hide native cursor if a sequence panel will be shown immediately
-        if (sequencePanel != null)
-        {
-            sequencePanel.SetActive(true);
-            Cursor.visible = false;
-        }
+        // Teleport player dekat karakter yang dipilih
+        GameObject playerObj = null;
+        if (PlayerMovement.ActivePlayerInstance != null)
+            playerObj = PlayerMovement.ActivePlayerInstance.gameObject;
         else
         {
-            // keep cursor visible so player sees pointer after making choice
-            Cursor.visible = true;
+            playerObj = GameObject.FindWithTag("Player");
+            if (playerObj == null) playerObj = GameObject.FindWithTag("Player-Orang Utan");
         }
 
-        // 8b. Ganti animasi karakter saat layar masih hitam
-        if (index == 1)
+        if (playerObj != null)
         {
-            // Pilih harimau -> harimau selamat (berdiri), manusia mati (animasi berhenti)
-            if (harimauAnimator != null) harimauAnimator.SetTrigger(harimauBerdiriTrigger);
-            if (manusiaAnimator != null) manusiaAnimator.enabled = false;
-        }
-        else
-        {
-            // Pilih manusia -> manusia tetap mati, harimau juga mati (animasi berhenti)
-            if (manusiaAnimator != null) manusiaAnimator.enabled = false;
-            if (harimauAnimator != null) harimauAnimator.enabled = false;
+            Transform spawnTarget = index == 0 ? spawnDekatManusia : spawnDekatHarimau;
+            if (spawnTarget != null)
+            {
+                Vector3 pos = spawnTarget.position;
+                pos.z = 1f;
+                playerObj.transform.position = pos;
+            }
         }
 
-        // 9. Fade balik ke game — player sudah di posisi baru
+        // Animator karakter
+        if (index == 1 && harimauAnimator != null)
+            harimauAnimator.SetTrigger(harimauBerdiriTrigger);
+        else if (index == 0 && manusiaAnimator != null)
+            manusiaAnimator.enabled = false;
+
+        yield return null;
+
         if (activeFader != null)
             yield return StartCoroutine(activeFader.FadeIn());
 
-        // Restore GUI OrangUtan dan Quest UI after this initial choice sequence (we will hide again if sequence needs it)
+        // Kembalikan UI dan gerakan player
         OrangUtanUIVisibility.Instance?.ForceRefresh();
         if (QuestManager.Instance != null) QuestManager.Instance.ShowObjective();
 
-        // ---- NEW: Run configured ending sequence for chosen ending ----
-        EndingSequence seq = (index == 0) ? badEnding : goodEnding;
-        if (seq != null)
-        {
-            // hide normal UI so sequence panel takes full attention
-            OrangUtanUIVisibility.Instance?.ForceHide();
-            if (QuestManager.Instance != null) QuestManager.Instance.HideObjective();
-
-            yield return StartCoroutine(RunEndingSequence(seq));
-        }
+        PlayerMovement player = PlayerMovement.ActivePlayerInstance
+            ?? FindFirstObjectByType<PlayerMovement>();
+        if (player != null) player.canMove = true;
     }
+
+    // ──────────────────────────────────────────────────────
+    //  2. Ending Trigger (dari EndingTrigger / InteractableObject)
+    // ──────────────────────────────────────────────────────
+
+    public void TriggerGoodEnding()
+    {
+        if (endingStarted) return;
+        if (goodEnding != null)
+        {
+            endingStarted = true;
+            StartCoroutine(StartEndingSequence(goodEnding));
+        }
+        else
+            Debug.LogWarning("[DecisionManager] goodEnding belum di-assign!");
+    }
+
+    public void TriggerBadEnding()
+    {
+        if (endingStarted) return;
+        if (badEnding != null)
+        {
+            endingStarted = true;
+            StartCoroutine(StartEndingSequence(badEnding));
+        }
+        else
+            Debug.LogWarning("[DecisionManager] badEnding belum di-assign!");
+    }
+
+    IEnumerator StartEndingSequence(EndingSequence seq)
+    {
+        // Kunci player
+        PlayerMovement player = PlayerMovement.ActivePlayerInstance
+            ?? FindFirstObjectByType<PlayerMovement>();
+        if (player != null) player.canMove = false;
+
+        // Sembunyikan UI game
+        OrangUtanUIVisibility.Instance?.ForceHide();
+        if (QuestManager.Instance != null) QuestManager.Instance.HideObjective();
+
+        // Dialog singkat sebelum fade (di scene, dengan karakter)
+        if (seq.preEndingLines != null && seq.preEndingLines.Length > 0
+            && DialogueManager.instance != null)
+        {
+            DialogueManager.instance.StartDialogue(seq.preEndingLines);
+            yield return null;
+            yield return new WaitUntil(() => !DialogueManager.instance.IsDialogueActive());
+        }
+
+        // Tunggu 2 frame agar InteractableObject selesai cleanup
+        yield return null;
+        yield return null;
+
+        // Fade ke hitam sebelum sequence
+        FadeUI activeFader = GetActiveFader();
+        if (activeFader != null)
+            yield return StartCoroutine(activeFader.FadeOut());
+
+        yield return StartCoroutine(RunEndingSequence(seq));
+    }
+
+    // ──────────────────────────────────────────────────────
+    //  3. Ending Sequence Runner
+    // ──────────────────────────────────────────────────────
 
     IEnumerator RunEndingSequence(EndingSequence seq)
     {
+        FadeUI activeFader = GetActiveFader();
+
         if (sequencePanel == null)
         {
-            Debug.LogWarning("[DecisionManager] sequencePanel not assigned in Inspector. Skipping ending sequence and running transition.");
-            // fallback to transition even if sequence panel missing
+            Debug.LogWarning("[DecisionManager] sequencePanel belum di-assign. Skip sequence.");
             InvokeTransition(seq);
             yield break;
         }
 
-        // Ensure sequence UI state
+        // Aktifkan panel
         sequencePanel.SetActive(true);
+
+        // Auto-find NarratorDialogue dari children SequencePanel
+        if (narratorDialogue == null)
+            narratorDialogue = sequencePanel.GetComponentInChildren<NarratorDialogue>(true);
+
+        // Pastikan SequencePanel punya Image hitam sebagai background
+        Image panelBg = sequencePanel.GetComponent<Image>();
+        if (panelBg == null)
+        {
+            panelBg = sequencePanel.AddComponent<Image>();
+            panelBg.raycastTarget = false;
+        }
+        panelBg.color = Color.black;
+
+        // Fix SequenceBlackText agar full screen
+        if (blackText != null)
+        {
+            RectTransform btRt = blackText.rectTransform;
+            if (btRt.anchorMin != Vector2.zero || btRt.anchorMax != Vector2.one)
+            {
+                btRt.anchorMin = Vector2.zero;
+                btRt.anchorMax = Vector2.one;
+                btRt.offsetMin = new Vector2(80f, 80f);
+                btRt.offsetMax = new Vector2(-80f, -80f);
+            }
+            var sg = blackText.gameObject.GetComponent<SortingGroup>();
+            if (sg != null) Destroy(sg);
+        }
+
+        // Reset semua elemen
         if (sequenceImage != null) sequenceImage.gameObject.SetActive(false);
         if (sequenceRawImage != null) sequenceRawImage.gameObject.SetActive(false);
         if (blackText != null) { blackText.gameObject.SetActive(false); blackText.text = ""; }
-        if (sequenceVideoPlayer != null)
-        {
-            sequenceVideoPlayer.Stop();
-            sequenceVideoPlayer.clip = null;
-        }
+        if (sequenceVideoPlayer != null) { sequenceVideoPlayer.Stop(); sequenceVideoPlayer.clip = null; }
+        if (sequenceContinueHint != null) sequenceContinueHint.SetActive(false);
 
-        // Play every step in order
         foreach (var step in seq.steps)
         {
-            // 1) Image (with optional dialogue)
+            // ── FADE IN sebelum konten ──
+            if (step.fadeIn && activeFader != null)
+                yield return StartCoroutine(activeFader.FadeIn());
+
+            // ── Gambar CG ──
             if (step.image != null && sequenceImage != null)
             {
                 sequenceRawImage?.gameObject.SetActive(false);
+                if (blackText != null) blackText.gameObject.SetActive(false);
                 sequenceImage.gameObject.SetActive(true);
                 sequenceImage.sprite = step.image;
-                sequenceImage.SetNativeSize();
             }
 
-            // 2) Video (mutually exclusive with image for clarity)
+            // ── Video ──
             if (step.videoClip != null && sequenceVideoPlayer != null && sequenceRawImage != null)
             {
                 sequenceImage?.gameObject.SetActive(false);
+                if (blackText != null) blackText.gameObject.SetActive(false);
                 sequenceRawImage.gameObject.SetActive(true);
 
-                // Assign and play
                 sequenceVideoPlayer.Stop();
                 sequenceVideoPlayer.clip = step.videoClip;
-
-                // If VideoPlayer has AudioSource, ensure it is playing (assign inspector if needed)
                 sequenceVideoPlayer.Prepare();
                 yield return new WaitUntil(() => sequenceVideoPlayer.isPrepared);
                 sequenceVideoPlayer.Play();
 
-                // Wait until finishes
                 while (sequenceVideoPlayer.isPlaying)
                     yield return null;
+
+                // Tunggu E/Space setelah video selesai
+                if (step.waitForInput)
+                {
+                    ShowContinueHint(true);
+                    yield return StartCoroutine(WaitForAdvanceInput());
+                    ShowContinueHint(false);
+                }
             }
 
-            // 3) Dialogue attached to this step
-            if (step.lines != null && step.lines.Length > 0 && DialogueManager.instance != null)
+            // ── Teks Narator (klik E/Space tiap baris, panel gelap sendiri) ──
+            if (step.narratorLines != null && step.narratorLines.Length > 0)
             {
-                DialogueManager.instance.StartDialogue(step.lines);
-                yield return null;
-                yield return new WaitUntil(() => !DialogueManager.instance.IsDialogueActive());
+                if (narratorDialogue != null)
+                {
+                    yield return StartCoroutine(narratorDialogue.Show(step.narratorLines));
+                }
+                else
+                {
+                    // Fallback jika NarratorDialogue tidak ada
+                    if (blackText != null)
+                    {
+                        sequenceImage?.gameObject.SetActive(false);
+                        sequenceRawImage?.gameObject.SetActive(false);
+                        blackText.gameObject.SetActive(true);
+                        foreach (string line in step.narratorLines)
+                        {
+                            blackText.text = line;
+                            ShowContinueHint(true);
+                            yield return StartCoroutine(WaitForAdvanceInput());
+                            ShowContinueHint(false);
+                            yield return null;
+                        }
+                        blackText.gameObject.SetActive(false);
+                    }
+                }
             }
 
-            // 4) Black-screen text special step
+            // ── Teks putih di background hitam ──
             if (step.showBlackText && blackText != null)
             {
-                // hide images/video
                 sequenceImage?.gameObject.SetActive(false);
                 sequenceRawImage?.gameObject.SetActive(false);
-
                 blackText.gameObject.SetActive(true);
                 blackText.text = step.blackText ?? "";
-                yield return new WaitForSeconds(Mathf.Max(0.01f, step.blackTextDuration));
+
+                if (step.waitForInput)
+                {
+                    ShowContinueHint(true);
+                    yield return StartCoroutine(WaitForAdvanceInput());
+                    ShowContinueHint(false);
+                }
+                else
+                {
+                    yield return new WaitForSeconds(Mathf.Max(0.5f, step.displayDuration));
+                }
+
                 blackText.gameObject.SetActive(false);
             }
 
-            // 5) Optional display duration to let static image linger
-            if (step.displayDuration > 0f)
+            // ── Gambar saja (tanpa narator/teks): tunggu E/Space ──
+            bool hasWaitableContent = (step.narratorLines != null && step.narratorLines.Length > 0)
+                                      || step.showBlackText
+                                      || step.videoClip != null;
+            if (step.image != null && !hasWaitableContent)
             {
-                yield return new WaitForSeconds(step.displayDuration);
+                if (step.waitForInput)
+                {
+                    ShowContinueHint(true);
+                    yield return StartCoroutine(WaitForAdvanceInput());
+                    ShowContinueHint(false);
+                }
+                else if (step.displayDuration > 0f)
+                {
+                    yield return new WaitForSeconds(step.displayDuration);
+                }
             }
+
+            // ── FADE OUT setelah step ──
+            if (step.fadeOut && activeFader != null)
+                yield return StartCoroutine(activeFader.FadeOut());
+
+            // Reset tampilan setelah step
+            if (sequenceImage != null) sequenceImage.gameObject.SetActive(false);
+            if (sequenceRawImage != null) sequenceRawImage.gameObject.SetActive(false);
+            if (blackText != null) blackText.gameObject.SetActive(false);
         }
 
-        // Final black text if configured at sequence level
-        if (blackText != null && !string.IsNullOrEmpty( (seq.steps != null && seq.steps.Length>0) ? "" : "" )) { /* keep for flexibility */ }
-
-        // Hide sequence UI before transition (optionally keep black screen by using FadeUI)
+        // Selesai — bersihkan
+        if (sequenceContinueHint != null) sequenceContinueHint.SetActive(false);
         if (sequencePanel != null) sequencePanel.SetActive(false);
 
-        // Perform transition using TransitionManager
+        // Pulihkan player (sebelum transisi)
+        PlayerMovement player = PlayerMovement.ActivePlayerInstance
+            ?? FindFirstObjectByType<PlayerMovement>();
+        if (player != null) player.canMove = true;
+
         InvokeTransition(seq);
-        yield break;
     }
 
-    private void InvokeTransition(EndingSequence seq)
-    {
-        if (seq == null)
-            return;
+    // ──────────────────────────────────────────────────────
+    //  Helpers
+    // ──────────────────────────────────────────────────────
 
-        if (!string.IsNullOrEmpty(seq.nextScene) && TransitionManager.Instance != null)
+    /// <summary>Tunggu sampai player tekan E, Space, atau Enter.</summary>
+    IEnumerator WaitForAdvanceInput()
+    {
+        // Skip frame saat ini agar tidak langsung ter-trigger oleh input yang memulai step ini
+        yield return null;
+        while (!Input.GetKeyDown(KeyCode.E) &&
+               !Input.GetKeyDown(KeyCode.Space) &&
+               !Input.GetKeyDown(KeyCode.Return))
         {
-            // Use TransitionManager to move to next scene, preserving quest if configured
+            yield return null;
+        }
+    }
+
+    void ShowContinueHint(bool show)
+    {
+        if (sequenceContinueHint != null)
+            sequenceContinueHint.SetActive(show);
+    }
+
+    FadeUI GetActiveFader()
+    {
+        if (fader != null) return fader;
+        if (FadeUI.instance != null) return FadeUI.instance;
+        FadeUI[] faders = Resources.FindObjectsOfTypeAll<FadeUI>();
+        foreach (FadeUI f in faders)
+        {
+            if (!string.IsNullOrEmpty(f.gameObject.scene.name))
+            {
+                FadeUI.instance = f;
+                return f;
+            }
+        }
+        return null;
+    }
+
+    void InvokeTransition(EndingSequence seq)
+    {
+        if (seq == null || string.IsNullOrEmpty(seq.nextScene)) return;
+
+        if (TransitionManager.Instance != null)
+        {
             TransitionManager.Instance.StartTransition(
                 seq.nextScene,
                 seq.nextSpawn ?? "",
                 seq.nextQuest,
                 seq.useFade
             );
+        }
+        else
+        {
+            // Fallback langsung load scene
+            UnityEngine.SceneManagement.SceneManager.LoadScene(seq.nextScene);
         }
     }
 }

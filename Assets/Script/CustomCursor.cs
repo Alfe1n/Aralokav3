@@ -23,6 +23,10 @@ public class CustomCursor : MonoBehaviour
         if (cursorImage == null)
             cursorImage = GetComponent<Image>();
 
+        // Cursor UI tidak boleh memblokir klik ke sprite di bawahnya
+        if (cursorImage != null)
+            cursorImage.raycastTarget = false;
+
         // start hidden
         gameObject.SetActive(false);
     }
