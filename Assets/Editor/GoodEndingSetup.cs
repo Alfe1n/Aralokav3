@@ -181,7 +181,7 @@ public static class GoodEndingSetup
             new DecisionManager.SequenceStep
             {
                 videoClip = null,       // assign GoodEnding_Pancarona.mp4
-                waitForInput = true,    // tunggu E/Space setelah video selesai
+                waitForInput = false,   // langsung next setelah video selesai
                 fadeIn = true,
                 fadeOut = true,
             },
@@ -234,6 +234,10 @@ public static class GoodEndingSetup
         seq.nextQuest = -1;
         seq.useFade = true;
 
+        // Load bad ending images
+        Sprite img1 = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Object/UI/BadEnding/Bad Ending 1.png");
+        Sprite img2 = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Object/UI/BadEnding/BadEnding2.png");
+
         // Dialog singkat saat player interaksi dengan Manusia (sebelum fade ke ending)
         seq.preEndingLines = new DialogueLine[]
         {
@@ -256,7 +260,7 @@ public static class GoodEndingSetup
             // ── STEP 0: Panel 1 — Bara menolong Manusia ──
             new DecisionManager.SequenceStep
             {
-                image = null,   // assign sprite Panel 1 di Inspector
+                image = img1,
                 narratorLines = new string[]
                 {
                     "Bara mencoba mendekati manusia itu...",
@@ -273,7 +277,7 @@ public static class GoodEndingSetup
             // ── STEP 1: Panel 2 — Hutan hancur ──
             new DecisionManager.SequenceStep
             {
-                image = null,   // assign sprite Panel 2 di Inspector
+                image = img2,
                 narratorLines = new string[]
                 {
                     "Hari berganti hari...",
@@ -425,4 +429,305 @@ public static class GoodEndingSetup
             $"  narratorDialogue: {(dm.narratorDialogue != null ? "OK" : "MISSING")}\n" +
             $"  sequenceContinueHint: {(dm.sequenceContinueHint != null ? "OK" : "MISSING")}");
     }
+
+    // ───────────────────────────────────────────────────────────────────────
+    //  6. Setup Ending Characters (Harimau and Manusia Setup)
+    // ───────────────────────────────────────────────────────────────────────
+    [MenuItem("Araloka/6 - Setup Ending Characters")]
+    public static void SetupEndingCharacters()
+    {
+        // 1. Manusia Setup
+        GameObject manusia = GameObject.Find("Manusia");
+        if (manusia != null)
+        {
+            Undo.RecordObject(manusia, "Setup Manusia Ending Components");
+
+            // Tambahkan BoxCollider2D sebagai trigger area interaksi
+            BoxCollider2D boxCol = manusia.GetComponent<BoxCollider2D>();
+            if (boxCol == null)
+            {
+                boxCol = manusia.AddComponent<BoxCollider2D>();
+            }
+            boxCol.isTrigger = true;
+            boxCol.size = new Vector2(2.7f, 2.25f);
+            boxCol.offset = new Vector2(0.04f, 0.69f);
+
+            // Tambahkan EndingTrigger
+            EndingTrigger et = manusia.GetComponent<EndingTrigger>();
+            if (et == null)
+            {
+                et = manusia.AddComponent<EndingTrigger>();
+            }
+            et.isGoodEnding = false; // Manusia = Bad Ending
+            EditorUtility.SetDirty(et);
+
+            // Tambahkan InteractableObject
+            InteractableObject io = manusia.GetComponent<InteractableObject>();
+            if (io == null)
+            {
+                io = manusia.AddComponent<InteractableObject>();
+            }
+            io.useQuest = false;
+            io.requireSpawnerCleared = false;
+            io.isRescueInteraction = false;
+            io.dialogueLines = new DialogueLine[0];
+
+            // Setup Event OnInteractComplete untuk memanggil EndingTrigger.Trigger
+            // Gunakan UnityEventTools agar permanen & tersimpan di Scene
+            io.onInteractComplete = new UnityEngine.Events.UnityEvent();
+            UnityEditor.Events.UnityEventTools.AddPersistentListener(io.onInteractComplete, et.Trigger);
+            
+            EditorUtility.SetDirty(io);
+            EditorUtility.SetDirty(manusia);
+
+            Debug.Log("[GoodEndingSetup] Manusia (Bad Ending) setup selesai.");
+        }
+        else
+        {
+            Debug.LogError("[GoodEndingSetup] Manusia GameObject tidak ditemukan di Scene!");
+        }
+
+        // 2. Harimau Setup
+        GameObject harimau = GameObject.Find("Harimau");
+        if (harimau != null)
+        {
+            Undo.RecordObject(harimau, "Setup Harimau Ending Components");
+
+            BoxCollider2D boxCol = harimau.GetComponent<BoxCollider2D>();
+            if (boxCol == null)
+            {
+                boxCol = harimau.AddComponent<BoxCollider2D>();
+            }
+            boxCol.isTrigger = true;
+            boxCol.size = new Vector2(2.7f, 2.25f);
+            boxCol.offset = new Vector2(0.04f, 0.69f);
+
+            EndingTrigger et = harimau.GetComponent<EndingTrigger>();
+            if (et == null)
+            {
+                et = harimau.AddComponent<EndingTrigger>();
+            }
+            et.isGoodEnding = true; // Harimau = Good Ending
+            EditorUtility.SetDirty(et);
+
+            InteractableObject io = harimau.GetComponent<InteractableObject>();
+            if (io == null)
+            {
+                io = harimau.AddComponent<InteractableObject>();
+            }
+            io.useQuest = false;
+            io.requireSpawnerCleared = false;
+            io.isRescueInteraction = false;
+            io.dialogueLines = new DialogueLine[0];
+
+            io.onInteractComplete = new UnityEngine.Events.UnityEvent();
+            UnityEditor.Events.UnityEventTools.AddPersistentListener(io.onInteractComplete, et.Trigger);
+
+            EditorUtility.SetDirty(io);
+            EditorUtility.SetDirty(harimau);
+
+            Debug.Log("[GoodEndingSetup] Harimau (Good Ending) setup selesai.");
+        }
+        else
+        {
+            Debug.LogError("[GoodEndingSetup] Harimau GameObject tidak ditemukan di Scene!");
+        }
+    }
+
+    // ───────────────────────────────────────────────────────────────────────
+    //  7. Setup Player Interact Prompts
+    // ───────────────────────────────────────────────────────────────────────
+    [MenuItem("Araloka/7 - Setup Player Interact Prompts")]
+    public static void SetupPlayerInteractPrompts()
+    {
+        GameObject[] allGOs = Resources.FindObjectsOfTypeAll<GameObject>();
+        int count = 0;
+        foreach (var go in allGOs)
+        {
+            if (go.name == "InteractPrompt" && !string.IsNullOrEmpty(go.scene.name))
+            {
+                Undo.RecordObject(go, "Setup Player Interact Prompt");
+
+                // 1. Dapatkan atau tambahkan script controller
+                var ipc = go.GetComponent<InteractPromptController>();
+                if (ipc == null)
+                {
+                    ipc = go.AddComponent<InteractPromptController>();
+                }
+
+                // 2. Load slice sprite
+                Sprite spr = null;
+                object[] assets = AssetDatabase.LoadAllAssetsAtPath("Assets/Object/UI/Core/ChatGPT Image 18 Jun 2026, 16.20.58 2.png");
+                foreach (var asset in assets)
+                {
+                    if (asset is Sprite && ((UnityEngine.Object)asset).name.Contains("_0"))
+                    {
+                        spr = (Sprite)asset;
+                        break;
+                    }
+                }
+                Sprite targetSprite = spr != null ? spr : AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Object/UI/Core/ChatGPT Image 18 Jun 2026, 16.20.58 2.png");
+
+                if (ipc != null)
+                {
+                    ipc.interactSprite = targetSprite;
+                }
+
+                // 3. Hapus TextMeshPro dan MeshRenderer agar tidak bentrok dengan SpriteRenderer
+                var tmp = go.GetComponent<TMPro.TextMeshPro>();
+                if (tmp != null) Undo.DestroyObjectImmediate(tmp);
+
+                var mr = go.GetComponent<MeshRenderer>();
+                if (mr != null) Undo.DestroyObjectImmediate(mr);
+
+                // 4. Tambahkan SpriteRenderer
+                var sr = go.GetComponent<SpriteRenderer>();
+                if (sr == null)
+                {
+                    sr = go.AddComponent<SpriteRenderer>();
+                }
+                if (sr != null)
+                {
+                    sr.sprite = targetSprite;
+                    sr.enabled = true;
+
+                    var parentSR = go.transform.parent != null ? go.transform.parent.GetComponent<SpriteRenderer>() : null;
+                    if (parentSR != null)
+                    {
+                        sr.sortingLayerID = parentSR.sortingLayerID;
+                        sr.sortingLayerName = parentSR.sortingLayerName;
+                        sr.sortingOrder = parentSR.sortingOrder + 10;
+                    }
+                    else
+                    {
+                        sr.sortingOrder = 20;
+                    }
+                }
+
+                var col = go.GetComponent<BoxCollider2D>();
+                if (col == null)
+                {
+                    col = go.AddComponent<BoxCollider2D>();
+                }
+                col.isTrigger = true;
+                col.size = new Vector2(3f, 3f);
+
+                EditorUtility.SetDirty(go);
+                count++;
+            }
+        }
+    }
+
+    // ───────────────────────────────────────────────────────────────────────
+    //  8. Setup Canvas Interact Prompts (Hibrida UI Image)
+    // ───────────────────────────────────────────────────────────────────────
+    [MenuItem("Araloka/8 - Setup Canvas Interact Prompts")]
+    public static void SetupCanvasInteractPrompts()
+    {
+        // 1. Cari Canvas di active scenes
+        Canvas canvas = null;
+        Canvas[] canvases = Resources.FindObjectsOfTypeAll<Canvas>();
+        foreach (var c in canvases)
+        {
+            if (!string.IsNullOrEmpty(c.gameObject.scene.name) && c.name == "Canvas")
+            {
+                canvas = c;
+                break;
+            }
+        }
+
+        if (canvas == null)
+        {
+            Debug.LogError("[GoodEndingSetup] Canvas dengan nama 'Canvas' tidak ditemukan di scene!");
+            return;
+        }
+
+        Undo.RecordObject(canvas.gameObject, "Setup Canvas Interact Prompts");
+
+        // 2. Nonaktifkan InteractPrompt bawaan TMP yang nempel di Player
+        GameObject[] allGOs = Resources.FindObjectsOfTypeAll<GameObject>();
+        GameObject playerBaraObj = null;
+        GameObject playerOrangUtanObj = null;
+
+        foreach (var go in allGOs)
+        {
+            if (string.IsNullOrEmpty(go.scene.name)) continue;
+
+            if (go.name == "InteractPrompt")
+            {
+                // Nonaktifkan GameObject TMP bawaan
+                Undo.RecordObject(go, "Disable TMP Interact Prompt");
+                go.SetActive(false);
+                EditorUtility.SetDirty(go);
+            }
+            else if (go.name == "Player")
+            {
+                playerBaraObj = go;
+            }
+            else if (go.name == "Player-Orang Utan")
+            {
+                playerOrangUtanObj = go;
+            }
+        }
+
+        // 3. Cari atau buat GameObject CanvasInteractPrompt tunggal di Canvas
+        string promptName = "CanvasInteractPrompt";
+        Transform promptTrans = canvas.transform.Find(promptName);
+        GameObject promptGO = promptTrans != null ? promptTrans.gameObject : null;
+
+        Sprite spr = null;
+        object[] assets = AssetDatabase.LoadAllAssetsAtPath("Assets/Object/UI/Core/ChatGPT Image 18 Jun 2026, 16.20.58 2.png");
+        foreach (var asset in assets)
+        {
+            if (asset is Sprite && ((UnityEngine.Object)asset).name.Contains("_0"))
+            {
+                spr = (Sprite)asset;
+                break;
+            }
+        }
+        Sprite targetSprite = spr != null ? spr : AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Object/UI/Core/ChatGPT Image 18 Jun 2026, 16.20.58 2.png");
+
+        if (promptGO == null)
+        {
+            promptGO = new GameObject(promptName, typeof(RectTransform), typeof(UnityEngine.UI.Image), typeof(InteractPromptFollower));
+            Undo.RegisterCreatedObjectUndo(promptGO, "Create Canvas UI Prompt");
+            promptGO.transform.SetParent(canvas.transform, false);
+        }
+        
+        var img = promptGO.GetComponent<UnityEngine.UI.Image>();
+        img.sprite = targetSprite;
+        var rTrans = promptGO.GetComponent<RectTransform>();
+        rTrans.sizeDelta = new Vector2(67f, 84f); // Sesuai resolusi sprite original
+
+        var follower = promptGO.GetComponent<InteractPromptFollower>();
+        follower.interactSprite = targetSprite;
+        // Target follow dinamis (akan dideteksi otomatis saat runtime oleh PlayerMovement di script follower)
+        follower.playerTransform = null; 
+        promptGO.SetActive(false); // Sembunyikan default awal
+
+        // Hapus prompt lama jika ada sisa duplikasi di scene
+        Transform oldOrangUtan = canvas.transform.Find("CanvasInteractPrompt_OrangUtan");
+        if (oldOrangUtan != null) Undo.DestroyObjectImmediate(oldOrangUtan.gameObject);
+        Transform oldBara = canvas.transform.Find("CanvasInteractPrompt_Bara");
+        if (oldBara != null) Undo.DestroyObjectImmediate(oldBara.gameObject);
+
+        // 4. Hubungkan ke DialogueManager
+        DialogueManager dm = GameObject.FindFirstObjectByType<DialogueManager>();
+        if (dm != null)
+        {
+            Undo.RecordObject(dm, "Link Prompt to DialogueManager");
+            dm.interactPromptBara = promptGO;
+            dm.interactPromptOrangUtan = null;
+            EditorUtility.SetDirty(dm);
+            Debug.Log("[GoodEndingSetup] Berhasil menghubungkan Canvas Interact Prompt ke DialogueManager.");
+        }
+        else
+        {
+            Debug.LogWarning("[GoodEndingSetup] DialogueManager tidak ditemukan di scene untuk menghubungkan link reference.");
+        }
+
+        EditorUtility.SetDirty(canvas.gameObject);
+        Debug.Log("[GoodEndingSetup] Setup Canvas Interact Prompt selesai otomatis (Single mode)!");
+    }
 }
+

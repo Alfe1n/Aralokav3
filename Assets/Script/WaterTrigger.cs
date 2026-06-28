@@ -22,13 +22,14 @@ public class WaterTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Player")) return;
+        if (!collision.CompareTag("Player") && !collision.CompareTag("Player-Orang Utan")) return;
         if (isInWater) return;
 
         isInWater = true;
 
         // Pakai PlayerMovement (Aralokav3) bukan Movement
         PlayerMovement mov = collision.GetComponent<PlayerMovement>();
+        if (mov == null) mov = collision.GetComponentInParent<PlayerMovement>();
         if (mov != null)
         {
             originalSpeed = mov.moveSpeed;
@@ -42,13 +43,14 @@ public class WaterTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Player")) return;
+        if (!collision.CompareTag("Player") && !collision.CompareTag("Player-Orang Utan")) return;
         if (!isInWater) return;
 
         isInWater = false;
 
         // Pakai PlayerMovement (Aralokav3)
         PlayerMovement mov = collision.GetComponent<PlayerMovement>();
+        if (mov == null) mov = collision.GetComponentInParent<PlayerMovement>();
         if (mov != null && originalSpeed > 0)
         {
             mov.moveSpeed = originalSpeed;

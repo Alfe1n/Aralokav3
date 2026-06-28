@@ -206,6 +206,11 @@ public class OpeningCutscene : MonoBehaviour
 
         TeleportBaraToSpawn(kamarBaraScene, "Spawn_Utama");
 
+        if (QuestManager.Instance != null)
+        {
+            QuestManager.Instance.ShowObjective();
+        }
+
         yield return SceneManager.UnloadSceneAsync(
             "OpeningScene"
         );

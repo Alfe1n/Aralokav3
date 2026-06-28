@@ -93,8 +93,11 @@ public class MazeDarkness : MonoBehaviour
         }
     }
 
+    public bool isInMaze { get; private set; }
+
     public void EnterMaze()
     {
+        isInMaze = true;
         EnsurePlayerLightRef();
         targetIntensity = darkIntensity;
         targetOrthoSize = mazeOrthoSize;
@@ -106,6 +109,7 @@ public class MazeDarkness : MonoBehaviour
 
     public void ExitMaze()
     {
+        isInMaze = false;
         EnsurePlayerLightRef();
         targetIntensity = normalIntensity;
         targetOrthoSize = normalOrthoSize;

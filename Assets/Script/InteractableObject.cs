@@ -77,6 +77,7 @@ public class InteractableObject : MonoBehaviour
     private bool isInteracting = false;
     private Collider2D col;
     private bool hasTriggered = false;
+    private bool isShowingPrompt = false;
 
     void Start()
     {
@@ -116,9 +117,49 @@ public class InteractableObject : MonoBehaviour
         if (cgImage != null) cgImage.SetActive(false);
     }
 
+    void OnDisable()
+    {
+        if (isShowingPrompt)
+        {
+            isShowingPrompt = false;
+            if (DialogueManager.instance != null)
+                DialogueManager.instance.HidePrompt();
+        }
+    }
+
+    public static InteractableObject GetNearestValidInteractable(Vector3 playerPos)
+    {
+        InteractableObject nearest = null;
+        float minDist = float.MaxValue;
+        foreach (InteractableObject io in FindObjectsByType<InteractableObject>(FindObjectsSortMode.None))
+        {
+            if (io != null && io.enabled && io.gameObject.activeInHierarchy && io.playerInside && io.IsInteractionAllowed() && !io.isInteracting && !io.hasTriggered)
+            {
+                float dist = Vector3.Distance(playerPos, io.transform.position);
+                if (dist < minDist)
+                {
+                    minDist = dist;
+                    nearest = io;
+                }
+            }
+        }
+        return nearest;
+    }
+
     void Update()
     {
-        if (hasTriggered) return;
+        // Selalu perbarui referensi ke player aktif untuk menangani pergantian karakter
+        playerMovement = PlayerMovement.ActivePlayerInstance != null ? PlayerMovement.ActivePlayerInstance : FindFirstObjectByType<PlayerMovement>();
+
+        if (hasTriggered)
+        {
+            if (isShowingPrompt)
+            {
+                isShowingPrompt = false;
+                if (DialogueManager.instance != null) DialogueManager.instance.HidePrompt();
+            }
+            return;
+        }
 
         // toggle collider berdasarkan kondisi spawner
         if (requireSpawnerCleared && col != null)
@@ -131,21 +172,53 @@ public class InteractableObject : MonoBehaviour
                 if (!cleared && playerInside)
                 {
                     playerInside = false;
-                    if (DialogueManager.instance != null)
-                        DialogueManager.instance.HidePrompt();
+                    if (isShowingPrompt)
+                    {
+                        isShowingPrompt = false;
+                        if (DialogueManager.instance != null)
+                            DialogueManager.instance.HidePrompt();
+                    }
                 }
             }
         }
 
-        if (!playerInside) return;
-        if (!IsInteractionAllowed()) return;
-        if (DialogueManager.instance != null && DialogueManager.instance.IsDialogueActive()) return;
-        if (isInteracting) return;
+        bool canInteract = playerInside && IsInteractionAllowed() && !isInteracting && (DialogueManager.instance != null && !DialogueManager.instance.IsDialogueActive());
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (canInteract)
         {
-            Debug.Log($"[InteractableObject] E pressed on {gameObject.name}");
-            StartCoroutine(BeginInteraction());
+            // Cari tahu apakah objek ini adalah yang terdekat dengan player
+            var pm = playerMovement;
+            if (pm != null)
+            {
+                InteractableObject nearest = GetNearestValidInteractable(pm.transform.position);
+                if (nearest != this)
+                {
+                    canInteract = false;
+                }
+            }
+        }
+
+        if (canInteract)
+        {
+            if (!isShowingPrompt)
+            {
+                isShowingPrompt = true;
+                if (DialogueManager.instance != null) DialogueManager.instance.ShowPrompt();
+            }
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Debug.Log($"[InteractableObject] E pressed on {gameObject.name}");
+                StartCoroutine(BeginInteraction());
+            }
+        }
+        else
+        {
+            if (isShowingPrompt)
+            {
+                isShowingPrompt = false;
+                if (DialogueManager.instance != null) DialogueManager.instance.HidePrompt();
+            }
         }
     }
 
@@ -220,6 +293,7 @@ public class InteractableObject : MonoBehaviour
 
         Debug.Log($"INTERACT : {gameObject.name}");
 
+        isShowingPrompt = false;
         if (DialogueManager.instance != null) DialogueManager.instance.HidePrompt();
         
         playerMovement = FindFirstObjectByType<PlayerMovement>();
@@ -237,6 +311,10 @@ public class InteractableObject : MonoBehaviour
         {
             yield return StartCoroutine(CrystalCutsceneSequence());
             if (playerMovement != null) playerMovement.canMove = true;
+            if (QuestManager.Instance != null)
+            {
+                QuestManager.Instance.ShowObjective();
+            }
             OrangUtanUIVisibility.Instance?.ForceRefresh();
             isInteracting = false;
             Destroy(gameObject);
@@ -542,10 +620,16 @@ public class InteractableObject : MonoBehaviour
 
         Debug.Log($"[InteractableObject] OnTriggerEnter2D by: {other.name} with tag {other.tag}");
 
-        if (!other.CompareTag("Player") && !other.CompareTag("Player-Orang Utan"))
+        PlayerMovement pm = other.GetComponentInParent<PlayerMovement>();
+        if (pm == null) pm = other.GetComponent<PlayerMovement>();
+
+        if (pm == null)
         {
-            Debug.Log($"[InteractableObject] Tag rejected: {other.tag}");
-            return;
+            if (!other.CompareTag("Player") && !other.CompareTag("Player-Orang Utan"))
+            {
+                Debug.Log($"[InteractableObject] Tag rejected: {other.tag}");
+                return;
+            }
         }
 
         playerInside = true;
@@ -561,8 +645,15 @@ public class InteractableObject : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         if (!enabled) return;
-        if (!other.CompareTag("Player") && !other.CompareTag("Player-Orang Utan"))
-            return;
+
+        PlayerMovement pm = other.GetComponentInParent<PlayerMovement>();
+        if (pm == null) pm = other.GetComponent<PlayerMovement>();
+
+        if (pm == null)
+        {
+            if (!other.CompareTag("Player") && !other.CompareTag("Player-Orang Utan"))
+                return;
+        }
 
         playerInside = false;
 

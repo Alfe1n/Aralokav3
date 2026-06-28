@@ -15,7 +15,7 @@ public class SequencePanelCreator
     public static void CreateSequencePanel()
     {
         // Find or create Canvas
-        Canvas canvas = Object.FindObjectOfType<Canvas>();
+        Canvas canvas = Object.FindAnyObjectByType<Canvas>();
         GameObject canvasGO = null;
         if (canvas == null)
         {

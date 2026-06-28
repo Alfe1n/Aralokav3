@@ -9157,14 +9157,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   dialogueLines:
   - text: Tolong aku, Orang Utan! Aku terkurung di dalam sangkar ini!
-    speaker: Burung Kakak Tua
+    speaker: Kakak Tua
     portrait: {fileID: 4001931395401749380, guid: 6d03cb38aa4d0e6438573fd0f4f36eb6, type: 3}
   - text: Bagaimana cara membukanya?
     speaker: Bara
     portrait: {fileID: -6668896378578197248, guid: dc05296099fd74a4d94472e7d3817c5e, type: 3}
   - text: Kuncinya tertinggal di rompi proyek (vest) milik manusia di Hutan Awal!
       Tolong carikan!
-    speaker: Burung Kakak Tua
+    speaker: Kakak Tua
     portrait: {fileID: 2319446498802120873, guid: 6d03cb38aa4d0e6438573fd0f4f36eb6, type: 3}
   useQuest: 1
   requiredQuest: 12
@@ -9223,7 +9223,7 @@ MonoBehaviour:
     portrait: {fileID: -6668896378578197248, guid: d41cf00244fce9c4aabf92e25b57b398, type: 3}
   - text: Bebas! Terima kasih banyak, Orang Utan! Aku akan langsung terbang ke Hutan
       Awal!
-    speaker: Burung Kakak Tua
+    speaker: Kakak Tua
     portrait: {fileID: 6604790593994324769, guid: 6d03cb38aa4d0e6438573fd0f4f36eb6, type: 3}
   useQuest: 1
   requiredQuest: 14

@@ -16,7 +16,7 @@ public class ElevationTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Player")) return;
+        if (!collision.CompareTag("Player") && !collision.CompareTag("Player-Orang Utan")) return;
 
         collision.gameObject.layer =
             LayerMask.NameToLayer(targetPhysicsLayer);
@@ -29,7 +29,7 @@ public class ElevationTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Player")) return;
+        if (!collision.CompareTag("Player") && !collision.CompareTag("Player-Orang Utan")) return;
 
         collision.gameObject.layer =
             LayerMask.NameToLayer(defaultPhysicsLayer);

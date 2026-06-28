@@ -57,10 +57,26 @@ public class NarratorDialogue : MonoBehaviour
                 // Inline typewriter — tidak pakai nested StartCoroutine supaya tidak error saat GameObject baru aktif
                 isTyping = true;
                 lineText.text = "";
+                int letterCount = 0;
                 foreach (char c in line)
                 {
                     if (!isTyping) { lineText.text = currentFullLine; break; }
                     lineText.text += c;
+
+                    // Play blip sound every 4 characters (excluding spaces)
+                    if (c != ' ')
+                    {
+                        letterCount++;
+                        if (letterCount % 4 == 0)
+                        {
+                            if (DialogueManager.instance != null && DialogueManager.instance.audioSource != null && DialogueManager.instance.dialogueBlip != null)
+                            {
+                                DialogueManager.instance.audioSource.pitch = Random.Range(0.96f, 1.04f);
+                                DialogueManager.instance.audioSource.PlayOneShot(DialogueManager.instance.dialogueBlip, 0.05f);
+                            }
+                        }
+                    }
+
                     yield return new WaitForSeconds(typingSpeed);
                 }
                 isTyping = false;

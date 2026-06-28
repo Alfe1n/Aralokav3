@@ -124,7 +124,19 @@ public class DecisionManager : MonoBehaviour
         {
             sequenceVideoPlayer.playOnAwake = false;
             sequenceVideoPlayer.isLooping = false;
-            sequenceVideoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
+            
+            // Cek jika ada AudioSource di objek VideoPlayer
+            AudioSource videoAudio = sequenceVideoPlayer.GetComponent<AudioSource>();
+            if (videoAudio != null)
+            {
+                sequenceVideoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
+                sequenceVideoPlayer.SetTargetAudioSource(0, videoAudio);
+            }
+            else
+            {
+                // Jika tidak ada AudioSource, keluarkan suara langsung ke speaker (Direct) agar tidak bisu
+                sequenceVideoPlayer.audioOutputMode = VideoAudioOutputMode.Direct;
+            }
         }
     }
 
@@ -235,6 +247,18 @@ public class DecisionManager : MonoBehaviour
             }
         }
 
+        // Sembunyikan karakter yang tidak dipilih agar tidak bisa diinteraksi lagi
+        GameObject manusiaObj = GameObject.Find("Manusia");
+        GameObject harimauObj = GameObject.Find("Harimau");
+        if (index == 0) // Pilih Manusia
+        {
+            if (harimauObj != null) harimauObj.SetActive(false);
+        }
+        else if (index == 1) // Pilih Harimau
+        {
+            if (manusiaObj != null) manusiaObj.SetActive(false);
+        }
+
         // Animator karakter
         if (index == 1 && harimauAnimator != null)
             harimauAnimator.SetTrigger(harimauBerdiriTrigger);
@@ -248,7 +272,13 @@ public class DecisionManager : MonoBehaviour
 
         // Kembalikan UI dan gerakan player
         OrangUtanUIVisibility.Instance?.ForceRefresh();
-        if (QuestManager.Instance != null) QuestManager.Instance.ShowObjective();
+        if (QuestManager.Instance != null)
+        {
+            if (index == 0)
+                QuestManager.Instance.SetCustomObjectiveText("Berbicara dengan Manusia");
+            else
+                QuestManager.Instance.SetCustomObjectiveText("Berbicara dengan Harimau");
+        }
 
         PlayerMovement player = PlayerMovement.ActivePlayerInstance
             ?? FindFirstObjectByType<PlayerMovement>();
@@ -399,8 +429,8 @@ public class DecisionManager : MonoBehaviour
                 while (sequenceVideoPlayer.isPlaying)
                     yield return null;
 
-                // Tunggu E/Space setelah video selesai
-                if (step.waitForInput)
+                // Tunggu E/Space setelah video selesai (lewati jika ini adalah video)
+                if (step.waitForInput && step.videoClip == null)
                 {
                     ShowContinueHint(true);
                     yield return StartCoroutine(WaitForAdvanceInput());

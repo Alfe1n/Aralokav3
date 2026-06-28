@@ -10,8 +10,8 @@ public class DialogueManager : MonoBehaviour
 
     [Header("UI")]
     public GameObject dialoguePanel;
-    public GameObject interactPromptBara;
-    public GameObject interactPromptOrangUtan;
+    public GameObject interactPromptBara; // Kita simpan agar tidak break, tapi logic menyederhanakannya
+    [HideInInspector] public GameObject interactPromptOrangUtan; // Sembunyikan dan satukan targetnya
 
     public TMP_Text dialogueText;
     public TMP_Text nameText;
@@ -291,13 +291,11 @@ public class DialogueManager : MonoBehaviour
         if (!dialogueActive)
         {
             if (interactPromptBara != null) interactPromptBara.SetActive(true);
-            if (interactPromptOrangUtan != null) interactPromptOrangUtan.SetActive(true);
         }
     }
 
     public void HidePrompt()
     {
         if (interactPromptBara != null) interactPromptBara.SetActive(false);
-        if (interactPromptOrangUtan != null) interactPromptOrangUtan.SetActive(false);
     }
 }
